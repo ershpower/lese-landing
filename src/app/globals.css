@@ -5,24 +5,51 @@
 body {
 }
 
+/*.h1 {*/
+/*    @apply text-[2.396vw] lg:text-[6.458vw] leading-[1.15] font-medium font-montserrat;*/
+/*}*/
+/*!*2xl:text-[70px] 3xl:text-[100px]*!*/
+/*.h2 {*/
+/*    @apply 2xl:text-[70px] 3xl:text-[100px]  leading-[1] font-montserrat;*/
+/*}*/
+/*.h3 {*/
+/*    @apply text-[44px] xl:text-[60px] leading-[1] font-medium font-montserrat;*/
+/*}*/
+/*.h5 {*/
+/*    @apply text-[30px] xl:text-[36px] leading-[1.1] font-medium font-montserrat;*/
+/*}*/
+/*.h6 {*/
+/*    @apply text-[20px] lg:text-[20px] leading-[1.1] font-semibold font-montserrat;*/
+/*}*/
+/*.h7 {*/
+/*    @apply  2xl:text-[16px] 3xl:text-[20px] leading-[1.10] font-onest;*/
+/*}*/
+/*.h8 {*/
+/*    @apply text-[16px] lg:text-[16px] leading-[1.10] font-onest;*/
+/*}*/
+/*.h9 {*/
+/*    @apply text-[10px] leading-[1.10] font-onest;*/
+/*}*/
+
 @layer utilities {
     .h1 {
         @apply text-[2.396vw] lg:text-[6.458vw] leading-[1.15] font-medium font-montserrat;
     }
+    /*2xl:text-[70px] 3xl:text-[100px]*/
     .h2 {
-        @apply text-[100px] lg:text-[100px] leading-[1] font-montserrat;
+        @apply text-[5.208vw]  leading-[1] font-montserrat;
     }
     .h3 {
-        @apply text-[60px] lg:text-[60px] leading-[1] font-medium font-montserrat;
+        @apply text-[3.125vw] leading-[1] font-medium font-montserrat;
     }
     .h5 {
-        @apply text-[36px] lg:text-[36px] leading-[1.1] font-medium font-montserrat;
+        @apply text-[1.875vw] leading-[1.1] font-medium font-montserrat;
     }
     .h6 {
         @apply text-[20px] lg:text-[20px] leading-[1.1] font-semibold font-montserrat;
     }
     .h7 {
-        @apply text-[20px] lg:text-[20px] leading-[1.10] font-onest;
+        @apply text-[1.042vw] leading-[1.10] font-onest;
     }
     .h8 {
         @apply text-[16px] lg:text-[16px] leading-[1.10] font-onest;

@@ -7,6 +7,7 @@ type RetinaImageProps = {
   width?: number | string;
   height?: number | string;
   className?: string;
+  style?: React.CSSProperties; // ← добавили style
 };
 
 const RetinaImage: React.FC<RetinaImageProps> = ({
@@ -16,6 +17,7 @@ const RetinaImage: React.FC<RetinaImageProps> = ({
   width,
   height,
   className = '',
+  style,
 }) => {
   return (
     <img
@@ -26,6 +28,7 @@ const RetinaImage: React.FC<RetinaImageProps> = ({
       height={height}
       className={className}
       loading={'lazy'}
+      style={style}
     />
   );
 };

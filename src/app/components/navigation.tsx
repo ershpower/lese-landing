@@ -72,8 +72,8 @@ function Navigation() {
                 >
                   <span className={'h9'}>0{i + 1}</span>
                   {item.title}
-                  <div className={'ml-auto'}>
-                    <ArrowRightUp />
+                  <div className={'text-dark-blue ml-auto'}>
+                    <ArrowRightUp width={9} height={9} />
                   </div>
                 </a>
               </li>
@@ -101,7 +101,7 @@ function Navigation() {
           Напишите мне, чтобы обсудить все детали и начать ваш проект
         </p>
         <div className={'mt-16 flex justify-end'}>
-          <Finger />
+          <Finger width={40} height={40} />
         </div>
       </a>
     </div>

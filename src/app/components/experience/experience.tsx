@@ -53,11 +53,11 @@ const images = [
 
 function Experience() {
   return (
-    <section className={'mt-80 rounded-20 bg-white p-40'}>
-      <h3 className={'h3 text-dark-blue mb-40'}>
+    <section className={'p-f40 mt-80 rounded-20 bg-white'}>
+      <h3 className={'h3 text-dark-blue'}>
         Мой опыт для вашей <br /> эффектной презентации
       </h3>
-      <div className={'mt-40 grid grid-cols-4 gap-10'}>
+      <div className={'mt-f40 grid grid-cols-2 gap-10 lg:grid-cols-4'}>
         <TextCard
           title={'3'}
           subtitle={'года'}
@@ -86,7 +86,7 @@ function Experience() {
           </p>
           <div
             className={
-              'mt-40 grid grid-cols-[repeat(auto-fill,minmax(60px,1fr))] gap-10'
+              'mt-f40 grid grid-cols-[repeat(auto-fill,minmax(30px,1fr))] gap-10 2xl:grid-cols-[repeat(auto-fill,minmax(60px,1fr))]'
             }
           >
             {images.map((img, i) => (

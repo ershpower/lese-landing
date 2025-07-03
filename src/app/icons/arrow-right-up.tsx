@@ -1,25 +1,23 @@
 import React from 'react';
+import { IconProps } from './types';
 
-export const ArrowRightUp = () => {
+export const ArrowRightUp = ({ height, width }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="9"
-      height="9"
-      viewBox="0 0 9 9"
       fill="none"
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className=""
     >
-      <g clipPath="url(#clip0_454_1032)">
-        <path
-          d="M7.32668 2.66993L1.26029 8.73633L0.263672 7.73971L6.32936 1.67331H0.983295V0.263672H8.73633V8.01671H7.32668V2.66993Z"
-          fill="#284578"
-        />
-      </g>
-      <defs>
-        <clipPath id="clip0_454_1032">
-          <rect width="9" height="9" fill="white" />
-        </clipPath>
-      </defs>
+      <path
+        xmlns="http://www.w3.org/2000/svg"
+        d="M16.2815 5.93318L2.80064 19.4141L0.585938 17.1994L14.0652 3.71848H2.1851V0.585938H19.4141V17.8149H16.2815V5.93318Z"
+        fill="currentColor"
+      />
     </svg>
   );
 };
