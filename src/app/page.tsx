@@ -1,6 +1,7 @@
 import Navigation from '@/app/components/navigation';
 import Experience from '@/app/components/experience/experience';
 import MyWorks from '@/app/components/my-works';
+import WorkSteps from '@/app/components/work-steps';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <main className={'ml-10 mr-20 mt-20 flex-shrink'}>
         <Experience />
         <MyWorks />
+        <WorkSteps />
       </main>
     </div>
   );
