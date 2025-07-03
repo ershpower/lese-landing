@@ -12,6 +12,10 @@ export default {
         red: 'rgba(230, 0, 35, 1)',
         'blue-behance': 'rgba(0, 92, 255, 1)',
         gray: '#53555a',
+        'b-color': 'rgba(240, 240, 255, 1)',
+        'b-color-2': 'rgba(182, 212, 253, 1)',
+        'b-color-3': 'rgba(159, 197, 238, 1)',
+        'extra-light-gray': '#E3E3E3',
       },
       backgroundImage: {
         'light-gradient':
@@ -20,6 +24,12 @@ export default {
           'radial-gradient(103.21% 103.21% at 0% -3.21%, #9FC5EE 0%, #477BCD 29.19%, #1B1B84 65.98%, #09094B 94.23%)',
         'attention-gradient':
           'linear-gradient(119.12deg, #EFF5FF 7.07%, #C7E0FF 61.3%, #71ACF7 103.06%)',
+        'split-light-blue-gradient':
+          'linear-gradient(22.56deg, rgba(255, 255, 255, 0) 40.69%, #F0F0FF 82.15%)',
+        'split-blue-gradient':
+          'linear-gradient(30.77deg, rgba(207, 228, 255, 0) 7.73%, #C6DEFF 46.83%)',
+        'split-white-gradient':
+          'linear-gradient(28.3deg, #FFFFFF 42.82%, #F7F7F7 80.96%);\n',
       },
       spacing: {
         0: '0rem',

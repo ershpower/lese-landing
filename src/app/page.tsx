@@ -2,6 +2,7 @@ import Navigation from '@/app/components/navigation';
 import Experience from '@/app/components/experience/experience';
 import MyWorks from '@/app/components/my-works';
 import WorkSteps from '@/app/components/work-steps';
+import { Prices } from '@/app/components/prices';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Experience />
         <MyWorks />
         <WorkSteps />
+        <Prices />
       </main>
     </div>
   );

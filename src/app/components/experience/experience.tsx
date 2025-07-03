@@ -53,7 +53,7 @@ const images = [
 
 function Experience() {
   return (
-    <section className={'p-f40 mt-80 rounded-20 bg-white'}>
+    <section className={'mt-80 rounded-20 bg-white p-f40'}>
       <h3 className={'h3 text-dark-blue'}>
         Мой опыт для вашей <br /> эффектной презентации
       </h3>
@@ -81,7 +81,7 @@ function Experience() {
             <Dots />
           </div>
           <p className={'h2 text-dark-blue'}>25+</p>
-          <p className={'h5 text-dark-blue mt-10'}>
+          <p className={'h5 mt-10 text-dark-blue'}>
             Пройденных учебных курсов и изученных программ
           </p>
           <div
@@ -114,7 +114,7 @@ function Experience() {
 
         <div
           className={
-            'bg-attention-gradient relative col-span-1 min-h-[334px] rounded-20 p-40'
+            'relative col-span-1 min-h-[334px] rounded-20 bg-attention-gradient p-40'
           }
         >
           <div className={'flex justify-end overflow-visible text-black'}>

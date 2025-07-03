@@ -40,19 +40,22 @@ body {
         @apply text-[5.208vw]  leading-[1] font-montserrat;
     }
     .h3 {
-        @apply text-[3.125vw] leading-[1] font-medium font-montserrat;
+        @apply text-[3.125vw]  leading-[1] font-medium font-montserrat;
+    }
+    .h4 {
+        @apply text-[1.875vw]  leading-[1] font-onest;
     }
     .h5 {
-        @apply text-[1.875vw] leading-[1.1] font-medium font-montserrat;
+        @apply text-[1.875vw]  leading-[1.1] font-medium font-montserrat;
     }
     .h6 {
         @apply text-[1.042vw] leading-[1.1] font-semibold font-montserrat;
     }
     .h7 {
-        @apply text-[1.042vw] leading-[1.10] font-onest;
+        @apply text-[1.042vw]  leading-[1.10] font-onest;
     }
     .h8 {
-        @apply text-[0.833vw] leading-[1.10] font-onest;
+        @apply text-[0.833vw]  leading-[1.10] font-onest;
     }
     .h9 {
         @apply text-[10px] leading-[1.10] font-onest;

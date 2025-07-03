@@ -1,6 +1,5 @@
 import React from 'react';
 import { Dots } from '@/app/icons/dots';
-import Image from 'next/image';
 import RetinaImage from '@/app/ui-lit/retina-image';
 
 interface ImageCardProps {
