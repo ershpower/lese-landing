@@ -3,6 +3,7 @@ import Experience from '@/app/components/experience/experience';
 import MyWorks from '@/app/components/my-works';
 import WorkSteps from '@/app/components/work-steps';
 import { Prices } from '@/app/components/prices';
+import { Whom } from '@/app/components/whom/whom';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <main className={'ml-10 mr-20 mt-20 flex-shrink'}>
         <Experience />
         <MyWorks />
+        <Whom />
         <WorkSteps />
         <Prices />
       </main>

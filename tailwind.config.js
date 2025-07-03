@@ -9,6 +9,7 @@ export default {
         blue: 'rgba(63, 105, 192, 1)',
         'white-70': 'rgba(255, 255, 255, 0.7)',
         'white-80': 'rgba(255, 255, 255, 0.7)',
+        'black-30': 'rgba(0, 0, 0, 0.3)',
         red: 'rgba(230, 0, 35, 1)',
         'blue-behance': 'rgba(0, 92, 255, 1)',
         gray: '#53555a',

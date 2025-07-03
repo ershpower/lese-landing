@@ -54,13 +54,13 @@ const cards = [
 
 function WorkSteps() {
   return (
-    <section className={'p-f40'}>
+    <section className={'mt-f80 rounded-20 bg-white p-f40'}>
       <h3 className={'h3 text-dark-blue'}>Этапы работы</h3>
       <div className={'mt-f40 grid grid-cols-4 gap-10'}>
         {cards.map((card, i) => (
           <div
             key={i}
-            className={`p-f40 relative col-span-1 rounded-20 ${i === 2 ? 'bg-attention-gradient' : 'bg-white'}`}
+            className={`relative col-span-1 rounded-20 p-f40 ${i === 2 ? 'bg-attention-gradient' : 'bg-light-blue'}`}
           >
             <div className={'flex justify-between'}>
               <img src={card.img} alt="" />
@@ -77,7 +77,7 @@ function WorkSteps() {
             {i !== 3 && i !== 7 && (
               <div
                 className={
-                  'text-dark-blue absolute right-0 top-[50%] z-20 w-fit translate-x-[50%] translate-y-[-50%] rounded-full bg-white p-10'
+                  'absolute right-0 top-[50%] z-20 w-fit translate-x-[50%] translate-y-[-50%] rounded-full bg-white p-10 text-dark-blue'
                 }
               >
                 <ArrowRoundedRight />
