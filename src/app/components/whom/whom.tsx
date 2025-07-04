@@ -2,7 +2,6 @@ import React from 'react';
 import { Col } from '@/app/components/whom/col';
 import RetinaImage from '@/app/ui-lit/retina-image';
 import { ArrowWhom } from '@/app/icons/arrow-whom';
-import { Info } from '@/app/icons/info';
 
 const col1Items = [
   'Привлекать инвестиции',
