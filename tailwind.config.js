@@ -30,7 +30,9 @@ export default {
         'split-blue-gradient':
           'linear-gradient(30.77deg, rgba(207, 228, 255, 0) 7.73%, #C6DEFF 46.83%)',
         'split-white-gradient':
-          'linear-gradient(28.3deg, #FFFFFF 42.82%, #F7F7F7 80.96%);\n',
+          'linear-gradient(28.3deg, #FFFFFF 42.82%, #F7F7F7 80.96%)',
+        'footer-gradient':
+          'linear-gradient(271.55deg, #1856A7 8.83%, #62A2F6 21.78%, #ACD2FC 33.78%, #CEE4FF 43.52%, #EFF5FF 74.56%)',
       },
       spacing: {
         0: '0rem',

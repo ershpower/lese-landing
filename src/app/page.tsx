@@ -6,6 +6,7 @@ import { Prices } from '@/app/components/prices';
 import { Whom } from '@/app/components/whom/whom';
 import HeroBlock from '@/app/components/hero-block';
 import Faq from '@/app/components/faq/faq';
+import { Footer } from '@/app/components/footer';
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       >
         <Navigation />
       </aside>
-      <main className={'ml-10 mr-20 mt-20 flex-shrink'}>
+      <main className={'ml-10 mr-20 mt-20 flex-shrink pb-20'}>
         <HeroBlock />
         <Experience />
         <MyWorks />
@@ -25,6 +26,7 @@ export default function Home() {
         <WorkSteps />
         <Prices />
         <Faq />
+        <Footer />
       </main>
     </div>
   );

@@ -72,7 +72,7 @@ function Navigation() {
                 >
                   <span className={'h9'}>0{i + 1}</span>
                   {item.title}
-                  <div className={'text-dark-blue ml-auto'}>
+                  <div className={'ml-auto text-dark-blue'}>
                     <ArrowRightUp width={9} height={9} />
                   </div>
                 </a>
@@ -84,20 +84,20 @@ function Navigation() {
       <a
         target={'_blank'}
         href={'https://t.me/Ershova_Presentation'}
-        className={'bg-dark-gradient block rounded-20 px-20 py-30'}
+        className={'block h-[26.852vh] rounded-20 bg-dark-gradient px-20 py-30'}
       >
         <div className={'ml-auto flex justify-end text-white'}>
           <Dots />
         </div>
         <div
           className={
-            'text-blue rounded-10 mt-4 flex h-[40px] w-[40px] items-center justify-center bg-white pr-[2px]'
+            'mt-4 flex h-[40px] w-[40px] items-center justify-center rounded-10 bg-white pr-[2px] text-blue'
           }
         >
           <Tg />
         </div>
         <h6 className={'h6 mt-12 text-white'}>Заказать презентацию</h6>
-        <p className={'h8 text-white-70 mt-12'}>
+        <p className={'h8 mt-12 text-white-70'}>
           Напишите мне, чтобы обсудить все детали и начать ваш проект
         </p>
         <div className={'mt-16 flex justify-end'}>
