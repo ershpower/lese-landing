@@ -2,32 +2,21 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
 
-const montserrat = localFont({
-  src: [
-    {
-      path: '../../public/fonts/montserrat-alternates/MontserratAlternates-Regular.woff2',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/montserrat-alternates/MontserratAlternates-Medium.woff2',
-      weight: '500',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/montserrat-alternates/MontserratAlternates-SemiBold.woff2',
-      weight: '600',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-montserrat-alternates',
-});
-
 const onest = localFont({
   src: [
     {
       path: '../../public/fonts/onest/Onest-Regular.woff2',
       weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/onest/Onest-Light.woff2',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/onest/Onest-medium.woff2',
+      weight: '500',
       style: 'normal',
     },
   ],
@@ -46,9 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${montserrat.variable} ${onest.variable} bg-light-blue antialiased`}
-      >
+      <body className={`${onest.variable} bg-light-blue antialiased`}>
         {children}
       </body>
     </html>

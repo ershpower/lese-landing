@@ -3,62 +3,27 @@
 @tailwind utilities;
 
 body {
+    font-family: Onest, sans-serif;
 }
-
-/*.h1 {*/
-/*    @apply text-[2.396vw] lg:text-[6.458vw] leading-[1.15] font-medium font-montserrat;*/
-/*}*/
-/*!*2xl:text-[70px] 3xl:text-[100px]*!*/
-/*.h2 {*/
-/*    @apply 2xl:text-[70px] 3xl:text-[100px]  leading-[1] font-montserrat;*/
-/*}*/
-/*.h3 {*/
-/*    @apply text-[44px] xl:text-[60px] leading-[1] font-medium font-montserrat;*/
-/*}*/
-/*.h5 {*/
-/*    @apply text-[30px] xl:text-[36px] leading-[1.1] font-medium font-montserrat;*/
-/*}*/
-/*.h6 {*/
-/*    @apply text-[20px] lg:text-[20px] leading-[1.1] font-semibold font-montserrat;*/
-/*}*/
-/*.h7 {*/
-/*    @apply  2xl:text-[16px] 3xl:text-[20px] leading-[1.10] font-onest;*/
-/*}*/
-/*.h8 {*/
-/*    @apply text-[16px] lg:text-[16px] leading-[1.10] font-onest;*/
-/*}*/
-/*.h9 {*/
-/*    @apply text-[10px] leading-[1.10] font-onest;*/
-/*}*/
 
 @layer utilities {
     .h1 {
-        @apply text-[2.396vw] lg:text-[6.458vw] leading-[1.15] font-medium font-montserrat;
+        @apply text-48 leading-[0.95] font-medium;
     }
-    /*2xl:text-[70px] 3xl:text-[100px]*/
     .h2 {
-        @apply text-[5.208vw]  leading-[1] font-montserrat;
+        @apply text-48 leading-[0.95] font-light;
     }
     .h3 {
-        @apply text-[3.125vw]  leading-[1] font-medium font-montserrat;
+        @apply text-24 leading-[1] font-medium;
     }
     .h4 {
-        @apply text-[1.875vw]  leading-[1] font-onest;
+        @apply text-18 leading-[1] font-medium;
     }
     .h5 {
-        @apply text-[1.875vw]  leading-[1.1] font-medium font-montserrat;
+        @apply text-14 leading-[1.1] font-normal;
     }
     .h6 {
-        @apply text-[1.042vw] leading-[1.1] font-semibold font-montserrat;
-    }
-    .h7 {
-        @apply text-[1.042vw]  leading-[1.10] font-onest;
-    }
-    .h8 {
-        @apply text-[0.833vw]  leading-[1.10] font-onest;
-    }
-    .h9 {
-        @apply text-[10px] leading-[1.10] font-onest;
+        @apply text-12 leading-[1.1] font-normal;
     }
     .section-wrapper{
         @apply p-[0.521vw] h-screen lg:py-[1.042vw] lg:pr-[1.042vw] lg:pl-[0px];

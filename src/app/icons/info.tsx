@@ -1,5 +1,4 @@
 import React from 'react';
-import { IconProps } from '@/app/icons/types';
 
 export const Info = () => {
   return (
