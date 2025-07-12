@@ -6,7 +6,9 @@ export default {
       colors: {
         'dark-blue': '#150197',
         'light-gray': 'rgba(248, 248, 255, 1)',
+        'black-10': 'rgba(0, 0, 0, 0.1)',
         'black-20': 'rgba(0, 0, 0, 0.2)',
+        'black-30': 'rgba(0, 0, 0, 0.3)',
         'black-70': 'rgba(0, 0, 0, 0.7)',
         'white-70': 'rgba(255, 255, 255, 0.7)',
         red: 'rgba(230, 0, 35, 1)',

@@ -1,0 +1,20 @@
+.szh-accordion__item-content{
+    transition: height 0.25s cubic-bezier(0, 0, 0, 1);
+}
+
+.szh-accordion__item{
+    svg{
+        transition: transform 0.25s cubic-bezier(0, 0, 0, 1);
+
+    }
+}
+
+.szh-accordion__item--expanded{
+    svg.accordion_arrow{
+        transform: rotate(90deg);
+    }
+}
+
+.szh-accordion__item-heading{
+    border-radius: 20px;
+}

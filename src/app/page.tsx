@@ -1,6 +1,7 @@
 import HeroBlock from '@/app/components/hero-block';
 import Experience from '@/app/components/experience/experience';
 import { Portfolio } from '@/app/components/portfolio';
+import { Whom } from '@/app/components/whom';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <HeroBlock />
         <Experience />
         <Portfolio />
+        <Whom />
       </main>
     </div>
   );

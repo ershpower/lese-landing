@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconProps } from './types';
 
-export const ArrowRightUp = ({ height, width }: IconProps) => {
+export const ArrowRightUp = ({ height, width, className }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -11,7 +11,7 @@ export const ArrowRightUp = ({ height, width }: IconProps) => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className=""
+      className={className}
     >
       <path
         xmlns="http://www.w3.org/2000/svg"
