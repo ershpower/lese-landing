@@ -5,14 +5,19 @@ export default {
     extend: {
       colors: {
         'dark-blue': '#150197',
+        'light-gray': 'rgba(248, 248, 255, 1)',
         'black-20': 'rgba(0, 0, 0, 0.2)',
         'black-70': 'rgba(0, 0, 0, 0.7)',
-        'light-gray': 'rgba(248, 248, 255, 1)',
+        'white-70': 'rgba(255, 255, 255, 0.7)',
+        red: 'rgba(230, 0, 35, 1)',
+        'behance-blue': 'rgba(0, 92, 255, 1)',
       },
       boxShadow: {
         marquee: '2px 2px 6px 0px #1501974D',
       },
       backgroundImage: {
+        'portfolio-bg': 'url("/portfolio/bg.png")',
+        'portfolio-bg-circle': 'url("/portfolio/circle.png")',
         'hero-bg': 'url("/hero/xs-bg-1x.png")',
         'marquee-gradient-1':
           'linear-gradient(90.12deg, #1ED1F9 18.81%, #FFFFFF 92.52%)',
