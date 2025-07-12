@@ -1,6 +1,7 @@
 import React from 'react';
+import { IconProps } from '@/app/icons/types';
 
-export const Dots = () => {
+export const Dots = ({ height, width, className }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,6 +9,7 @@ export const Dots = () => {
       height="8"
       viewBox="0 0 32 8"
       fill="none"
+      className={className}
     >
       <circle cx="4" cy="4" r="3.5" stroke="currentColor" strokeOpacity="0.3" />
       <circle

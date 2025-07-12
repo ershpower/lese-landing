@@ -4,6 +4,7 @@
 
 body {
     font-family: Onest, sans-serif;
+    background: rgba(248, 248, 255, 1);
 }
 
 @layer utilities {
@@ -29,6 +30,6 @@ body {
         @apply p-[0.521vw] h-screen lg:py-[1.042vw] lg:pr-[1.042vw] lg:pl-[0px];
     }
     .section{
-        @apply p-[1.250vw] bg-white rounded-[1.042vw] overflow-hidden h-full lg:p-[40px];
+        @apply  bg-white rounded-20 mt-40 mx-10 pt-20 pb-10 px-10;
     }
 }

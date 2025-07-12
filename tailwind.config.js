@@ -7,6 +7,7 @@ export default {
         'dark-blue': '#150197',
         'black-20': 'rgba(0, 0, 0, 0.2)',
         'black-70': 'rgba(0, 0, 0, 0.7)',
+        'light-gray': 'rgba(248, 248, 255, 1)',
       },
       boxShadow: {
         marquee: '2px 2px 6px 0px #1501974D',
@@ -34,6 +35,7 @@ export default {
         20: '1.25rem',
         22: '1.375rem',
         24: '1.5rem',
+        28: '1.75rem',
         30: '1.875rem',
         32: '2rem',
         34: '2.0625rem',

@@ -115,7 +115,7 @@ function HeroBlock() {
       </div>
       <div
         className={
-          'border-black-20 flex justify-between rounded-20 border p-16'
+          'border-black-20 flex justify-between rounded-20 border bg-transparent p-16'
         }
       >
         <div className={'flex items-center gap-10'}>
