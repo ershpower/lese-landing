@@ -3,6 +3,7 @@ import Experience from '@/app/components/experience/experience';
 import { Portfolio } from '@/app/components/portfolio';
 import { Whom } from '@/app/components/whom';
 import { WorkSteps } from '@/app/components/work-steps/work-steps';
+import Price from '@/app/components/price';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Portfolio />
         <Whom />
         <WorkSteps />
+        <Price />
       </main>
     </div>
   );

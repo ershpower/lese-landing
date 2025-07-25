@@ -1,8 +1,10 @@
 import React from 'react';
+import { IconProps } from '@/app/icons/types';
 
-export const Clock = () => {
+export const Clock = ({ className }: IconProps) => {
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width="22"
       height="22"

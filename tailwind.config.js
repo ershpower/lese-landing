@@ -9,11 +9,13 @@ export default {
         'black-10': 'rgba(0, 0, 0, 0.1)',
         'black-20': 'rgba(0, 0, 0, 0.2)',
         'black-30': 'rgba(0, 0, 0, 0.3)',
+        'black-50': 'rgba(0, 0, 0, 0.5)',
         'black-70': 'rgba(0, 0, 0, 0.7)',
         'white-50': 'rgba(255, 255, 255, 0.5)',
         'white-70': 'rgba(255, 255, 255, 0.7)',
         red: 'rgba(230, 0, 35, 1)',
         'behance-blue': 'rgba(0, 92, 255, 1)',
+        icon: 'rgba(227, 227, 227, 1)',
       },
       boxShadow: {
         marquee: '2px 2px 6px 0px #1501974D',

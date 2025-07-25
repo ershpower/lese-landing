@@ -8,10 +8,19 @@ import {
 import { ArrowRightUp } from '@/app/icons/arrow-right-up';
 
 interface AccordionProps {
-  items: Array<{ title: string; inner?: React.ReactNode; isAccent?: boolean }>;
+  items: Array<{
+    title: string;
+    subtitle?: string;
+    inner?: React.ReactNode;
+    isAccent?: boolean;
+  }>;
 }
 export const Accordion = ({ items }: AccordionProps) => {
-  const renderCommonItem = (title: string, inner: React.ReactNode) => (
+  const renderCommonItem = (
+    title: string,
+    inner: React.ReactNode,
+    subtitle?: string,
+  ) => (
     <AccordionItem
       className={'overflow-hidden rounded-20'}
       buttonProps={{
@@ -19,9 +28,14 @@ export const Accordion = ({ items }: AccordionProps) => {
       }}
       header={
         <div
-          className={`flex w-full items-center justify-between overflow-hidden bg-light-gray p-20`}
+          className={`flex w-full justify-between overflow-hidden bg-light-gray p-20`}
         >
-          <p className={'h4'}> {title}</p>
+          <div>
+            <p className={'h4 text-left'}> {title}</p>
+            {subtitle && (
+              <p className={'h6 mt-10 text-left text-black-70'}>{subtitle}</p>
+            )}
+          </div>
           <div>
             <ArrowRightUp
               className={'accordion_arrow'}
@@ -36,7 +50,11 @@ export const Accordion = ({ items }: AccordionProps) => {
     </AccordionItem>
   );
 
-  const renderAccentItems = (title: string, inner: React.ReactNode) => (
+  const renderAccentItems = (
+    title: string,
+    inner: React.ReactNode,
+    subtitle?: string,
+  ) => (
     <AccordionItem
       className={'overflow-hidden rounded-20 bg-light-gray'}
       buttonProps={{
@@ -47,6 +65,7 @@ export const Accordion = ({ items }: AccordionProps) => {
           className={`flex w-full items-center justify-between overflow-hidden rounded-20 bg-red p-20`}
         >
           <p className={'h4'}> {title}</p>
+          {subtitle && <p className={'h6 mt-10 text-black-70'}>{subtitle}</p>}
           <div>
             <ArrowRightUp
               className={'accordion_arrow'}
@@ -69,9 +88,13 @@ export const Accordion = ({ items }: AccordionProps) => {
     >
       {items.map((item, index) =>
         item.isAccent ? (
-          <div key={index}>{renderAccentItems(item.title, item.inner)}</div>
+          <div key={index}>
+            {renderAccentItems(item.title, item.inner, item.subtitle)}
+          </div>
         ) : (
-          <div key={index}>{renderCommonItem(item.title, item.inner)}</div>
+          <div key={index}>
+            {renderCommonItem(item.title, item.inner, item.subtitle)}
+          </div>
         ),
       )}
     </AccordionUI>
