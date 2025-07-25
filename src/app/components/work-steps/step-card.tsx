@@ -4,7 +4,7 @@ import { ArrowRoundedRight } from '@/app/icons/arrow-rounded-right';
 
 interface StepCardProps {
   img: string;
-  title: string;
+  title: string | React.ReactNode;
   subtitle: string;
   isAccent?: boolean;
   withArrow?: boolean;
@@ -22,7 +22,7 @@ export const StepCard = ({
       className={`relative flex justify-between gap-30 rounded-20 py-20 pl-10 pr-20 ${isAccent ? 'bg-red' : 'bg-light-gray'}`}
     >
       <div className={'flex items-start gap-20'}>
-        <img src={img} alt="" className={'h-[40px] w-[32px]'} />
+        <img src={img} alt="" className={'h-[40px] w-[38px]'} />
         <div>
           <p className={`h4 ${isAccent ? 'text-white' : 'text-dark-blue'}`}>
             {title}
@@ -33,13 +33,15 @@ export const StepCard = ({
             {subtitle}
           </p>
           {isAccent && (
-            <p className={'h5 text-white-50 mt-10'}>*В формате “Под ключ”</p>
+            <p className={'h5 mt-10 text-white-50'}>*В формате “Под ключ”</p>
           )}
         </div>
       </div>
-      <div>
-        <Dots />
-      </div>
+      {!isAccent && (
+        <div className={'absolute right-20 top-20'}>
+          <Dots />
+        </div>
+      )}
 
       {withArrow && (
         <div
