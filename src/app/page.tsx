@@ -4,6 +4,7 @@ import { Portfolio } from '@/app/components/portfolio';
 import { Whom } from '@/app/components/whom';
 import { WorkSteps } from '@/app/components/work-steps/work-steps';
 import Price from '@/app/components/price';
+import Faq from '@/app/components/faq';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Whom />
         <WorkSteps />
         <Price />
+        <Faq />
       </main>
     </div>
   );
