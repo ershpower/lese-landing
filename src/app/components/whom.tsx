@@ -1,6 +1,7 @@
 import React from 'react';
 import { Accordion } from '@/app/ui-lit/accordion';
 import { Info } from '@/app/icons/info';
+import { FOR_WHO_ID } from '@/app/consts';
 
 const items = [
   {
@@ -83,7 +84,7 @@ const items = [
 
 export const Whom = () => {
   return (
-    <section className={'section'}>
+    <section className={'section'} id={FOR_WHO_ID}>
       <p className={'h3 text-dark-blue'}>
         Мои услуги для тех, кто нуждается в эффективных решениях
       </p>

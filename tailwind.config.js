@@ -11,7 +11,8 @@ export default {
         'black-30': 'rgba(0, 0, 0, 0.3)',
         'black-50': 'rgba(0, 0, 0, 0.5)',
         'black-70': 'rgba(0, 0, 0, 0.7)',
-        'white-50': 'rgba(255, 255, 255, 0.5)',
+        'white-30': 'rgba(255, 255, 255, 0.3)',
+        'white-70': 'rgba(255, 255, 255, 0.7)',
         'white-70': 'rgba(255, 255, 255, 0.7)',
         red: 'rgba(230, 0, 35, 1)',
         'behance-blue': 'rgba(0, 92, 255, 1)',
@@ -28,6 +29,8 @@ export default {
           'linear-gradient(90.12deg, #1ED1F9 18.81%, #FFFFFF 92.52%)',
         'marquee-gradient-2':
           'linear-gradient(90.12deg, #FFFFFF 18.81%, #1ED1F9 92.52%)',
+        'burger-gradient':
+          'linear-gradient(173.63deg, rgba(2, 2, 51, 0.7) 7.1%, rgba(9, 45, 200, 0.7) 94.96%)',
       },
       spacing: {
         0: '0rem',

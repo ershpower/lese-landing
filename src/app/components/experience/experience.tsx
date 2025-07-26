@@ -3,10 +3,11 @@ import { CardText } from '@/app/components/experience/card-text';
 import { CardImage } from '@/app/components/experience/card-image';
 import { Dots } from '@/app/icons/dots';
 import { BigCard } from '@/app/components/experience/big-card';
+import { ABOUT_ME_ID } from '@/app/consts';
 
 function Experience() {
   return (
-    <section className={'section'}>
+    <section className={'section'} id={ABOUT_ME_ID}>
       <h3 className={'h3 px-10 text-dark-blue'}>
         Мой опыт для вашей эффектной презентации
       </h3>

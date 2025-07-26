@@ -1,5 +1,6 @@
 import React from 'react';
 import { StepCard } from '@/app/components/work-steps/step-card';
+import { WORK_STEPS_ID } from '@/app/consts';
 
 const cards = [
   {
@@ -61,7 +62,7 @@ const cards = [
 
 export const WorkSteps = () => {
   return (
-    <section className={'section'}>
+    <section className={'section'} id={WORK_STEPS_ID}>
       <p className={'h3 text-dark-blue'}>Этапы работы</p>
 
       <div className={'mt-20 flex flex-col gap-8'}>

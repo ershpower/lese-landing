@@ -1,11 +1,12 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { Burger } from '@/app/icons/burger';
 import Marquee from 'react-fast-marquee';
 import { OrderButton } from '@/app/ui-lit/order-button';
 import { Dots } from '@/app/icons/dots';
 import RetinaImage from '@/app/ui-lit/retina-image';
+import Burger from '@/app/components/burger';
+import { BurgerIcon } from '@/app/icons/burger';
 
 const bullets = ['стартапов', 'спикеров', 'компаний'];
 
@@ -14,6 +15,17 @@ const row2 = ['Инвестиционные презентации', 'Консу
 const row3 = ['Презентаций для выступления', 'Бизнес - презентации'];
 
 function HeroBlock() {
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
+
+  const handleOpenMenu = () => {
+    document.body.style.overflow = 'hidden';
+    setIsOpenMenu(true);
+  };
+  const handleCloseMenu = () => {
+    setIsOpenMenu(false);
+    document.body.style.overflow = 'auto';
+  };
+
   const [activeBullet, setActiveBullet] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -38,20 +50,20 @@ function HeroBlock() {
       >
         <div className={'flex h-full flex-col justify-between'}>
           <div className={'absolute bottom-[25%] left-[-10px] w-[110%]'}>
-            <div className={'shadow-marquee w-full rotate-[-5deg]'}>
+            <div className={'w-full rotate-[-5deg] shadow-marquee'}>
               <Marquee className={'bg-marquee-gradient-1 p-6'}>
                 {[...row1, ...row1].map((word, index) => (
                   <div key={index} className={'flex items-center gap-8 pl-8'}>
                     {word}
                     <div
-                      className={'bg-dark-blue h-[4px] w-[4px] rounded-full'}
+                      className={'h-[4px] w-[4px] rounded-full bg-dark-blue'}
                     ></div>
                   </div>
                 ))}
               </Marquee>
             </div>
 
-            <div className={'shadow-marquee mt-30 w-full rotate-[5deg]'}>
+            <div className={'mt-30 w-full rotate-[5deg] shadow-marquee'}>
               <Marquee
                 className={'bg-marquee-gradient-2 p-6'}
                 direction={'right'}
@@ -67,7 +79,7 @@ function HeroBlock() {
               </Marquee>
             </div>
 
-            <div className={'shadow-marquee mt-30 w-full rotate-[-5deg]'}>
+            <div className={'mt-30 w-full rotate-[-5deg] shadow-marquee'}>
               <Marquee className={'bg-marquee-gradient-1 p-6'} speed={70}>
                 {[...row3, ...row3].map((word, index) => (
                   <div key={index} className={'flex items-center gap-8 pl-8'}>
@@ -82,14 +94,20 @@ function HeroBlock() {
           </div>
 
           <div>
-            <Burger width={28} height={28} className={'ml-auto mr-6 mt-6'} />
+            <div onClick={handleOpenMenu}>
+              <BurgerIcon
+                width={28}
+                height={28}
+                className={'ml-auto mr-6 mt-6'}
+              />
+            </div>
             <h1 className={'h1 mt-16 text-center text-white'}>
               Оригинально визуализирую сложные идеи
             </h1>
 
             <div className={'mt-40 flex w-full gap-6'}>
               <p
-                className={`h5 text-dark-blue flex-auto rounded-20 border border-white bg-white px-12 py-8 text-center`}
+                className={`h5 flex-auto rounded-20 border border-white bg-white px-12 py-8 text-center text-dark-blue`}
               >
                 Для:
               </p>
@@ -115,7 +133,7 @@ function HeroBlock() {
       </div>
       <div
         className={
-          'border-black-20 flex justify-between rounded-20 border bg-transparent p-16'
+          'flex justify-between rounded-20 border border-black-20 bg-transparent p-16'
         }
       >
         <div className={'flex items-center gap-10'}>
@@ -127,7 +145,7 @@ function HeroBlock() {
           />
           <div>
             <p className={'h4 text-dark-blue'}>Алеся Ершова</p>
-            <p className={'h6 text-black-70 mt-8'}>
+            <p className={'h6 mt-8 text-black-70'}>
               впечатляю аудиторию, привлекаю <br /> инвестиции, увеличиваю
               продажи
             </p>
@@ -135,6 +153,7 @@ function HeroBlock() {
         </div>
         <Dots />
       </div>
+      <Burger isOpen={isOpenMenu} onClose={handleCloseMenu} />
     </section>
   );
 }

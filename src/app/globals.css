@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Onest, sans-serif;
     background: rgba(248, 248, 255, 1);

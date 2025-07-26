@@ -2,6 +2,7 @@ import React from 'react';
 import { Clock } from '@/app/icons/clock';
 import { Accordion } from '@/app/ui-lit/accordion';
 import { Info } from '@/app/icons/info';
+import { PRICE_ID } from '@/app/consts';
 
 const items = [
   {
@@ -77,7 +78,7 @@ const items = [
 
 function Price() {
   return (
-    <section className={'section'}>
+    <section className={'section'} id={PRICE_ID}>
       <p className={'h3 text-dark-blue'}>Цена</p>
       <p className={'h5 mt-20 text-black-70'}>
         Итоговая стоимость рассчитывается индивидуально на основе объема,
