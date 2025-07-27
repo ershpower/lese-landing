@@ -30,7 +30,7 @@ function HeroBlockMobile({ row1, row2, row3, bullets }: HeroBlockMobileProps) {
 
   return (
     <section
-      className={'flex h-screen flex-col gap-6 overflow-x-hidden p-6 sm:hidden'}
+      className={'flex h-screen flex-col gap-6 overflow-x-hidden p-6 md:hidden'}
     >
       <div
         className={
