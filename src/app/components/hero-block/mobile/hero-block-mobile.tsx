@@ -7,14 +7,16 @@ import { Dots } from '@/app/icons/dots';
 import RetinaImage from '@/app/ui-lit/retina-image';
 import Burger from '@/app/components/burger';
 import { BurgerIcon } from '@/app/icons/burger';
+import Bullets from '@/app/components/hero-block/bullets';
 
-const bullets = ['стартапов', 'спикеров', 'компаний'];
+interface HeroBlockMobileProps {
+  row1: string[];
+  row2: string[];
+  row3: string[];
+  bullets: string[];
+}
 
-const row1 = ['Коммерческие предложения', 'Pitch Deck', 'Шаблоны'];
-const row2 = ['Инвестиционные презентации', 'Консультации', 'Анимация'];
-const row3 = ['Презентаций для выступления', 'Бизнес - презентации'];
-
-function HeroBlock() {
+function HeroBlockMobile({ row1, row2, row3, bullets }: HeroBlockMobileProps) {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   const handleOpenMenu = () => {
@@ -26,23 +28,10 @@ function HeroBlock() {
     document.body.style.overflow = 'auto';
   };
 
-  const [activeBullet, setActiveBullet] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveBullet((prev) => {
-        if (prev === 2) {
-          return 0;
-        } else {
-          return prev + 1;
-        }
-      });
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <section className={'flex h-screen flex-col gap-6 overflow-x-hidden p-6'}>
+    <section
+      className={'flex h-screen flex-col gap-6 overflow-x-hidden p-6 sm:hidden'}
+    >
       <div
         className={
           'relative min-h-[625px] flex-auto rounded-20 bg-hero-bg bg-cover bg-no-repeat p-10 pb-40'
@@ -105,26 +94,8 @@ function HeroBlock() {
               Оригинально визуализирую сложные идеи
             </h1>
 
-            <div className={'mt-40 flex w-full gap-6'}>
-              <p
-                className={`h5 flex-auto rounded-20 border border-white bg-white px-12 py-8 text-center text-dark-blue`}
-              >
-                Для:
-              </p>
-              {bullets.map((bullet, index) => {
-                const classNames =
-                  activeBullet === index
-                    ? 'bg-white text-dark-blue'
-                    : 'bg-transparent text-white opacity-50';
-                return (
-                  <p
-                    key={index}
-                    className={`h5 flex-auto rounded-20 border border-white px-12 py-8 text-center ${classNames}`}
-                  >
-                    {bullet}
-                  </p>
-                );
-              })}
+            <div className={'mt-40'}>
+              <Bullets bullets={bullets} />
             </div>
           </div>
 
@@ -158,4 +129,4 @@ function HeroBlock() {
   );
 }
 
-export default HeroBlock;
+export default HeroBlockMobile;

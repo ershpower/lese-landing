@@ -1,0 +1,25 @@
+import React from 'react';
+import RetinaImage from '@/app/ui-lit/retina-image';
+
+function PersonInfo() {
+  return (
+    <div
+      className={
+        'bg-profile-bg col-start-4 row-start-1 flex h-full flex-col justify-end gap-10 rounded-20 border border-black-20 bg-left-top bg-no-repeat p-20'
+      }
+    >
+      <RetinaImage
+        width={60}
+        height={60}
+        src1x={'/hero/avatar1x.png'}
+        src2x={'/hero/avatar2x.png'}
+      />
+      <p className={'h4 text-dark-blue'}>Алеся Ершова</p>
+      <p className={'h6 text-black-70'}>
+        впечатляю аудиторию, привлекаю инвестиции, увеличиваю продажи
+      </p>
+    </div>
+  );
+}
+
+export default PersonInfo;

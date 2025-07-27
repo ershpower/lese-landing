@@ -20,8 +20,10 @@ export default {
       },
       boxShadow: {
         marquee: '2px 2px 6px 0px #1501974D',
+        blue: '2px 2px 20px 0px rgba(21, 1, 151, 0.3)',
       },
       backgroundImage: {
+        'profile-bg': 'url("/hero/profile-bg.png")',
         'portfolio-bg': 'url("/portfolio/bg.png")',
         'portfolio-bg-circle': 'url("/portfolio/circle.png")',
         'hero-bg': 'url("/hero/xs-bg-1x.png")',

@@ -1,4 +1,4 @@
-import HeroBlock from '@/app/components/hero-block';
+import HeroBlock from '@/app/components/hero-block/hero-block';
 import Experience from '@/app/components/experience/experience';
 import { Portfolio } from '@/app/components/portfolio';
 import { Whom } from '@/app/components/whom';
@@ -12,13 +12,13 @@ export default function Home() {
     <div>
       <main>
         <HeroBlock />
-        <Experience />
-        <Portfolio />
-        <Whom />
-        <WorkSteps />
-        <Price />
-        <Faq />
-        <Footer />
+        {/*<Experience />*/}
+        {/*<Portfolio />*/}
+        {/*<Whom />*/}
+        {/*<WorkSteps />*/}
+        {/*<Price />*/}
+        {/*<Faq />*/}
+        {/*<Footer />*/}
       </main>
     </div>
   );

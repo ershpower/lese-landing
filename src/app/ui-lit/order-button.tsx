@@ -11,14 +11,8 @@ export const OrderButton = () => {
           'relative flex items-center justify-center gap-6 rounded-20 bg-white p-16'
         }
       >
-        <div
-          className={
-            'bg-dark-blue rounded-8 flex h-[27px] w-[27px] items-center justify-center'
-          }
-        >
-          <Tg width={12} height={10} className={'mr-2 text-white'} />
-        </div>
-        <span className={'text-dark-blue h4'}>Заказать презентацию</span>
+        <Tg />
+        <span className={'h4 text-dark-blue'}>Заказать презентацию</span>
         <Finger
           className={'absolute bottom-[12px] right-[24px]'}
           width={24}
