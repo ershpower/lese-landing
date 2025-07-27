@@ -51,7 +51,7 @@ interface BurgerProps {
   onClose: () => void;
 }
 
-function Burger({ isOpen, onClose }: BurgerProps) {
+function BurgerMenu({ isOpen, onClose }: BurgerProps) {
   if (!isOpen) return null;
 
   const handleClick = () => {
@@ -139,4 +139,4 @@ function Burger({ isOpen, onClose }: BurgerProps) {
   );
 }
 
-export default Burger;
+export default BurgerMenu;

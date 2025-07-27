@@ -5,10 +5,11 @@ import Marquee from 'react-fast-marquee';
 import { OrderButton } from '@/app/ui-lit/order-button';
 import { Dots } from '@/app/icons/dots';
 import RetinaImage from '@/app/ui-lit/retina-image';
-import Burger from '@/app/components/burger';
+import BurgerMenu from '@/app/components/burger-menu';
 import { BurgerIcon } from '@/app/icons/burger';
 import HeroBlockMobile from './mobile/hero-block-mobile';
 import HeroBlockTablet from '@/app/components/hero-block/mobile/hero-block-tablet';
+import FixedMenu from '@/app/components/hero-block/fixed-menu';
 
 const bullets = ['стартапов', 'спикеров', 'компаний'];
 
@@ -30,8 +31,16 @@ function HeroBlock() {
 
   return (
     <>
-      <HeroBlockMobile row1={row1} row2={row2} row3={row3} bullets={bullets} />
+      <HeroBlockMobile
+        row1={row1}
+        row2={row2}
+        row3={row3}
+        bullets={bullets}
+        onOpenMenu={handleOpenMenu}
+      />
       <HeroBlockTablet row1={row1} row2={row2} bullets={bullets} />
+      <FixedMenu onOpenMenu={handleOpenMenu} />
+      <BurgerMenu isOpen={isOpenMenu} onClose={handleCloseMenu} />
     </>
   );
 }

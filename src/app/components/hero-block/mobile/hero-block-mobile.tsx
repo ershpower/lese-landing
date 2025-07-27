@@ -5,7 +5,7 @@ import Marquee from 'react-fast-marquee';
 import { OrderButton } from '@/app/ui-lit/order-button';
 import { Dots } from '@/app/icons/dots';
 import RetinaImage from '@/app/ui-lit/retina-image';
-import Burger from '@/app/components/burger';
+import BurgerMenu from '@/app/components/burger-menu';
 import { BurgerIcon } from '@/app/icons/burger';
 import Bullets from '@/app/components/hero-block/bullets';
 
@@ -14,27 +14,23 @@ interface HeroBlockMobileProps {
   row2: string[];
   row3: string[];
   bullets: string[];
+  onOpenMenu: () => void;
 }
 
-function HeroBlockMobile({ row1, row2, row3, bullets }: HeroBlockMobileProps) {
-  const [isOpenMenu, setIsOpenMenu] = useState(false);
-
-  const handleOpenMenu = () => {
-    document.body.style.overflow = 'hidden';
-    setIsOpenMenu(true);
-  };
-  const handleCloseMenu = () => {
-    setIsOpenMenu(false);
-    document.body.style.overflow = 'auto';
-  };
-
+function HeroBlockMobile({
+  row1,
+  row2,
+  row3,
+  bullets,
+  onOpenMenu,
+}: HeroBlockMobileProps) {
   return (
     <section
       className={'flex h-screen flex-col gap-6 overflow-x-hidden p-6 md:hidden'}
     >
       <div
         className={
-          'relative min-h-[625px] flex-auto rounded-20 bg-hero-bg bg-cover bg-no-repeat p-10 pb-40'
+          'relative z-20 min-h-[625px] flex-auto rounded-20 bg-hero-bg bg-cover bg-no-repeat p-10 pb-40'
         }
       >
         <div className={'flex h-full flex-col justify-between'}>
@@ -83,7 +79,7 @@ function HeroBlockMobile({ row1, row2, row3, bullets }: HeroBlockMobileProps) {
           </div>
 
           <div>
-            <div onClick={handleOpenMenu}>
+            <div onClick={onOpenMenu}>
               <BurgerIcon
                 width={28}
                 height={28}
@@ -124,7 +120,6 @@ function HeroBlockMobile({ row1, row2, row3, bullets }: HeroBlockMobileProps) {
         </div>
         <Dots />
       </div>
-      <Burger isOpen={isOpenMenu} onClose={handleCloseMenu} />
     </section>
   );
 }
