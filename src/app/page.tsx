@@ -15,7 +15,7 @@ export default function Home() {
         <Experience />
         <Portfolio />
         <Whom />
-        {/*<WorkSteps />*/}
+        <WorkSteps />
         {/*<Price />*/}
         {/*<Faq />*/}
         {/*<Footer />*/}

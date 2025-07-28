@@ -10,7 +10,7 @@ interface StepCardProps {
   withArrow?: boolean;
 }
 
-export const StepCard = ({
+export const StepCardMobile = ({
   img,
   subtitle,
   title,

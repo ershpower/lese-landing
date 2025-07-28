@@ -1,6 +1,8 @@
 import React from 'react';
-import { StepCard } from '@/app/components/work-steps/step-card';
 import { WORK_STEPS_ID } from '@/app/consts';
+import WorkStepsMobile from '@/app/components/work-steps/work-steps-mobile';
+import WorkStepsDesktop from '@/app/components/work-steps/work-steps-desktop';
+import RetinaImage from '@/app/ui-lit/retina-image';
 
 const cards = [
   {
@@ -62,20 +64,20 @@ const cards = [
 
 export const WorkSteps = () => {
   return (
-    <section className={'section'} id={WORK_STEPS_ID}>
+    <section className={'section relative'} id={WORK_STEPS_ID}>
       <p className={'h3 text-dark-blue'}>Этапы работы</p>
 
-      <div className={'mt-20 flex flex-col gap-8'}>
-        {cards.map((card, index) => (
-          <StepCard
-            key={index}
-            img={card.img}
-            title={card.title}
-            subtitle={card.subtitle}
-            isAccent={index === 2}
-            withArrow={index !== 7}
-          />
-        ))}
+      <div className={'block md:hidden'}>
+        <WorkStepsMobile cards={cards} />
+      </div>
+
+      <div className={'hidden md:block'}>
+        <WorkStepsDesktop cards={cards} />
+        <RetinaImage
+          className={'absolute bottom-0 right-0 h-[229px] w-[270px]'}
+          src1x={'/work-steps/abstract1x.png'}
+          src2x={'/work-steps/abstract1x.png'}
+        />
       </div>
     </section>
   );
