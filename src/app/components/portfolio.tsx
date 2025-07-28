@@ -1,14 +1,26 @@
 import React from 'react';
 import { Finger } from '@/app/icons/finger';
 import { PORTFOLIO_ID } from '@/app/consts';
+import Title from '@/app/ui-lit/title';
 
 export const Portfolio = () => {
   return (
-    <section className={'mx-10 mt-40'} id={PORTFOLIO_ID}>
-      <div className={'overflow-hidden rounded-20 bg-white'}>
-        <p className={'h3 p-20 text-dark-blue'}>
-          Создам презентацию, даже если у вас сплошной текст и море графиков
-        </p>
+    <div
+      className={'mx-10 mt-40 grid grid-cols-4 gap-10 md:grid-rows-2'}
+      id={PORTFOLIO_ID}
+    >
+      <div
+        className={
+          'col-span-4 overflow-hidden rounded-20 bg-white pt-20 md:col-span-3 md:row-span-2'
+        }
+      >
+        <div className={'px-10'}>
+          <Title
+            title={
+              'Создам презентацию, даже если у вас сплошной текст и море графиков'
+            }
+          />
+        </div>
         <div
           className={
             'relative mt-[-30px] min-h-[510px] bg-portfolio-bg bg-cover bg-no-repeat'
@@ -31,36 +43,35 @@ export const Portfolio = () => {
           </div>
         </div>
       </div>
-      <div className={'mt-8 flex gap-8'}>
-        <a href={''} className={'block rounded-20 bg-red p-20'}>
-          <p className={'h6 text-white'}>Больше работ можно посмотреть на: </p>
-          <img
-            src="/portfolio/big-pinerest.svg"
-            alt="Pinterest"
-            className={'mt-16'}
-          />
-          <Finger
-            height={30}
-            width={30}
-            className={'ml-auto mt-10 text-white'}
-          />
-        </a>
-        <a href={''} className={'block rounded-20 bg-behance-blue p-20'}>
-          <p className={'h6 text-white'}>
-            Подробные кейсы можно посмотреть на:
-          </p>
-          <img
-            src="/portfolio/big-behance.svg"
-            alt="Behance"
-            className={'mt-16'}
-          />
-          <Finger
-            height={30}
-            width={30}
-            className={'ml-auto mt-14 text-white'}
-          />
-        </a>
-      </div>
-    </section>
+
+      <a
+        href={''}
+        className={
+          'col-span-2 block flex flex-col justify-between rounded-20 bg-red p-20 md:col-span-1'
+        }
+      >
+        <p className={'h6 text-white'}>Больше работ можно посмотреть на: </p>
+        <img
+          src="/portfolio/big-pinerest.svg"
+          alt="Pinterest"
+          className={'mt-16'}
+        />
+        <Finger height={30} width={30} className={'ml-auto mt-10 text-white'} />
+      </a>
+      <a
+        href={''}
+        className={
+          'col-span-2 block flex flex-col justify-between rounded-20 bg-behance-blue p-20 md:col-span-1'
+        }
+      >
+        <p className={'h6 text-white'}>Подробные кейсы можно посмотреть на:</p>
+        <img
+          src="/portfolio/big-behance.svg"
+          alt="Behance"
+          className={'mt-16'}
+        />
+        <Finger height={30} width={30} className={'ml-auto mt-14 text-white'} />
+      </a>
+    </div>
   );
 };

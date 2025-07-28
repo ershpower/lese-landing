@@ -13,7 +13,7 @@ export default function Home() {
       <main>
         <HeroBlock />
         <Experience />
-        {/*<Portfolio />*/}
+        <Portfolio />
         {/*<Whom />*/}
         {/*<WorkSteps />*/}
         {/*<Price />*/}
