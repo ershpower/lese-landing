@@ -12,7 +12,7 @@ export default function Home() {
     <div>
       <main>
         <HeroBlock />
-        {/*<Experience />*/}
+        <Experience />
         {/*<Portfolio />*/}
         {/*<Whom />*/}
         {/*<WorkSteps />*/}
