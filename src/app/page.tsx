@@ -14,7 +14,7 @@ export default function Home() {
         <HeroBlock />
         <Experience />
         <Portfolio />
-        {/*<Whom />*/}
+        <Whom />
         {/*<WorkSteps />*/}
         {/*<Price />*/}
         {/*<Faq />*/}

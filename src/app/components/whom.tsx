@@ -2,6 +2,7 @@ import React from 'react';
 import { Accordion } from '@/app/ui-lit/accordion';
 import { Info } from '@/app/icons/info';
 import { FOR_WHO_ID } from '@/app/consts';
+import { AccordionCard } from '@/app/ui-lit/accordion-card';
 
 const items = [
   {
@@ -91,7 +92,14 @@ export const Whom = () => {
       <p className={'h5 mb-20 mt-20 text-black-70'}>
         Работаю в различных дизайн-стилях. Помогаю:
       </p>
-      <Accordion items={items} />
+      <div className={'block md:hidden'}>
+        <Accordion items={items} />
+      </div>
+      <div className={'hidden grid-cols-2 gap-10 md:grid'}>
+        {items.map((item, index) => (
+          <AccordionCard key={index} title={item.title} inner={item.inner} />
+        ))}
+      </div>
     </section>
   );
 };
