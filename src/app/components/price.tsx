@@ -80,7 +80,7 @@ const items = [
 function Price() {
   return (
     <section className={'section'} id={PRICE_ID}>
-      <p className={'h3 text-dark-blue'}>Цена</p>
+      <p className={'h3 text-dark-blue'}>Стоимость</p>
       <div className={'gap-60 md:flex'}>
         <p className={'h5 mt-20 text-black-70 md:max-w-[300px]'}>
           Итоговая стоимость рассчитывается индивидуально на основе объема,

@@ -2,7 +2,7 @@ import React from 'react';
 import { OrderButton } from '@/app/ui-lit/order-button';
 import { ArrowRightUp } from '@/app/icons/arrow-right-up';
 
-function Footer() {
+function FooterMobile() {
   return (
     <footer className={'mx-10 mt-40 rounded-20 bg-pink-400 p-10'}>
       <p className={'text-40 text-white'}>
@@ -92,4 +92,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default FooterMobile;

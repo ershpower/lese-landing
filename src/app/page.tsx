@@ -5,7 +5,7 @@ import { Whom } from '@/app/components/whom';
 import { WorkSteps } from '@/app/components/work-steps/work-steps';
 import Price from '@/app/components/price';
 import Faq from '@/app/components/faq';
-import Footer from '@/app/components/footer';
+import Footer from '@/app/components/footer/footer';
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         <WorkSteps />
         <Price />
         <Faq />
-        {/*<Footer />*/}
+        <Footer />
       </main>
     </div>
   );
