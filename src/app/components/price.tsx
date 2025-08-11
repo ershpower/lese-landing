@@ -3,6 +3,7 @@ import { Clock } from '@/app/icons/clock';
 import { Accordion } from '@/app/ui-lit/accordion';
 import { Info } from '@/app/icons/info';
 import { PRICE_ID } from '@/app/consts';
+import { AccordionCard } from '@/app/ui-lit/accordion-card';
 
 const items = [
   {
@@ -80,16 +81,30 @@ function Price() {
   return (
     <section className={'section'} id={PRICE_ID}>
       <p className={'h3 text-dark-blue'}>Цена</p>
-      <p className={'h5 mt-20 text-black-70'}>
-        Итоговая стоимость рассчитывается индивидуально на основе объема,
-        сложности и специфики задачи
-      </p>
-      <p className={'h5 mb-20 mt-20 text-black-70'}>
-        Больше деталей, точные сроки и стоимость работы можно узнать после
-        обсуждения  и составления полной сметы вашего проекта
-      </p>
-      <Accordion items={items} />
-      <div className={'text-black-50 mt-10 flex items-start gap-6'}>
+      <div className={'gap-60 md:flex'}>
+        <p className={'h5 mt-20 text-black-70 md:max-w-[300px]'}>
+          Итоговая стоимость рассчитывается индивидуально на основе объема,
+          сложности и специфики задачи
+        </p>
+        <p className={'h5 mb-20 mt-20 text-black-70 md:max-w-[300px]'}>
+          Больше деталей, точные сроки и стоимость работы можно узнать после
+          обсуждения и составления полной сметы вашего проекта
+        </p>
+      </div>
+      <div className={'block md:hidden'}>
+        <Accordion items={items} />
+      </div>
+      <div className={'hidden grid-cols-2 gap-10 md:grid'}>
+        {items.map((item, index) => (
+          <AccordionCard
+            key={index}
+            title={item.title}
+            inner={item.inner}
+            subtitle={item.subtitle}
+          />
+        ))}
+      </div>
+      <div className={'mt-10 flex items-start gap-6 text-black-50 md:hidden'}>
         <div>
           <Info />
         </div>
