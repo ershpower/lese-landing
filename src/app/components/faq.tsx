@@ -40,11 +40,7 @@ const items = [
       'Предоставляю промежуточные результаты проекта, строго придерживаюсь оговорённых сроков и оперативно реагирую на вопросы',
   },
   {
-    title: (
-      <span>
-        Если нужно <br /> не «как у всех»
-      </span>
-    ),
+    title: <span>Если нужно не «как у всех»</span>,
     answer:
       'Разрабатываю индивидуальную дизайн-концепцию без использования шаблонных решений и банальных картинок',
   },
@@ -65,7 +61,7 @@ function Faq() {
       <p className={'h3 text-dark-blue'}>
         Предложу решение для любой задачи в установленные сроки
       </p>
-      <div className={'mt-20 grid grid-cols-1 gap-8'}>
+      <div className={'mt-20 grid grid-cols-1 gap-8 md:grid-cols-3'}>
         {items.map((item, index) => (
           <div
             key={index}
@@ -76,11 +72,13 @@ function Faq() {
             {/*visible*/}
             <div
               className={
-                'relative left-0 top-0 flex items-center justify-between gap-10 p-20 transition-all duration-200 ease-in-out group-hover:left-[-100%]'
+                'relative left-0 top-0 flex items-center justify-between gap-10 p-20 transition-all duration-200 ease-in-out group-hover:left-[-100%] md:h-[110px]'
               }
             >
-              <p className={'h4 text-dark-blue'}>{item.title}</p>
-              <div className={'text-dark-blue'}>
+              <p className={'h4 text-dark-blue md:max-w-[133px]'}>
+                {item.title}
+              </p>
+              <div className={'right-20 top-20 text-dark-blue md:absolute'}>
                 <Question />
               </div>
             </div>

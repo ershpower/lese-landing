@@ -17,7 +17,7 @@ export default function Home() {
         <Whom />
         <WorkSteps />
         <Price />
-        {/*<Faq />*/}
+        <Faq />
         {/*<Footer />*/}
       </main>
     </div>
