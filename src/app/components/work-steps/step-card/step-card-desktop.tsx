@@ -6,7 +6,7 @@ import RetinaImage from '@/app/ui-lit/retina-image';
 interface StepCardProps {
   img: string;
   title: string | React.ReactNode;
-  subtitle: string;
+  subtitle: string | React.ReactNode;
   index: number;
 }
 
@@ -18,7 +18,9 @@ function StepCardDesktop({ img, subtitle, title, index }: StepCardProps) {
     index === 0 || index === 1 || index === 3 || index === 4 || index === 6;
 
   return (
-    <div className={`relative rounded-20 bg-light-gray p-20 ${classNames}`}>
+    <div
+      className={`relative rounded-20 p-20 md:h-[200px] ${isAccent ? 'bg-brand-gradient' : 'bg-light-gray'} ${classNames}`}
+    >
       {!isAccent && (
         <div className={'absolute right-20 top-20'}>
           <Dots />
@@ -28,7 +30,7 @@ function StepCardDesktop({ img, subtitle, title, index }: StepCardProps) {
       {isAccent && (
         <div
           className={
-            'absolute right-10 top-10 rounded-[60px] bg-white px-20 py-8'
+            'absolute right-10 top-10 rounded-[60px] bg-white px-24 py-4'
           }
         >
           <p className={'h6 text-dark-blue'}>
@@ -39,10 +41,14 @@ function StepCardDesktop({ img, subtitle, title, index }: StepCardProps) {
       )}
 
       <img src={img} alt="" className={'h-[40px] w-[55px]'} />
-      <p className={`h4 mt-10 text-dark-blue ${isLast ? 'max-w-[234px]' : ''}`}>
+      <p
+        className={`h4 mt-10 ${isLast ? 'max-w-[234px]' : ''} ${isAccent ? 'text-white' : 'text-dark-blue'}`}
+      >
         {title}
       </p>
-      <p className={`h6 mt-10 text-black-70 ${isLast ? 'max-w-[238px]' : ''}`}>
+      <p
+        className={`h6 mt-10 text-black-70 ${isLast ? 'max-w-[238px]' : ''} ${isAccent ? 'text-white-70' : 'text-black-70'}`}
+      >
         {subtitle}
       </p>
       {withArrow && (

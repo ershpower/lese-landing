@@ -17,7 +17,7 @@ function HeroBlockTablet({ bullets, row2, row1 }: HeroBlockTabletProps) {
         {/*left*/}
         <div
           className={
-            'relative col-span-3 flex flex-col items-center rounded-20 bg-hero-bg bg-cover bg-no-repeat'
+            'relative col-span-3 flex flex-col items-center rounded-20 bg-brand-gradient md:overflow-hidden'
           }
         >
           <h2 className={'h1 mt-60 text-center text-white'}>
@@ -31,7 +31,10 @@ function HeroBlockTablet({ bullets, row2, row1 }: HeroBlockTabletProps) {
             <div className={'w-full rotate-[-5deg] shadow-marquee'}>
               <Marquee className={'bg-marquee-gradient-1 p-6'}>
                 {[...row1, ...row1].map((word, index) => (
-                  <div key={index} className={'flex items-center gap-8 pl-8'}>
+                  <div
+                    key={index}
+                    className={'h6 flex items-center gap-8 pl-8'}
+                  >
                     {word}
                     <div
                       className={'h-[4px] w-[4px] rounded-full bg-dark-blue'}
@@ -47,7 +50,10 @@ function HeroBlockTablet({ bullets, row2, row1 }: HeroBlockTabletProps) {
                 direction={'right'}
               >
                 {[...row2, ...row2].map((word, index) => (
-                  <div key={index} className={'flex items-center gap-8 pl-8'}>
+                  <div
+                    key={index}
+                    className={'h6 flex items-center gap-8 pl-8'}
+                  >
                     {word}
                     <div
                       className={'h-[4px] w-[4px] rounded-full bg-[#150197]'}

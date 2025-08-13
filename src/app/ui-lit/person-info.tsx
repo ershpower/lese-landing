@@ -5,7 +5,7 @@ function PersonInfo() {
   return (
     <div
       className={
-        'bg-profile-bg col-start-4 row-start-1 flex h-full flex-col justify-end gap-10 rounded-20 border border-black-20 bg-left-top bg-no-repeat p-20'
+        'col-start-4 row-start-1 flex h-full flex-col justify-end gap-10 rounded-20 border border-black-20 bg-profile-bg bg-left-top bg-no-repeat p-18'
       }
     >
       <RetinaImage
@@ -16,7 +16,8 @@ function PersonInfo() {
       />
       <p className={'h4 text-dark-blue'}>Алеся Ершова</p>
       <p className={'h6 text-black-70'}>
-        впечатляю аудиторию, привлекаю инвестиции, увеличиваю продажи
+        впечатляю аудиторию, <br /> привлекаю инвестиции,
+        <br /> увеличиваю продажи
       </p>
     </div>
   );

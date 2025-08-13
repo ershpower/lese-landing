@@ -5,3 +5,34 @@ export const WORK_STEPS_ID = 'WORK_STEPS_ID';
 export const PRICE_ID = 'PRICE_ID';
 export const FAQ_ID = 'FAQ_ID';
 export const CONTACTS_ID = 'CONTACTS_ID';
+
+export const menuItems = [
+  {
+    href: `#${ABOUT_ME_ID}`,
+    title: 'Обо мне',
+  },
+  {
+    href: `#${PORTFOLIO_ID}`,
+    title: 'Портфолио',
+  },
+  {
+    href: `#${FOR_WHO_ID}`,
+    title: 'Для кого',
+  },
+  {
+    href: `#${WORK_STEPS_ID}`,
+    title: 'Этапы работы',
+  },
+  {
+    href: `#${PRICE_ID}`,
+    title: 'Стоимость',
+  },
+  {
+    href: `#${FAQ_ID}`,
+    title: 'FAQ',
+  },
+  {
+    href: `#${CONTACTS_ID}`,
+    title: 'Контакты',
+  },
+];

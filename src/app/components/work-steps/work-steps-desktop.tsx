@@ -5,7 +5,7 @@ interface WorkStepsDesktop {
   cards: Array<{
     img: string;
     title: string | React.ReactNode;
-    subtitle: string;
+    subtitle: string | React.ReactNode;
   }>;
 }
 

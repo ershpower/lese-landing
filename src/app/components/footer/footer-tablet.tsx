@@ -15,7 +15,7 @@ const items = [
   },
   {
     icon: <PinterestTransparent />,
-    title: 'Pinterest.com',
+    title: 'Pinterest',
     href: '',
   },
   {
@@ -31,7 +31,7 @@ function FooterTablet() {
       {/*left*/}
       <div
         className={
-          'col-span-3 flex flex-col gap-30 rounded-20 bg-hero-bg bg-cover bg-no-repeat p-30'
+          'col-span-3 flex flex-col gap-20 rounded-20 bg-brand-gradient p-30'
         }
       >
         <p className={'h1 text-white'}>
@@ -41,26 +41,72 @@ function FooterTablet() {
           Доверьтесь моему опыту и креативу, чтобы получить эффектную
           презентацию
         </p>
-        <div className={'grid grid-cols-3 gap-20'}>
-          {items.map((item, index) => (
-            <Link
-              href={item.href}
-              key={index}
-              className={`flex items-center gap-10 text-white ${index !== 2 ? 'border-r border-white-50' : ''}`}
-            >
-              <div>{item.icon}</div>
-              <p>{item.title}</p>
-              <div>
-                <ArrowRightUp />
-              </div>
-            </Link>
-          ))}
+        <div className={'grid grid-cols-3'}>
+          {/*tg*/}
+          <Link
+            href={'https://t.me/Ershova_Presentation'}
+            className={`h5 col-span-2 flex items-center gap-10 border-r border-white-50 py-10 text-white`}
+          >
+            <div>
+              <TgTransparent />
+            </div>
+            <p>Telegram канал</p>
+            <div>
+              <ArrowRightUp width={10} height={10} />
+            </div>
+          </Link>
+
+          {/*behance*/}
+          <Link
+            href={'https://www.behance.net/Ershova_Presentation'}
+            className={`h5 col-span-1 flex items-center gap-10 py-10 pl-30 text-white`}
+          >
+            <div>
+              <BehanceTransparent />
+            </div>
+            <p>Behance</p>
+            <div>
+              <ArrowRightUp width={10} height={10} />
+            </div>
+          </Link>
+
+          {/* email  */}
+          <Link
+            href={''}
+            className={`h5 col-span-2 flex items-center gap-10 border-r border-t border-white-50 py-10 text-white`}
+          >
+            {/*<div>*/}
+            {/*  <PinterestTransparent />*/}
+            {/*</div>*/}
+            {/*<p>email</p>*/}
+            {/*<div>*/}
+            {/*  <ArrowRightUp width={10} height={10} />*/}
+            {/*</div>*/}
+          </Link>
+
+          {/*pinterest*/}
+          <Link
+            href={'https://ru.pinterest.com/Ershova_Presentation/'}
+            className={`h5 col-span-1 flex items-center gap-10 border-t border-white-50 py-10 pl-20 text-white`}
+          >
+            <div>
+              <PinterestTransparent />
+            </div>
+            <p>Behance</p>
+            <div>
+              <ArrowRightUp width={10} height={10} />
+            </div>
+          </Link>
         </div>
       </div>
       {/*right*/}
-      <div className={'col-span-1 flex flex-col gap-10'}>
-        <PersonInfo />
-        <OrderButtonDesktop />
+      <div className={'col-span-1 flex h-full flex-col gap-10'}>
+        <div className={'flex-auto'}>
+          <PersonInfo />
+        </div>
+        <div>
+          <OrderButtonDesktop />
+        </div>
       </div>
     </div>
   );

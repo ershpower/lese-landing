@@ -29,16 +29,23 @@ function Experience() {
         <div className="order-2 col-span-1">
           <CardImage
             title={
-              'Дизайнила презентации для топовых российских  компаний и стартапов из разных уголков мира'
+              <>
+                Дизайнила презентации <br /> для топовых российских компаний и
+                стартапов <br /> из разных уголков мира
+              </>
             }
-            img={''}
+            img={'/experience/moon.png'}
           />
         </div>
 
         <div className="order-3 col-span-1 md:order-5">
           <CardImage
-            title={'Красный диплом «Реклама и связи с общественностью»'}
-            img={''}
+            title={
+              <>
+                Красный диплом <br /> «Реклама и связи <br />с общественностью»
+              </>
+            }
+            img={'/experience/diplom.png'}
           />
         </div>
 
@@ -46,7 +53,12 @@ function Experience() {
           <CardText
             title={'Проектов'}
             bigTitle={'>400'}
-            subtitle={'Выполнила за 6 лет работы дизайнеров'}
+            subtitle={
+              <>
+                Выполнила за 6 лет
+                <br /> работы дизайнеров
+              </>
+            }
           />
         </div>
 
@@ -54,16 +66,16 @@ function Experience() {
           <CardText
             title={'лет'}
             bigTitle={'7'}
-            subtitle={'Дополнительного художественного  образования'}
+            subtitle={<>Дополнительного художественного  образования</>}
           />
         </div>
 
         <div className={'order-6 col-span-1 md:order-4'}>
-          <div className={'min-h-[168px] rounded-20 bg-hero-bg p-10'}>
+          <div className={'min-h-[168px] rounded-20 bg-brand-gradient p-10'}>
             <Dots className={'ml-auto mr-10 mt-10 text-white'} />
             <p className={'h6 mt-28 text-white'}>
-              Всегда строго соблюдаю дедлайны, не «пропадаю», строго следую NDA
-              и авторскому праву
+              Всегда соблюдаю дедлайны, не «пропадаю», строго следую NDA и
+              авторскому праву
             </p>
           </div>
         </div>

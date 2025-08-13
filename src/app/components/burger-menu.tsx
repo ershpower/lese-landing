@@ -1,50 +1,10 @@
 'use client';
 import React from 'react';
 import CloseIcon from '@/app/icons/close';
-import {
-  ABOUT_ME_ID,
-  CONTACTS_ID,
-  FAQ_ID,
-  FOR_WHO_ID,
-  PORTFOLIO_ID,
-  PRICE_ID,
-  WORK_STEPS_ID,
-} from '@/app/consts';
 import { ArrowRightUp } from '@/app/icons/arrow-right-up';
-import { on } from 'next/dist/client/components/react-dev-overlay/pages/bus';
 import { TgGradient } from '@/app/icons/tg-gradient';
 import { Finger } from '@/app/icons/finger';
-
-const menuItems = [
-  {
-    href: `#${ABOUT_ME_ID}`,
-    title: 'Обо мне',
-  },
-  {
-    href: `#${PORTFOLIO_ID}`,
-    title: 'Портфолио',
-  },
-  {
-    href: `#${FOR_WHO_ID}`,
-    title: 'Для кого',
-  },
-  {
-    href: `#${WORK_STEPS_ID}`,
-    title: 'Этапы работы',
-  },
-  {
-    href: `#${PRICE_ID}`,
-    title: 'Стоимость',
-  },
-  {
-    href: `#${FAQ_ID}`,
-    title: 'FAQ',
-  },
-  {
-    href: `#${CONTACTS_ID}`,
-    title: 'Контакты',
-  },
-];
+import { menuItems } from '@/app/consts';
 
 interface BurgerProps {
   isOpen: boolean;
@@ -61,21 +21,20 @@ function BurgerMenu({ isOpen, onClose }: BurgerProps) {
   return (
     <div
       className={
-        'fixed left-0 top-0 z-50 flex h-screen w-screen flex-col justify-between bg-burger-gradient p-10 backdrop-blur'
+        'w-[calc(100wv - 12px)] fixed inset-6 z-50 flex h-[calc(100vh-12px)] flex-col justify-between rounded-20 bg-burger-gradient p-10 backdrop-blur'
       }
     >
-      <div>
-        <div
-          onClick={onClose}
-          className={
-            'ml-auto w-fit rounded-16 border border-white-30 p-12 text-white'
-          }
-        >
-          <CloseIcon />
-        </div>
-
+      <div
+        onClick={onClose}
+        className={
+          'ml-auto w-fit rounded-16 border border-white p-12 text-white'
+        }
+      >
+        <CloseIcon />
+      </div>
+      <div className={'flex flex-auto items-center justify-center'}>
         <div>
-          <ul className={'m-auto max-w-[203px]'}>
+          <ul className={'m-auto w-[230px]'}>
             {menuItems.map((item, index) => {
               const className = index === 0 ? 'border-0' : 'border-t';
               return (

@@ -9,16 +9,16 @@ import { ArrowRightUp } from '@/app/icons/arrow-right-up';
 
 interface AccordionProps {
   items: Array<{
-    title: string;
-    subtitle?: string;
+    title: string | React.ReactNode;
+    subtitle?: string | React.ReactNode;
     inner?: React.ReactNode;
     isAccent?: boolean;
   }>;
 }
 export const Accordion = ({ items }: AccordionProps) => {
   const renderCommonItem = (
-    title: string,
-    inner: React.ReactNode,
+    title: string | React.ReactNode,
+    inner: string | React.ReactNode,
     subtitle?: string,
   ) => (
     <AccordionItem
@@ -51,21 +51,23 @@ export const Accordion = ({ items }: AccordionProps) => {
   );
 
   const renderAccentItems = (
-    title: string,
-    inner: React.ReactNode,
+    title: string | React.ReactNode,
+    inner: string | React.ReactNode,
     subtitle?: string,
   ) => (
     <AccordionItem
-      className={'overflow-hidden rounded-20 bg-light-gray'}
+      className={'overflow-hidden rounded-20 bg-brand-gradient'}
       buttonProps={{
-        className: `w-full text-white bg-red rounded-20`,
+        className: `w-full text-white button-gradient rounded-20`,
       }}
       header={
         <div
-          className={`flex w-full items-center justify-between overflow-hidden rounded-20 bg-red p-20`}
+          className={`button-gradient flex w-full items-center justify-between overflow-hidden rounded-20 p-20`}
         >
-          <p className={'h4'}> {title}</p>
-          {subtitle && <p className={'h6 mt-10 text-black-70'}>{subtitle}</p>}
+          <div>
+            <p className={'h4 text-left'}> {title}</p>
+            {subtitle && <p className={'h6 mt-10 text-white-70'}>{subtitle}</p>}
+          </div>
           <div>
             <ArrowRightUp
               className={'accordion_arrow'}
@@ -76,7 +78,7 @@ export const Accordion = ({ items }: AccordionProps) => {
         </div>
       }
     >
-      <div className={'bg-light-gray px-20 pb-20 pt-12'}>{inner}</div>
+      <div className={'button-gradient px-20 pb-20 pt-12'}>{inner}</div>
     </AccordionItem>
   );
 

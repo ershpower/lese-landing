@@ -4,14 +4,19 @@ import { Accordion } from '@/app/ui-lit/accordion';
 import { Info } from '@/app/icons/info';
 import { PRICE_ID } from '@/app/consts';
 import { AccordionCard } from '@/app/ui-lit/accordion-card';
+import Title from '@/app/ui-lit/title';
 
 const items = [
   {
     title: 'Разработка шаблона',
-    subtitle:
-      'Дизайн на вымышленном тексте  для самостоятельного редактирования',
+    subtitle: (
+      <>
+        Дизайн на вымышленном тексте <br />
+        для самостоятельного редактирования
+      </>
+    ),
     inner: (
-      <div className={'border-t border-black-10 pt-20'}>
+      <div className={'border-t border-black-10 pt-10'}>
         <div className={'flex items-end gap-10'}>
           <span className={'text-dark-blue'}>от</span>
           <span className={'h2 text-dark-blue'}>10 000₽</span>
@@ -27,7 +32,7 @@ const items = [
     title: 'Только дизайн',
     subtitle: 'Без редактуры текстов и структуры',
     inner: (
-      <div className={'border-t border-black-10 pt-20'}>
+      <div className={'border-t border-black-10 pt-10'}>
         <div className={'flex items-end gap-10'}>
           <span className={'text-dark-blue'}>от</span>
           <span className={'h2 text-dark-blue'}>20 000₽</span>
@@ -44,16 +49,17 @@ const items = [
   {
     title: 'Под ключ',
     subtitle: 'Структура, текст, дизайн',
+    isAccent: true,
     inner: (
-      <div className={'border-t border-black-10 pt-20'}>
+      <div className={'border-white-10 border-t pt-10'}>
         <div className={'flex items-end gap-10'}>
-          <span className={'text-dark-blue'}>от</span>
-          <span className={'h2 text-dark-blue'}>35 000₽</span>
+          <span className={'text-white'}>от</span>
+          <span className={'h2 text-white'}>35 000₽</span>
         </div>
-        <div className={'mt-10 flex items-center gap-6 text-black-70'}>
+        <div className={'mt-10 flex items-center gap-6 text-white-70'}>
           <Clock className={'text-icon'} />
           <span className={'h6'}>
-            Срок выполнения от 2 дней (15-20 слайдов)
+            Срок выполнения от 4 дней (10-15 слайдов)
           </span>
         </div>
       </div>
@@ -61,10 +67,14 @@ const items = [
   },
   {
     title: 'Консультация',
-    subtitle:
-      'Для дизайнеров и других смежных  специалистов. Обсуждаем любой интересующий вас вопрос и разбираем ваши работы',
+    subtitle: (
+      <>
+        Для дизайнеров и других смежных <br /> специалистов. Обсуждаем любой
+        интересующий <br /> вас вопрос и разбираем ваши работы
+      </>
+    ),
     inner: (
-      <div className={'border-t border-black-10 pt-20'}>
+      <div className={'border-t border-black-10 pt-10'}>
         <div className={'flex items-end gap-10'}>
           <span className={'h2 text-dark-blue'}>2000₽</span>
         </div>
@@ -80,15 +90,18 @@ const items = [
 function Price() {
   return (
     <section className={'section'} id={PRICE_ID}>
-      <p className={'h3 text-dark-blue'}>Стоимость</p>
-      <div className={'gap-60 md:flex'}>
-        <p className={'h5 mt-20 text-black-70 md:max-w-[300px]'}>
-          Итоговая стоимость рассчитывается индивидуально на основе объема,
+      <Title title={'Стоимость'} />
+      <div className={'gap-60 md:flex md:pl-10'}>
+        <p className={'h5 mt-20 pl-10 text-black-70 md:max-w-[300px]'}>
+          Итоговая цена рассчитывается <br /> индивидуально на основе объема,{' '}
+          <br />
           сложности и специфики задачи
         </p>
-        <p className={'h5 mb-20 mt-20 text-black-70 md:max-w-[300px]'}>
-          Больше деталей, точные сроки и стоимость работы можно узнать после
-          обсуждения и составления полной сметы вашего проекта
+        <p className={'h5 mb-20 mt-20 pl-10 text-black-70 md:max-w-[350px]'}>
+          Больше деталей, точные сроки и стоимость{' '}
+          <br className={'md:hidden'} /> работы можно узнать после обсуждения{' '}
+          <br className={'md:hidden'} /> и составления полной сметы вашего
+          проекта
         </p>
       </div>
       <div className={'block md:hidden'}>
@@ -101,6 +114,7 @@ function Price() {
             title={item.title}
             inner={item.inner}
             subtitle={item.subtitle}
+            isAccent={item.isAccent}
           />
         ))}
       </div>

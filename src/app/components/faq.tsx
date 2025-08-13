@@ -1,12 +1,13 @@
 import React from 'react';
 import { FAQ_ID } from '@/app/consts';
 import { Question } from '@/app/icons/question';
+import Title from '@/app/ui-lit/title';
 
 const items = [
   {
     title: (
       <span>
-        Если бюджет <br /> ограничен
+        Если <br className={'hidden md:block'} /> бюджет <br /> ограничен
       </span>
     ),
     answer:
@@ -33,16 +34,33 @@ const items = [
   {
     title: (
       <span>
-        Если нельзя <br /> подвести по срокам
+        Если нельзя <br /> подвести <br /> по срокам
       </span>
     ),
-    answer:
-      'Предоставляю промежуточные результаты проекта, строго придерживаюсь оговорённых сроков и оперативно реагирую на вопросы',
+    answer: (
+      <>
+        Предоставляю промежуточные результаты <br className={'md:hidden'} />{' '}
+        проекта, строго придерживаюсь оговорённых сроков и оперативно реагирую
+        на вопросы
+      </>
+    ),
   },
   {
-    title: <span>Если нужно не «как у всех»</span>,
-    answer:
-      'Разрабатываю индивидуальную дизайн-концепцию без использования шаблонных решений и банальных картинок',
+    title: (
+      <span>
+        Если нужно <br /> не «как у всех»
+      </span>
+    ),
+    answer: (
+      <>
+        Разрабатываю индивидуальную дизайн-
+        <br className={'md:hidden'} />
+        концепцию без использования шаблонных <br
+          className={'md:hidden'}
+        />{' '}
+        решений и банальных картинок
+      </>
+    ),
   },
   {
     title: (
@@ -50,17 +68,27 @@ const items = [
         Если важна <br /> конфиденциальность
       </span>
     ),
-    answer:
-      'Подписываю соглашение о неразглашении (NDA). Ответственно отношусь к хранению и использованию вашей информации',
+    answer: (
+      <>
+        Подписываю соглашение о неразглашении <br className={'md:hidden'} />{' '}
+        (NDA). Ответственно отношусь к хранению и использованию вашей информации
+      </>
+    ),
   },
 ];
 
 function Faq() {
   return (
     <section className={'section'} id={FAQ_ID}>
-      <p className={'h3 text-dark-blue'}>
-        Предложу решение для любой задачи в установленные сроки
-      </p>
+      <Title
+        title={
+          <>
+            Предложу решение <br className={'md:hidden'} /> для любой{' '}
+            <br className={'hidden md:block'} /> задачи
+            <br className={'md:hidden'} /> в установленные сроки
+          </>
+        }
+      />
       <div className={'mt-20 grid grid-cols-1 gap-8 md:grid-cols-3'}>
         {items.map((item, index) => (
           <div
@@ -85,7 +113,7 @@ function Faq() {
             {/*hidden*/}
             <div
               className={
-                'absolute left-[100%] top-0 h-full w-full p-20 transition-all duration-200 ease-in-out group-hover:left-0'
+                'absolute left-[100%] top-0 flex h-full w-full items-center p-20 transition-all duration-200 ease-in-out group-hover:left-0'
               }
             >
               <p className={'h6 text-black-70'}>{item.answer}</p>

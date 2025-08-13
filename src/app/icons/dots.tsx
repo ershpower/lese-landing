@@ -5,26 +5,32 @@ export const Dots = ({ height, width, className }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="32"
-      height="8"
-      viewBox="0 0 32 8"
+      width="19"
+      height="5"
+      viewBox="0 0 19 5"
       fill="none"
       className={className}
     >
-      <circle cx="4" cy="4" r="3.5" stroke="currentColor" strokeOpacity="0.3" />
       <circle
-        cx="16"
-        cy="4"
-        r="3.5"
+        cx="2.5"
+        cy="2.5"
+        r="2"
         stroke="currentColor"
-        strokeOpacity="0.3"
+        strokeOpacity="0.2"
       />
       <circle
-        cx="28"
-        cy="4"
-        r="3.5"
+        cx="9.5"
+        cy="2.5"
+        r="2"
         stroke="currentColor"
-        strokeOpacity="0.3"
+        strokeOpacity="0.2"
+      />
+      <circle
+        cx="16.5"
+        cy="2.5"
+        r="2"
+        stroke="currentColor"
+        strokeOpacity="0.2"
       />
     </svg>
   );

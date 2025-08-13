@@ -6,7 +6,7 @@ import Title from '@/app/ui-lit/title';
 export const Portfolio = () => {
   return (
     <div
-      className={'mx-10 mt-40 grid grid-cols-4 gap-10 md:grid-rows-2'}
+      className={'mx-6 mt-40 grid grid-cols-4 gap-10 md:mx-10 md:grid-rows-2'}
       id={PORTFOLIO_ID}
     >
       <div
@@ -17,7 +17,10 @@ export const Portfolio = () => {
         <div className={'px-10'}>
           <Title
             title={
-              'Создам презентацию, даже если у вас сплошной текст и море графиков'
+              <>
+                Создам презентацию, <br />
+                даже если у вас сплошной <br /> текст и море графиков
+              </>
             }
           />
         </div>
@@ -38,19 +41,22 @@ export const Portfolio = () => {
             >
               <p className={'h2 text-white'}>6000+</p>
               <p className={'h4 mt-10 text-white'}>Слайдов отрисовано*</p>
-              <p className={'mt-10 text-white-70'}>*И не только слайдов)</p>
+              <p className={'h6 mt-10 text-white-70'}>*И не только слайдов)</p>
             </div>
           </div>
         </div>
       </div>
 
       <a
-        href={''}
+        href={'https://ru.pinterest.com/Ershova_Presentation/'}
+        target={'_blank'}
         className={
-          'col-span-2 block flex flex-col justify-between rounded-20 bg-red p-20 md:col-span-1'
+          'col-span-2 flex flex-col justify-between rounded-20 bg-red p-20 md:col-span-1'
         }
       >
-        <p className={'h6 text-white'}>Больше работ можно посмотреть на: </p>
+        <p className={'h6 text-white'}>
+          Больше работ <br /> можно посмотреть на:{' '}
+        </p>
         <img
           src="/portfolio/big-pinerest.svg"
           alt="Pinterest"
@@ -59,12 +65,15 @@ export const Portfolio = () => {
         <Finger height={30} width={30} className={'ml-auto mt-10 text-white'} />
       </a>
       <a
-        href={''}
+        href={'https://www.behance.net/Ershova_Presentation'}
+        target={'_blank'}
         className={
-          'col-span-2 block flex flex-col justify-between rounded-20 bg-behance-blue p-20 md:col-span-1'
+          'col-span-2 flex flex-col justify-between rounded-20 bg-behance-blue p-20 md:col-span-1'
         }
       >
-        <p className={'h6 text-white'}>Подробные кейсы можно посмотреть на:</p>
+        <p className={'h6 text-white'}>
+          Подробные кейсы <br /> можно посмотреть на:
+        </p>
         <img
           src="/portfolio/big-behance.svg"
           alt="Behance"

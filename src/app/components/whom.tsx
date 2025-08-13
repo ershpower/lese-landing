@@ -3,13 +3,18 @@ import { Accordion } from '@/app/ui-lit/accordion';
 import { Info } from '@/app/icons/info';
 import { FOR_WHO_ID } from '@/app/consts';
 import { AccordionCard } from '@/app/ui-lit/accordion-card';
+import Title from '@/app/ui-lit/title';
 
 const items = [
   {
     title: 'Стартапам',
     inner: (
       <>
-        <p className={'h6 border-t border-black-10 py-10 text-black-70'}>
+        <p
+          className={
+            'h6 border-t border-black-10 py-10 text-black-70 md:border-dark-blue'
+          }
+        >
           — Привлекать инвестиции
         </p>
         <p className={'h6 border-t border-black-10 py-10 text-black-70'}>
@@ -25,7 +30,11 @@ const items = [
     title: 'Компаниям',
     inner: (
       <>
-        <p className={'h6 border-t border-black-10 py-10 text-black-70'}>
+        <p
+          className={
+            'h6 border-t border-black-10 py-10 text-black-70 md:border-dark-blue'
+          }
+        >
           — Увеличивать продажи
         </p>
         <p className={'h6 border-t border-black-10 py-10 text-black-70'}>
@@ -44,7 +53,11 @@ const items = [
     title: 'Спикерам',
     inner: (
       <>
-        <p className={'h6 border-t border-black-10 py-10 text-black-70'}>
+        <p
+          className={
+            'h6 border-t border-black-10 py-10 text-black-70 md:border-dark-blue'
+          }
+        >
           — Усиливать личный бренд
         </p>
         <p className={'h6 border-t border-black-10 py-10 text-black-70'}>
@@ -64,16 +77,16 @@ const items = [
     isAccent: true,
     inner: (
       <div>
-        <p className={'h6 border-b border-black-10 pb-10 text-black-70'}>
-          Разрабатываю индивидуальные шаблоны с актуальным дизайном для
-          самостоятельного редактирования и независимости от времени и работы
-          дизайнера
+        <p className={'h6 border-b border-black-10 pb-10 text-white'}>
+          Разрабатываю индивидуальные шаблоны <br /> с актуальным дизайном для
+          самостоятельного редактирования и независимости от времени <br /> и
+          работы дизайнера
         </p>
         <div className={'mt-10 flex gap-10'}>
-          <div>
+          <div className={'text-white-70'}>
             <Info />
           </div>
-          <p className={'h6 text-black-30'}>
+          <p className={'h6 text-white-70'}>
             Идеальное решение для тех, кто не может тратить крупные бюджеты,и
             хочет быстро обновить старый дизайн
           </p>
@@ -86,10 +99,15 @@ const items = [
 export const Whom = () => {
   return (
     <section className={'section'} id={FOR_WHO_ID}>
-      <p className={'h3 text-dark-blue'}>
-        Мои услуги для тех, кто нуждается в эффективных решениях
-      </p>
-      <p className={'h5 mb-20 mt-20 text-black-70'}>
+      <Title
+        title={
+          <>
+            Мои услуги для тех, кто нуждается{' '}
+            <br className={'hidden md:block'} /> в эффективных решениях
+          </>
+        }
+      />
+      <p className={'h5 mb-20 mt-20 pl-20 text-black-70'}>
         Работаю в различных дизайн-стилях. Помогаю:
       </p>
       <div className={'block md:hidden'}>
@@ -97,7 +115,12 @@ export const Whom = () => {
       </div>
       <div className={'hidden grid-cols-2 gap-10 md:grid'}>
         {items.map((item, index) => (
-          <AccordionCard key={index} title={item.title} inner={item.inner} />
+          <AccordionCard
+            key={index}
+            title={item.title}
+            inner={item.inner}
+            isAccent={item.isAccent}
+          />
         ))}
       </div>
     </section>

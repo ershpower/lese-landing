@@ -9,8 +9,10 @@ export default {
         'black-10': 'rgba(0, 0, 0, 0.1)',
         'black-20': 'rgba(0, 0, 0, 0.2)',
         'black-30': 'rgba(0, 0, 0, 0.3)',
+        'black-40': 'rgba(0, 0, 0, 0.4)',
         'black-50': 'rgba(0, 0, 0, 0.5)',
         'black-70': 'rgba(0, 0, 0, 0.7)',
+        'white-10': 'rgba(255, 255, 255, 0.1)',
         'white-30': 'rgba(255, 255, 255, 0.3)',
         'white-50': 'rgba(255, 255, 255, 0.5)',
         'white-70': 'rgba(255, 255, 255, 0.7)',
@@ -24,7 +26,7 @@ export default {
       },
       backgroundImage: {
         'profile-bg': 'url("/hero/profile-bg.png")',
-        'portfolio-bg': 'url("/portfolio/bg.png")',
+        'portfolio-bg': 'url("/portfolio/mobile-bg.png")',
         'portfolio-bg-circle': 'url("/portfolio/circle.png")',
         'hero-bg': 'url("/hero/xs-bg-1x.png")',
         'marquee-gradient-1':
@@ -33,6 +35,28 @@ export default {
           'linear-gradient(90.12deg, #FFFFFF 18.81%, #1ED1F9 92.52%)',
         'burger-gradient':
           'linear-gradient(173.63deg, rgba(2, 2, 51, 0.7) 7.1%, rgba(9, 45, 200, 0.7) 94.96%)',
+        'menu-gradient':
+          'radial-gradient(85.84% 85.9% at 28.75% 14.1%, rgba(223, 233, 245, 0.5) 31.73%, rgba(186, 206, 239, 0.5) 72.75%, rgba(175, 200, 249, 0.5) 86.9%, rgba(154, 188, 255, 0.5) 100%)',
+        'button-gradient':
+          'url("/noise.png"), linear-gradient(270deg, #1ED1F9 0%, #11B8DD 18.76%, #1166DD 42.01%, #1F07BB 59.96%, #150197 84.84%)',
+        'brand-gradient': `
+        url("/noise.png"),
+        radial-gradient(
+          100.68% 82.61% at 82.74% 17.39%,
+          rgba(17, 184, 221, 0.5) 23.56%,
+          rgba(17, 102, 221, 0.3) 38.94%,
+          rgba(31, 7, 187, 0) 59.13%,
+          rgba(21, 1, 151, 0) 79.33%
+        ),
+        radial-gradient(
+          122.11% 100% at 3.56% 100%,
+          #1ED1F9 6.25%,
+          #11B8DD 26.28%,
+          #1166DD 43.38%,
+          #1F07BB 59.13%,
+          #150197 84.31%
+        )
+      `,
       },
       spacing: {
         0: '0rem',
@@ -66,6 +90,7 @@ export default {
       borderRadius: {
         8: '0.5rem', // 10x
         10: '0.625rem', // 10x
+        12: '0.75rem', // 10x
         16: '1rem', // 16px
         20: '1.25rem', // 18px
         30: '1.875rem', // 30px
@@ -93,6 +118,7 @@ export default {
         36: ['2.25rem'], // 36px
         38: ['2.375rem'], // 38px
         40: ['2.5rem'], // 40px
+        42: ['2.625rem'], // 42px
         52: ['3.25rem'], // 52px
         48: ['3rem'], // 52px
         60: ['3.75rem'], // 52px

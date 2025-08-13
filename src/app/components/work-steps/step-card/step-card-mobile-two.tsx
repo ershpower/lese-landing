@@ -10,7 +10,7 @@ interface StepCardProps {
   withArrow?: boolean;
 }
 
-export const StepCardMobile = ({
+export const StepCardMobileTwo = ({
   img,
   subtitle,
   title,
@@ -19,24 +19,22 @@ export const StepCardMobile = ({
 }: StepCardProps) => {
   return (
     <div
-      className={`relative flex h-[130px] justify-between gap-30 rounded-20 pl-10 pr-20 ${isAccent ? 'bg-brand-gradient' : 'bg-light-gray'}`}
+      className={`relative flex justify-between gap-30 rounded-20 py-20 pl-10 pr-10 ${isAccent ? 'bg-brand-gradient' : 'bg-light-gray'}`}
     >
-      <div className={'flex h-full items-center justify-center gap-20'}>
-        <div className={'flex gap-10'}>
-          <img src={img} alt="" className={'h-[40px] w-[55px]'} />
-          <div>
-            <p className={`h4 ${isAccent ? 'text-white' : 'text-dark-blue'}`}>
-              {title}
-            </p>
-            <p
-              className={`h6 ${isAccent ? 'text-white-70' : 'text-black-70'} mt-10`}
-            >
-              {subtitle}
-            </p>
-            {isAccent && (
-              <p className={'h5 mt-10 text-white-50'}>*В формате “Под ключ”</p>
-            )}
-          </div>
+      <div className={'flex items-start gap-10'}>
+        <img src={img} alt="" className={'h-[40px] w-[55px]'} />
+        <div>
+          <p className={`h4 ${isAccent ? 'text-white' : 'text-dark-blue'}`}>
+            {title}
+          </p>
+          <p
+            className={`h6 ${isAccent ? 'text-white-70' : 'text-black-70'} mt-10`}
+          >
+            {subtitle}
+          </p>
+          {isAccent && (
+            <p className={'h6 mt-10 text-white-50'}>*В формате “Под ключ”</p>
+          )}
         </div>
       </div>
       {!isAccent && (

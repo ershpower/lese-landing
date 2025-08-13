@@ -46,7 +46,7 @@ export const BigCard = () => {
       <Dots className={'ml-auto mr-10 mt-10'} />
       <p className={'h2 text-dark-blue'}> 25+</p>
       <p className={'h4 text-dark-blue'}>
-        Пройденных учебных курсов и изученных программ
+        Пройденных учебных курсов <br /> и изученных программ
       </p>
       <div className={'mt-10 flex flex-wrap gap-6'}>
         {images.map((img, i) => (

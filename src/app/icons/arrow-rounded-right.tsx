@@ -5,9 +5,9 @@ export const ArrowRoundedRight = ({ height, width, className }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="30"
-      height="30"
-      viewBox="0 0 30 30"
+      width={width}
+      height={height}
+      viewBox={`0 0 30 30`}
       fill="none"
       className={className}
     >

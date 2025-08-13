@@ -6,7 +6,7 @@ export const OrderButton = () => {
   return (
     <div>
       <a
-        href=""
+        href="https://t.me/Ershova_Presentation"
         className={
           'relative flex items-center justify-center gap-6 rounded-20 bg-white p-16'
         }
@@ -34,7 +34,7 @@ export const OrderButton = () => {
           />
         </svg>
         <span className={'h6 max-w-[185px] text-white'}>
-          Напишите мне, чтобы обсудить все детали и начать ваш проект
+          Напишите мне, чтобы обсудить <br /> все детал и начать ваш проект
         </span>
       </p>
     </div>
