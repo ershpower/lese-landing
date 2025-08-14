@@ -7,7 +7,7 @@ function Menu() {
   return (
     <div
       className={
-        'bg-menu-gradient h sticky left-0 top-10 h-[calc(100vh-20px)] rounded-20 p-10'
+        'h sticky left-0 top-10 h-[calc(100vh-20px)] rounded-20 bg-menu-gradient p-10'
       }
     >
       <Logo />
@@ -19,7 +19,7 @@ function Menu() {
               href={item.href}
             >
               <span className={'h6 text-black-40'}>0{index + 1}</span>
-              <span className={'h4 flex-auto'}>{item.title}</span>
+              <span className={'h5 flex-auto'}>{item.title}</span>
               <ArrowRightUp width={10} height={10} />
             </a>
           </li>

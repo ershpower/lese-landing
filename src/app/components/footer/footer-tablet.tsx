@@ -87,12 +87,12 @@ function FooterTablet() {
           {/*pinterest*/}
           <Link
             href={'https://ru.pinterest.com/Ershova_Presentation/'}
-            className={`h5 col-span-1 flex items-center gap-10 border-t border-white-50 py-10 pl-20 text-white`}
+            className={`h5 col-span-1 flex items-center gap-10 border-t border-white-50 py-10 pl-30 text-white`}
           >
             <div>
               <PinterestTransparent />
             </div>
-            <p>Behance</p>
+            <p>Pinterest</p>
             <div>
               <ArrowRightUp width={10} height={10} />
             </div>
