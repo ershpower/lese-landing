@@ -6,12 +6,14 @@ import Title from '@/app/ui-lit/title';
 export const Portfolio = () => {
   return (
     <div
-      className={'mx-6 mt-40 grid grid-cols-4 gap-10 md:mx-10 md:grid-rows-2'}
+      className={
+        'mx-6 mt-40 grid grid-cols-4 gap-10 md:mx-10 md:grid-rows-2 xl:mt-80'
+      }
       id={PORTFOLIO_ID}
     >
       <div
         className={
-          'col-span-4 overflow-hidden rounded-20 bg-white pt-20 md:col-span-3 md:row-span-2'
+          'col-span-4 overflow-hidden rounded-20 bg-white pt-20 md:col-span-3 md:row-span-2 2xl:pt-40'
         }
       >
         <div className={'px-10'}>
@@ -24,7 +26,7 @@ export const Portfolio = () => {
             }
           />
         </div>
-        <div className={'relative'}>
+        <div className={'relative 2xl:-mt-60'}>
           <picture>
             <source
               media="(min-width: 1024px)"
@@ -42,7 +44,7 @@ export const Portfolio = () => {
           </picture>
           <div
             className={
-              'absolute left-1/2 top-1/2 h-[270px] w-[270px] -translate-x-1/2 -translate-y-1/2 rounded-full p-16 backdrop-blur'
+              'absolute left-1/2 top-1/2 h-[270px] w-[270px] -translate-x-1/2 -translate-y-1/2 rounded-full p-16 backdrop-blur xl:h-[360px] xl:w-[360px] 2xl:h-[460px] 2xl:w-[460px]'
             }
           >
             <div
@@ -62,7 +64,7 @@ export const Portfolio = () => {
         href={'https://ru.pinterest.com/Ershova_Presentation/'}
         target={'_blank'}
         className={
-          'col-span-2 flex flex-col justify-between rounded-20 bg-red p-20 md:col-span-1'
+          'col-span-2 flex flex-col justify-between rounded-20 bg-red p-20 md:col-span-1 xl:p-40'
         }
       >
         <p className={'h6 text-white'}>
@@ -73,13 +75,17 @@ export const Portfolio = () => {
           alt="Pinterest"
           className={'mt-16'}
         />
-        <Finger height={30} width={30} className={'ml-auto mt-10 text-white'} />
+        <Finger
+          className={
+            'ml-auto mt-10 h-[30px] w-[30px] text-white xl:h-[40px] xl:w-[40px] 2xl:h-[60px] 2xl:w-[60px]'
+          }
+        />
       </a>
       <a
         href={'https://www.behance.net/Ershova_Presentation'}
         target={'_blank'}
         className={
-          'col-span-2 flex flex-col justify-between rounded-20 bg-behance-blue p-20 md:col-span-1'
+          'col-span-2 flex flex-col justify-between rounded-20 bg-behance-blue p-20 md:col-span-1 xl:p-40'
         }
       >
         <p className={'h6 text-white'}>
@@ -90,7 +96,11 @@ export const Portfolio = () => {
           alt="Behance"
           className={'mt-16'}
         />
-        <Finger height={30} width={30} className={'ml-auto mt-14 text-white'} />
+        <Finger
+          className={
+            'ml-auto mt-14 h-[30px] w-[30px] text-white xl:h-[40px] xl:w-[40px] 2xl:h-[60px] 2xl:w-[60px]'
+          }
+        />
       </a>
     </div>
   );

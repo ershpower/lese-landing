@@ -12,15 +12,23 @@ const items = [
       <>
         <p
           className={
-            'h6 border-t border-black-10 py-10 text-black-70 md:border-dark-blue'
+            'h6 border-t border-black-10 py-10 text-black-70 md:border-dark-blue 2xl:py-16'
           }
         >
           — Привлекать инвестиции
         </p>
-        <p className={'h6 border-t border-black-10 py-10 text-black-70'}>
+        <p
+          className={
+            'h6 border-t border-black-10 py-10 text-black-70 2xl:py-16'
+          }
+        >
           — Раскрывать смысл идеи для инвесторов
         </p>
-        <p className={'h6 border-t border-black-10 py-10 text-black-70'}>
+        <p
+          className={
+            'h6 border-t border-black-10 py-10 text-black-70 2xl:py-16'
+          }
+        >
           — Транслировать надёжность проекта
         </p>
       </>
@@ -32,18 +40,30 @@ const items = [
       <>
         <p
           className={
-            'h6 border-t border-black-10 py-10 text-black-70 md:border-dark-blue'
+            'h6 border-t border-black-10 py-10 text-black-70 md:border-dark-blue 2xl:py-16'
           }
         >
           — Увеличивать продажи
         </p>
-        <p className={'h6 border-t border-black-10 py-10 text-black-70'}>
+        <p
+          className={
+            'h6 border-t border-black-10 py-10 text-black-70 2xl:py-16'
+          }
+        >
           — Тестировать спрос
         </p>
-        <p className={'h6 border-t border-black-10 py-10 text-black-70'}>
+        <p
+          className={
+            'h6 border-t border-black-10 py-10 text-black-70 2xl:py-16'
+          }
+        >
           — Запускать новый/ую продукт/ услугу
         </p>
-        <p className={'h6 border-t border-black-10 py-10 text-black-70'}>
+        <p
+          className={
+            'h6 border-t border-black-10 py-10 text-black-70 2xl:py-16'
+          }
+        >
           — Заключать соглашения о бизнес партнёрстве
         </p>
       </>
@@ -55,18 +75,30 @@ const items = [
       <>
         <p
           className={
-            'h6 border-t border-black-10 py-10 text-black-70 md:border-dark-blue'
+            'h6 border-t border-black-10 py-10 text-black-70 md:border-dark-blue 2xl:py-16'
           }
         >
           — Усиливать личный бренд
         </p>
-        <p className={'h6 border-t border-black-10 py-10 text-black-70'}>
+        <p
+          className={
+            'h6 border-t border-black-10 py-10 text-black-70 2xl:py-16'
+          }
+        >
           — Удерживать фокус внимания аудитории
         </p>
-        <p className={'h6 border-t border-black-10 py-10 text-black-70'}>
+        <p
+          className={
+            'h6 border-t border-black-10 py-10 text-black-70 2xl:py-16'
+          }
+        >
           — Активно взаимодействовать созрителем
         </p>{' '}
-        <p className={'h6 border-t border-black-10 py-10 text-black-70'}>
+        <p
+          className={
+            'h6 border-t border-black-10 py-10 text-black-70 2xl:py-16'
+          }
+        >
           — Впечатлять аудиторию
         </p>
       </>
@@ -78,7 +110,8 @@ const items = [
     inner: (
       <div>
         <p className={'h6 border-b border-black-10 pb-10 text-white'}>
-          Разрабатываю индивидуальные шаблоны <br /> с актуальным дизайном для
+          Разрабатываю индивидуальные шаблоны <br className={'2xl:hidden'} /> с
+          актуальным дизайном <br className={'hidden 2xl:block'} /> для
           самостоятельного редактирования и независимости от времени <br /> и
           работы дизайнера
         </p>
@@ -87,8 +120,9 @@ const items = [
             <Info />
           </div>
           <p className={'h6 text-white-70'}>
-            Идеальное решение для тех, кто не может тратить крупные бюджеты,и
-            хочет быстро обновить старый дизайн
+            Идеальное решение для тех, кто не может{' '}
+            <br className={'hidden xl:block'} /> тратить крупные бюджеты,и хочет
+            быстро <br className={'hidden xl:block'} /> обновить старый дизайн
           </p>
         </div>
       </div>
@@ -107,7 +141,7 @@ export const Whom = () => {
           </>
         }
       />
-      <p className={'h5 mb-20 mt-20 pl-20 text-black-70'}>
+      <p className={'h5 mb-20 mt-20 pl-20 text-black-70 2xl:pl-40'}>
         Работаю в различных дизайн-стилях. Помогаю:
       </p>
       <div className={'block md:hidden'}>

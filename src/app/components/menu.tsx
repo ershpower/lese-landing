@@ -40,8 +40,6 @@ function Menu() {
     };
   }, []);
 
-  console.log(menuItems);
-  console.log(activeSection);
   return (
     <div
       className={
@@ -49,13 +47,13 @@ function Menu() {
       }
     >
       <div className={'p-10'}>
-        <Logo />
+        <Logo className={'h-[40px] w-[40px] xl:h-[50px] xl:w-[50px]'} />
       </div>
       <ul className={'mt-30'}>
         {menuItems.map((item, index) => (
           <li key={index}>
             <a
-              className={`flex items-center gap-10 px-10 py-16 ${index !== 0 ? 'border-t border-white' : ''} ${activeSection === item.href ? 'rounded-10 bg-button-gradient text-white' : 'text-dark-blue'}`}
+              className={`flex items-center gap-10 px-10 py-16 xl:gap-20 2xl:py-20 ${index !== 0 ? 'border-t border-white' : ''} ${activeSection === item.href ? 'rounded-10 bg-button-gradient text-white' : 'text-dark-blue'}`}
               href={`#${item.href}`}
             >
               <span
@@ -64,7 +62,9 @@ function Menu() {
                 0{index + 1}
               </span>
               <span className={'h5 flex-auto'}>{item.title}</span>
-              <ArrowRightUp width={10} height={10} />
+              <ArrowRightUp
+                className={'h-[10px] w-[10px] 2xl:h-[16px] 2xl:w-[16px]'}
+              />
             </a>
           </li>
         ))}

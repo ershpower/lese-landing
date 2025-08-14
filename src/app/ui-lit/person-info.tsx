@@ -5,12 +5,13 @@ function PersonInfo() {
   return (
     <div
       className={
-        'col-start-4 row-start-1 flex h-full flex-col justify-end gap-10 rounded-20 border border-black-20 bg-profile-bg bg-left-top bg-no-repeat p-18'
+        '2xl:bg-profile-bg-desktop2xl xl:bg-profile-bg-desktop col-start-4 row-start-1 flex h-full flex-col justify-end gap-10 rounded-20 border border-black-20 bg-profile-bg bg-left-top bg-no-repeat p-18 2xl:p-40'
       }
     >
       <RetinaImage
-        width={60}
-        height={60}
+        className={
+          'h-[60px] w-[60px] xl:h-[100px] xl:w-[100px] 2xl:h-[200px] 2xl:w-[200px]'
+        }
         src1x={'/hero/avatar1x.png'}
         src2x={'/hero/avatar2x.png'}
       />

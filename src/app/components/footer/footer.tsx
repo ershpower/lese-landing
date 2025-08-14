@@ -5,7 +5,7 @@ import { CONTACTS_ID } from '@/app/consts';
 
 function Footer() {
   return (
-    <div id={CONTACTS_ID} className={'mx-6 mb-10 mt-20'}>
+    <div id={CONTACTS_ID} className={'mx-6 mb-10 mt-40 md:mx-10 xl:mt-80'}>
       <div className={'block md:hidden'}>
         <FooterMobile />
       </div>

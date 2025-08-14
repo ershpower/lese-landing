@@ -9,6 +9,7 @@ export const Tg = ({ height, width, className }: IconProps) => {
       height="27"
       viewBox="0 0 27 27"
       fill="none"
+      className={className}
     >
       <rect width="27" height="27" rx="8" fill="#150197" />
       <path

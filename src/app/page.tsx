@@ -10,11 +10,15 @@ import Menu from '@/app/components/menu';
 
 export default function Home() {
   return (
-    <div className={'lg:grid lg:grid-cols-5'}>
-      <nav className={'relative col-span-1 mb-10 ml-10 mt-10 hidden lg:block'}>
+    <div className={'lg:grid lg:grid-cols-5 2xl:grid-cols-9'}>
+      <nav
+        className={
+          'relative col-span-1 mb-10 ml-10 mt-10 hidden lg:block 2xl:col-span-1'
+        }
+      >
         <Menu />
       </nav>
-      <main className={'col-span-4'}>
+      <main className={'col-span-4 2xl:col-span-8'}>
         <HeroBlock />
         <Experience />
         <Portfolio />

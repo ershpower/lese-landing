@@ -18,8 +18,8 @@ const items = [
     inner: (
       <div className={'border-t border-black-10 pt-10'}>
         <div className={'flex items-end gap-10'}>
-          <span className={'text-dark-blue'}>от</span>
-          <span className={'h2 text-dark-blue'}>10 000₽</span>
+          <span className={'h3 text-dark-blue'}>от</span>
+          <span className={'h2 text-dark-blue'}>15 000₽</span>
         </div>
         <div className={'mt-10 flex items-center gap-6 text-black-70'}>
           <Clock className={'text-icon'} />
@@ -34,7 +34,7 @@ const items = [
     inner: (
       <div className={'border-t border-black-10 pt-10'}>
         <div className={'flex items-end gap-10'}>
-          <span className={'text-dark-blue'}>от</span>
+          <span className={'h3 text-dark-blue'}>от</span>
           <span className={'h2 text-dark-blue'}>20 000₽</span>
         </div>
         <div className={'mt-10 flex items-center gap-6 text-black-70'}>
@@ -51,9 +51,9 @@ const items = [
     subtitle: 'Структура, текст, дизайн',
     isAccent: true,
     inner: (
-      <div className={'border-white-10 border-t pt-10'}>
+      <div className={'border-t border-white-10 pt-10'}>
         <div className={'flex items-end gap-10'}>
-          <span className={'text-white'}>от</span>
+          <span className={'h3 text-white'}>от</span>
           <span className={'h2 text-white'}>35 000₽</span>
         </div>
         <div className={'mt-10 flex items-center gap-6 text-white-70'}>
@@ -69,8 +69,10 @@ const items = [
     title: 'Консультация',
     subtitle: (
       <>
-        Для дизайнеров и других смежных <br /> специалистов. Обсуждаем любой
-        интересующий <br /> вас вопрос и разбираем ваши работы
+        Для дизайнеров и других смежных <br className={'2xl:hidden'} />{' '}
+        специалистов. Обсуждаем <br className={'hidden 2xl:block'} /> любой
+        интересующий <br className={'2xl:hidden'} /> вас вопрос и разбираем ваши
+        работы
       </>
     ),
     inner: (
@@ -91,13 +93,21 @@ function Price() {
   return (
     <section className={'section'} id={PRICE_ID}>
       <Title title={'Стоимость'} />
-      <div className={'gap-60 md:flex md:pl-10'}>
-        <p className={'h5 mt-20 pl-10 text-black-70 md:max-w-[300px]'}>
+      <div className={'mb-20 gap-60 md:flex md:pl-10 xl:mb-40 2xl:pl-40'}>
+        <p
+          className={
+            'h5 mt-20 pl-10 text-black-70 md:max-w-[300px] xl:max-w-[353px] 2xl:max-w-[453px]'
+          }
+        >
           Итоговая цена рассчитывается <br /> индивидуально на основе объема,{' '}
           <br />
           сложности и специфики задачи
         </p>
-        <p className={'h5 mb-20 mt-20 pl-10 text-black-70 md:max-w-[350px]'}>
+        <p
+          className={
+            'h5 mt-20 pl-10 text-black-70 md:max-w-[350px] xl:max-w-[463px] 2xl:max-w-[563px]'
+          }
+        >
           Больше деталей, точные сроки и стоимость{' '}
           <br className={'md:hidden'} /> работы можно узнать после обсуждения{' '}
           <br className={'md:hidden'} /> и составления полной сметы вашего

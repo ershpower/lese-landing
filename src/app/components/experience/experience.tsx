@@ -17,12 +17,21 @@ function Experience() {
         }
       />
 
-      <div className={'mt-20 grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-10'}>
+      <div
+        className={
+          'mt-20 grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-10 2xl:mt-40'
+        }
+      >
         <div className={'order-1 col-span-1'}>
           <CardText
             title={'года'}
             bigTitle={'3'}
-            subtitle={'Работала ведущим дизайнером в студии презентации'}
+            subtitle={
+              <>
+                Работала ведущим <br className={'hidden xl:block'} /> дизайнером
+                в студии <br className={'hidden 2xl:block'} /> презентации
+              </>
+            }
           />
         </div>
 
@@ -30,8 +39,9 @@ function Experience() {
           <CardImage
             title={
               <>
-                Дизайнила презентации <br /> для топовых российских компаний и
-                стартапов <br /> из разных уголков мира
+                Дизайнила презентации <br /> для топовых российских{' '}
+                <br className={'hidden 2xl:block'} /> компаний и стартапов{' '}
+                <br /> из разных уголков мира
               </>
             }
             img={'/experience/moon.png'}
@@ -66,17 +76,35 @@ function Experience() {
           <CardText
             title={'лет'}
             bigTitle={'7'}
-            subtitle={<>Дополнительного художественного  образования</>}
+            subtitle={
+              <>
+                Дополнительного <br className={'hidden 2xl:block'} />
+                художественного
+                <br className={'hidden xl:block'} />
+                образования
+              </>
+            }
           />
         </div>
 
         <div className={'order-6 col-span-1 md:order-4'}>
-          <div className={'min-h-[168px] rounded-20 bg-brand-gradient p-10'}>
-            <Dots className={'ml-auto mr-10 mt-10 text-white'} />
-            <p className={'h6 mt-28 text-white'}>
-              Всегда соблюдаю дедлайны, не «пропадаю», строго следую NDA и
-              авторскому праву
-            </p>
+          <div
+            className={
+              'relative flex h-full min-h-[168px] items-center rounded-20 bg-brand-gradient p-10 xl:min-h-[220px] xl:p-20 2xl:h-[320px] 2xl:p-40'
+            }
+          >
+            <Dots
+              className={'top absolute right-20 top-20 ml-auto text-white'}
+            />
+            <div>
+              <p className={'h6 text-white'}>
+                Всегда соблюдаю <br className={'hidden xl:block 2xl:hidden'} />{' '}
+                дедлайны, <br className={'hidden 2xl:block'} /> не «пропадаю»,
+                строго следую <br className={'hidden 2xl:block'} />
+                NDA <br className={'hidden xl:block 2xl:hidden'} />и авторскому
+                праву
+              </p>
+            </div>
           </div>
         </div>
 

@@ -42,8 +42,12 @@ const images = [
 
 export const BigCard = () => {
   return (
-    <div className={'min-h-[168px] rounded-20 bg-light-gray p-10'}>
-      <Dots className={'ml-auto mr-10 mt-10'} />
+    <div
+      className={
+        'relative h-full min-h-[168px] rounded-20 bg-light-gray p-10 xl:min-h-[220px] xl:p-20 2xl:h-[320px] 2xl:p-40'
+      }
+    >
+      <Dots className={'absolute right-20 top-20 ml-auto mr-10 mt-10'} />
       <p className={'h2 text-dark-blue'}> 25+</p>
       <p className={'h4 text-dark-blue'}>
         Пройденных учебных курсов <br /> и изученных программ
@@ -51,7 +55,9 @@ export const BigCard = () => {
       <div className={'mt-10 flex flex-wrap gap-6'}>
         {images.map((img, i) => (
           <RetinaImage
-            className={'h-[30px] w-[30px]'}
+            className={
+              'h-[30px] w-[30px] xl:h-[40px] xl:w-[40px] 2xl:h-[60px] 2xl:w-[60px]'
+            }
             key={i}
             src1x={img.img1x}
             src2x={img.img2x}
@@ -59,7 +65,9 @@ export const BigCard = () => {
           />
         ))}
         <RetinaImage
-          className={'h-[30px] w-[36px]'}
+          className={
+            'h-[30px] w-[36px] xl:h-[40px] xl:w-[50px] 2xl:h-[60px] 2xl:w-[70px]'
+          }
           src1x={'/experience/plus1x.png'}
           src2x={'/experience/plus2x.png'}
         />

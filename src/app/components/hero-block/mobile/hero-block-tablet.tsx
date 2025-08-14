@@ -21,45 +21,53 @@ function HeroBlockTablet({ bullets, row2, row1 }: HeroBlockTabletProps) {
           }
         >
           <h2 className={'h1 mt-60 text-center text-white'}>
-            Оригинально визуализирую сложные идеи
+            Оригинально <br /> визуализирую <br /> сложные идеи
           </h2>
           <div className={'mt-30'}>
             <Bullets bullets={bullets} />
           </div>
 
-          <div className={'absolute bottom-[7%] left-[-10px] w-[103%]'}>
+          <div
+            className={
+              'absolute bottom-[7%] left-[-10px] w-[103%] xl:bottom-[10%]'
+            }
+          >
             <div className={'w-full rotate-[-5deg] shadow-marquee'}>
-              <Marquee className={'bg-marquee-gradient-1 p-6'}>
-                {[...row1, ...row1].map((word, index) => (
-                  <div
-                    key={index}
-                    className={'h6 flex items-center gap-8 pl-8'}
-                  >
-                    {word}
+              <Marquee className={'bg-marquee-gradient-1 p-6 xl:p-14'}>
+                {[...row1, ...row1, ...row1, ...row1, ...row1, ...row1].map(
+                  (word, index) => (
                     <div
-                      className={'h-[4px] w-[4px] rounded-full bg-dark-blue'}
-                    ></div>
-                  </div>
-                ))}
+                      key={index}
+                      className={'h6 flex items-center gap-8 pl-8'}
+                    >
+                      {word}
+                      <div
+                        className={'h-[4px] w-[4px] rounded-full bg-dark-blue'}
+                      ></div>
+                    </div>
+                  ),
+                )}
               </Marquee>
             </div>
 
             <div className={'mt-30 w-full rotate-[5deg] shadow-marquee'}>
               <Marquee
-                className={'bg-marquee-gradient-2 p-6'}
+                className={'bg-marquee-gradient-2 p-6 xl:p-14'}
                 direction={'right'}
               >
-                {[...row2, ...row2].map((word, index) => (
-                  <div
-                    key={index}
-                    className={'h6 flex items-center gap-8 pl-8'}
-                  >
-                    {word}
+                {[...row2, ...row2, ...row2, ...row2, ...row2].map(
+                  (word, index) => (
                     <div
-                      className={'h-[4px] w-[4px] rounded-full bg-[#150197]'}
-                    ></div>
-                  </div>
-                ))}
+                      key={index}
+                      className={'h6 flex items-center gap-8 pl-8'}
+                    >
+                      {word}
+                      <div
+                        className={'h-[4px] w-[4px] rounded-full bg-[#150197]'}
+                      ></div>
+                    </div>
+                  ),
+                )}
               </Marquee>
             </div>
           </div>

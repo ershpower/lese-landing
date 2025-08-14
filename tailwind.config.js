@@ -26,6 +26,8 @@ export default {
       },
       backgroundImage: {
         'profile-bg': 'url("/hero/profile-bg.png")',
+        'profile-bg-desktop': 'url("/hero/profile-bg-desk.png")',
+        'profile-bg-desktop2xl': 'url("/hero/profile-bg-desk-2xl.png")',
         'portfolio-bg': 'url("/portfolio/mobile-bg.png")',
         'portfolio-tablet-bg': 'url("/portfolio/tablet-bg.png")',
         'portfolio-desk-bg': 'url("/portfolio/desk-bg.png")',
@@ -113,7 +115,9 @@ export default {
         16: ['1rem'], // 16px
         18: ['1.125rem'], // 18px
         20: ['1.25rem'], // 20px
+        22: ['1.375rem'], // 20px
         24: ['1.5rem'], // 24px
+        26: ['1.625rem'], // 24px
         28: ['1.75rem'], // 28px
         30: ['1.875rem'], // 28px
         32: ['2rem'], // 32px
@@ -124,7 +128,10 @@ export default {
         52: ['3.25rem'], // 52px
         48: ['3rem'], // 52px
         60: ['3.75rem'], // 52px
+        80: ['5rem'], // 52px
         100: ['6.25rem'], // 52px
+        140: ['8.74rem'], // 52px
+        160: ['10rem'], // 52px
       },
       fontFamily: {
         onest: ['var(--font-onest)'],

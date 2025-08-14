@@ -5,17 +5,27 @@ import { Finger } from '@/app/icons/finger';
 function OrderButtonDesktop() {
   return (
     <div
-      className={'relative h-full rounded-20 bg-white px-18 py-30 shadow-blue'}
+      className={
+        'relative h-full rounded-20 bg-white px-18 py-30 shadow-blue hover:cursor-pointer 2xl:h-[300px] 2xl:p-40'
+      }
     >
-      <Tg />
-      <h1 className={'h4 mt-6 text-dark-blue'}>Заказать презентацию</h1>
-      <p className={'h6 mt-10'}>
-        Напишите мне, чтобы обсудить все детали <br /> и начать ваш проект
+      <Tg
+        className={
+          'h-[27px] w-[27px] lg:h-[40px] lg:w-[40px] 2xl:h-[60px] 2xl:w-[60px]'
+        }
+      />
+      <h1 className={'h4 mt-6 text-dark-blue'}>
+        Заказать <br className={'hidden 2xl:block'} /> презентацию
+      </h1>
+      <p className={'h6 mt-10 text-black-70'}>
+        Напишите мне, чтобы <br className={'hidden 2xl:block'} /> обсудить все
+        детали <br className={'xl:hidden'} />
+        <br /> и начать ваш проект
       </p>
       <Finger
-        width={20}
-        height={20}
-        className={'absolute right-[24px] top-[50px]'}
+        className={
+          'absolute right-[24px] top-[50px] h-[20px] w-[20px] xl:h-[30px] xl:w-[30px] 2xl:h-[60px] 2xl:w-[60px]'
+        }
       />
     </div>
   );

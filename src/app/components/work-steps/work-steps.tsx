@@ -12,7 +12,7 @@ const cards = [
     subtitle: (
       <>
         Определяем цель и сроки проекта. Согласовываем коммерческое предложение
-        <br />и стоимость работы
+        <br className={'xl:hidden'} />и стоимость работы
       </>
     ),
   },
@@ -21,9 +21,10 @@ const cards = [
     title: 'Интервью',
     subtitle: (
       <>
-        Определяем задачи дизайн- <br className={'md:hidden'} />
-        продукта, целевую аудиторию, УТП, <br className={'md:hidden'} /> «боли»
-        ЦА и другие детали брифа
+        Определяем задачи дизайн-
+        <br className={'md:hidden xl:block 2xl:hidden'} />
+        продукта, целевую <br className={'hidden 2xl:block'} /> аудиторию, УТП,{' '}
+        <br className={'md:hidden'} /> «боли» ЦА и другие детали брифа
       </>
     ),
   },
@@ -36,8 +37,9 @@ const cards = [
     ),
     subtitle: (
       <>
-        После изучения информации <br /> и анализа конкурентов, прописываю
-        текстовую часть
+        После изучения информации <br className={'2xl:hidden'} /> и анализа
+        <br className={'hidden 2xl:block'} /> конкурентов, прописываю текстовую
+        часть
       </>
     ),
   },
@@ -46,10 +48,12 @@ const cards = [
     title: 'Разработка мудборда',
     subtitle: (
       <>
-        В формате PDF-файла показываю <br className={'md:hidden'} />2 концепции
-        визуала, сформированные <br className={'md:hidden'} />
-        на основе ваших пожеланий <br className={'md:hidden'} /> для
-        согласования стилистики
+        В формате PDF-файла <br className={'md:hidden xl:block 2xl:hidden'} />{' '}
+        показываю 2 концепции <br className={'hidden 2xl:block'} /> визуала,
+        сформированные <br className={'md:hidden'} />
+        на основе <br className={'hidden xl:block 2xl:hidden'} /> ваших
+        <br className={'hidden 2xl:block'} /> пожеланий{' '}
+        <br className={'md:hidden'} /> для согласования стилистики
       </>
     ),
   },
@@ -57,13 +61,17 @@ const cards = [
     img: '/work-steps/five.svg',
     title: (
       <>
-        Дизайн-концепция <br className={'md:hidden'} /> на первых трех слайдах
+        Дизайн-концепция <br className={'md:hidden 2xl:block'} /> на первых трех
+        слайдах
       </>
     ),
     subtitle: (
       <>
-        Закрепляю стиль работы, дизайн-приёмы <br className={'md:hidden'} /> и
-        т.д. На данном этапе предварительно утверждаем итоговый дизайн
+        Закрепляю стиль работы, <br className={'hidden xl:block 2xl:hidden'} />{' '}
+        дизайн-приёмы <br className={'md:hidden'} /> и т.д.{' '}
+        <br className={'hidden 2xl:block'} /> На данном{' '}
+        <br className={'hidden xl:block 2xl:hidden'} /> этапе предварительно
+        утверждаем <br className={'hidden 2xl:block'} /> итоговый дизайн
       </>
     ),
   },
@@ -88,12 +96,21 @@ const cards = [
   },
   {
     img: '/work-steps/eight.svg',
-    title: 'Внесение второй части оплаты и отправка файлов',
+    title: (
+      <>
+        Внесение второй части <br className={'xl:block'} /> оплаты и отправка
+        файлов
+      </>
+    ),
     subtitle: (
       <>
-        Работаю в PowerPoint и Figma. Предоставляю готовую презентацию <br />в
-        форматах pptx и pdf, либо передаю <br /> права на владение проектом (в
-        Figma)
+        Работаю в PowerPoint и Figma. Предоставляю{' '}
+        <br className={'xl:block 2xl:hidden'} />
+        готовую <br className={'hidden 2xl:block'} /> презентацию{' '}
+        <br className={'xl:hidden'} />в форматах pptx и pdf,
+        <br className={'xl:block 2xl:hidden'} />
+        либо передаю <br className={'xl:hidden 2xl:block'} /> права на владение
+        проектом (в Figma)
       </>
     ),
   },
@@ -110,9 +127,11 @@ export const WorkSteps = () => {
       <div className={'hidden md:block'}>
         <WorkStepsDesktop cards={cards} />
         <RetinaImage
-          className={'absolute bottom-0 right-0 h-[229px] w-[270px]'}
+          className={
+            'absolute bottom-0 right-0 h-[229px] w-[270px] xl:h-[270px] xl:w-[380px] 2xl:h-[470px] 2xl:w-[580px]'
+          }
           src1x={'/work-steps/abstract1x.png'}
-          src2x={'/work-steps/abstract1x.png'}
+          src2x={'/work-steps/abstract2x.png'}
         />
       </div>
     </section>

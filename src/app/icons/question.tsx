@@ -4,10 +4,9 @@ export const Question = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
       viewBox="0 0 30 30"
       fill="none"
+      className={'h-[24px] w-[24px] 2xl:h-[44px] 2xl:w-[44px]'}
     >
       <g clipPath="url(#clip0_454_1257)">
         <path

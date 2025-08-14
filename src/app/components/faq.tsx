@@ -7,16 +7,22 @@ const items = [
   {
     title: (
       <span>
-        Если <br className={'hidden md:block'} /> бюджет <br /> ограничен
+        Если <br className={'hidden md:block 2xl:hidden'} /> бюджет <br />{' '}
+        ограничен
       </span>
     ),
-    answer:
-      'Предлагаю несколько вариантов визуализации в зависимости от вашего бюджета',
+    answer: (
+      <>
+        Предлагаю несколько вариантов визуализации{' '}
+        <br className={'hidden 2xl:block'} /> в зависимости{' '}
+        <br className={'hidden xl:block 2xl:hidden'} /> от вашего бюджета
+      </>
+    ),
   },
   {
     title: (
       <span>
-        Если из исходников <br /> только идея
+        Если из исходников <br className={'2x xl:hidden'} /> только идея
       </span>
     ),
     answer:
@@ -34,7 +40,7 @@ const items = [
   {
     title: (
       <span>
-        Если нельзя <br /> подвести <br /> по срокам
+        Если нельзя <br /> подвести <br className={'2xl:hidden'} /> по срокам
       </span>
     ),
     answer: (
@@ -53,7 +59,8 @@ const items = [
     ),
     answer: (
       <>
-        Разрабатываю индивидуальную дизайн-
+        Разрабатываю индивидуальную{' '}
+        <br className={'hidden xl:block 2xl:hidden'} /> дизайн-
         <br className={'md:hidden'} />
         концепцию без использования шаблонных <br
           className={'md:hidden'}
@@ -94,16 +101,20 @@ function Faq() {
           <div
             key={index}
             className={
-              'group relative col-span-1 overflow-hidden rounded-20 bg-light-gray'
+              'group relative col-span-1 overflow-hidden rounded-20 bg-light-gray hover:cursor-pointer'
             }
           >
             {/*visible*/}
             <div
               className={
-                'relative left-0 top-0 flex items-center justify-between gap-10 p-20 transition-all duration-200 ease-in-out group-hover:left-[-100%] md:h-[110px]'
+                'relative left-0 top-0 flex items-center justify-between gap-10 p-20 transition-all duration-200 ease-in-out group-hover:left-[-100%] md:h-[110px] xl:h-[150px] 2xl:h-[170px] 2xl:p-40'
               }
             >
-              <p className={'h4 text-dark-blue md:max-w-[133px]'}>
+              <p
+                className={
+                  'h4 text-dark-blue md:max-w-[133px] xl:max-w-[250px] 2xl:max-w-[380px]'
+                }
+              >
                 {item.title}
               </p>
               <div className={'right-20 top-20 text-dark-blue md:absolute'}>

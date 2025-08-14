@@ -4,10 +4,8 @@ import { IconProps } from '@/app/icons/types';
 export const Clock = ({ className }: IconProps) => {
   return (
     <svg
-      className={className}
+      className={`h-[22px] w-[22px] 2xl:h-[40px] 2xl:w-[40px] ${className}`}
       xmlns="http://www.w3.org/2000/svg"
-      width="22"
-      height="22"
       viewBox="0 0 22 22"
       fill="none"
     >

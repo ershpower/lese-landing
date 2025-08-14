@@ -13,27 +13,27 @@ body {
 
 @layer utilities {
     .h1 {
-        @apply text-42 leading-[0.95] font-medium md:text-60;
+        @apply text-42 leading-[0.95] font-medium md:text-60 xl:text-80 2xl:text-140;
     }
     .h2 {
-        @apply text-48 leading-[0.95] font-light;
+        @apply text-48 leading-[0.95] font-light lg:text-60 2xl:text-100;
     }
     .h3 {
-        @apply text-24 leading-[1] font-medium md:text-30;
+        @apply text-24 leading-[1] font-medium md:text-30 lg:text-40 2xl:text-60;
     }
     .h4 {
-        @apply text-18 leading-[1] font-medium;
+        @apply text-18 leading-[1] font-medium xl:text-26 2xl:text-32;
     }
     .h5 {
-        @apply text-14 leading-[1.1] font-normal;
+        @apply text-14 leading-[1.1] font-normal xl:text-20 2xl:text-24;
     }
     .h6 {
-        @apply text-12 leading-[1.1] font-normal;
+        @apply text-12 leading-[1.1] font-normal xl:text-16 2xl:text-22;
     }
     .section-wrapper{
         @apply p-[0.521vw] h-screen lg:py-[1.042vw] lg:pr-[1.042vw] lg:pl-[0px];
     }
     .section{
-        @apply  bg-white rounded-20 mt-40 mx-6 pt-20 pb-10 px-10 md:pt-30 md:mx-10;
+        @apply  bg-white rounded-20 mt-40 mx-6 pt-40 pb-10 px-10 md:pt-30 md:mx-10 xl:mt-80 2xl:pt-40;
     }
 }

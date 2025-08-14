@@ -31,13 +31,13 @@ function FooterTablet() {
       {/*left*/}
       <div
         className={
-          'col-span-3 flex flex-col gap-20 rounded-20 bg-brand-gradient p-30'
+          'col-span-3 flex flex-col gap-20 rounded-20 bg-brand-gradient p-30 2xl:p-60'
         }
       >
         <p className={'h1 text-white'}>
           Ваш проект заслуживает впечатляющего визуала!
         </p>
-        <p className={'h5 max-w-[280px] text-white'}>
+        <p className={'h5 max-w-[280px] text-white xl:max-w-[500px]'}>
           Доверьтесь моему опыту и креативу, чтобы получить эффектную
           презентацию
         </p>
@@ -45,7 +45,7 @@ function FooterTablet() {
           {/*tg*/}
           <Link
             href={'https://t.me/Ershova_Presentation'}
-            className={`h5 col-span-2 flex items-center gap-10 border-r border-white-50 py-10 text-white`}
+            className={`h5 col-span-2 flex items-center gap-10 border-r border-white-50 py-10 text-white 2xl:py-20`}
           >
             <div>
               <TgTransparent />
@@ -59,7 +59,7 @@ function FooterTablet() {
           {/*behance*/}
           <Link
             href={'https://www.behance.net/Ershova_Presentation'}
-            className={`h5 col-span-1 flex items-center gap-10 py-10 pl-30 text-white`}
+            className={`h5 col-span-1 flex items-center gap-10 py-10 pl-30 text-white 2xl:py-20`}
           >
             <div>
               <BehanceTransparent />
@@ -87,7 +87,7 @@ function FooterTablet() {
           {/*pinterest*/}
           <Link
             href={'https://ru.pinterest.com/Ershova_Presentation/'}
-            className={`h5 col-span-1 flex items-center gap-10 border-t border-white-50 py-10 pl-30 text-white`}
+            className={`h5 col-span-1 flex items-center gap-10 border-t border-white-50 py-10 pl-30 text-white 2xl:py-20`}
           >
             <div>
               <PinterestTransparent />

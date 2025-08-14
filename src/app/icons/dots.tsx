@@ -9,7 +9,7 @@ export const Dots = ({ height, width, className }: IconProps) => {
       height="5"
       viewBox="0 0 19 5"
       fill="none"
-      className={className}
+      className={`${className} xl:h-[10px] xl:w-[24px] 2xl:h-[20px] 2xl:w-[34px]`}
     >
       <circle
         cx="2.5"

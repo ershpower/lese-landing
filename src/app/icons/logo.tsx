@@ -1,6 +1,7 @@
 import React from 'react';
+import { IconProps } from '@/app/icons/types';
 
-export const Logo = () => {
+export const Logo = ({ className }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,6 +9,7 @@ export const Logo = () => {
       height="40"
       viewBox="0 0 40 40"
       fill="none"
+      className={className}
     >
       <rect width="40" height="40" rx="12" fill="white" />
       <path

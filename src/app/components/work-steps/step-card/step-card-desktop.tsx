@@ -1,7 +1,6 @@
 import React from 'react';
 import { Dots } from '@/app/icons/dots';
 import { ArrowRoundedRight } from '@/app/icons/arrow-rounded-right';
-import RetinaImage from '@/app/ui-lit/retina-image';
 
 interface StepCardProps {
   img: string;
@@ -19,10 +18,10 @@ function StepCardDesktop({ img, subtitle, title, index }: StepCardProps) {
 
   return (
     <div
-      className={`relative rounded-20 p-20 md:h-[200px] ${isAccent ? 'bg-brand-gradient' : 'bg-light-gray'} ${classNames}`}
+      className={`relative rounded-20 p-20 md:h-[200px] xl:h-[280px] xl:p-30 2xl:min-h-[350px] 2xl:p-50 ${isAccent ? 'bg-brand-gradient' : 'bg-light-gray'} ${classNames}`}
     >
       {!isAccent && (
-        <div className={'absolute right-20 top-20'}>
+        <div className={'absolute right-20 top-20 xl:right-30 xl:top-30'}>
           <Dots />
         </div>
       )}
@@ -30,7 +29,7 @@ function StepCardDesktop({ img, subtitle, title, index }: StepCardProps) {
       {isAccent && (
         <div
           className={
-            'absolute right-10 top-10 rounded-[60px] bg-white px-24 py-4'
+            'absolute right-10 top-10 rounded-[60px] bg-white px-24 py-4 xl:right-20 xl:top-20'
           }
         >
           <p className={'h6 text-dark-blue'}>
@@ -40,14 +39,20 @@ function StepCardDesktop({ img, subtitle, title, index }: StepCardProps) {
         </div>
       )}
 
-      <img src={img} alt="" className={'h-[40px] w-[55px]'} />
+      <img
+        src={img}
+        alt=""
+        className={
+          'h-[40px] w-[55px] xl:h-[50px] xl:w-[65px] 2xl:h-[70px] 2xl:w-[85px]'
+        }
+      />
       <p
-        className={`h4 mt-10 ${isLast ? 'max-w-[234px]' : ''} ${isAccent ? 'text-white' : 'text-dark-blue'}`}
+        className={`h4 mt-10 ${isLast ? 'max-w-[234px] xl:max-w-[500px]' : ''} ${isAccent ? 'text-white' : 'text-dark-blue'}`}
       >
         {title}
       </p>
       <p
-        className={`h6 mt-10 text-black-70 ${isLast ? 'max-w-[238px]' : ''} ${isAccent ? 'text-white-70' : 'text-black-70'}`}
+        className={`h6 mt-10 text-black-70 ${isLast ? 'max-w-[238px] xl:max-w-[800px]' : ''} ${isAccent ? 'text-white-70' : 'text-black-70'}`}
       >
         {subtitle}
       </p>
@@ -58,9 +63,9 @@ function StepCardDesktop({ img, subtitle, title, index }: StepCardProps) {
           }
         >
           <ArrowRoundedRight
-            width={20}
-            height={20}
-            className={'rotate-90 text-dark-blue'}
+            className={
+              'h-[20px] w-[20px] rotate-90 text-dark-blue xl:h-[30px] xl:w-[30px] 2xl:h-[40px] 2xl:w-[40px]'
+            }
           />
         </div>
       )}
