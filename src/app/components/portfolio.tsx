@@ -24,11 +24,22 @@ export const Portfolio = () => {
             }
           />
         </div>
-        <div
-          className={
-            'relative mt-[-30px] min-h-[510px] bg-portfolio-bg bg-cover bg-no-repeat'
-          }
-        >
+        <div className={'relative'}>
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcSet="/portfolio/desk-bg.png"
+            ></source>
+            <source
+              media="(min-width: 768px)"
+              srcSet="/portfolio/tablet-bg.png"
+            ></source>
+            <img
+              src="/portfolio/mobile-bg.png"
+              className={'w-full object-cover'}
+              alt=""
+            />
+          </picture>
           <div
             className={
               'absolute left-1/2 top-1/2 h-[270px] w-[270px] -translate-x-1/2 -translate-y-1/2 rounded-full p-16 backdrop-blur'

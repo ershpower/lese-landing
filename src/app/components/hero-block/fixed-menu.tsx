@@ -10,7 +10,7 @@ function FixedMenu({ onOpenMenu }: FixedMenuProps) {
     <div
       onClick={onOpenMenu}
       className={
-        'rounded-12 fixed right-20 top-20 z-10 flex h-[40px] w-[40px] items-center justify-center bg-brand-gradient'
+        'fixed right-20 top-20 z-40 flex h-[40px] w-[40px] items-center justify-center rounded-12 bg-brand-gradient'
       }
     >
       <BurgerIcon width={20} height={20} />

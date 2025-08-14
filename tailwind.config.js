@@ -27,6 +27,8 @@ export default {
       backgroundImage: {
         'profile-bg': 'url("/hero/profile-bg.png")',
         'portfolio-bg': 'url("/portfolio/mobile-bg.png")',
+        'portfolio-tablet-bg': 'url("/portfolio/tablet-bg.png")',
+        'portfolio-desk-bg': 'url("/portfolio/desk-bg.png")',
         'portfolio-bg-circle': 'url("/portfolio/circle.png")',
         'hero-bg': 'url("/hero/xs-bg-1x.png")',
         'marquee-gradient-1':
