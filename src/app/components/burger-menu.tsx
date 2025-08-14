@@ -44,7 +44,7 @@ function BurgerMenu({ isOpen, onClose }: BurgerProps) {
                 >
                   <a
                     className={'flex items-center justify-between'}
-                    href={item.href}
+                    href={`$${item.href}`}
                     onClick={handleClick}
                   >
                     <span className={'h6 text-white-30'}>0{index + 1}</span>

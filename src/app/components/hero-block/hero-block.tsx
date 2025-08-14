@@ -10,6 +10,7 @@ import { BurgerIcon } from '@/app/icons/burger';
 import HeroBlockMobile from './mobile/hero-block-mobile';
 import HeroBlockTablet from '@/app/components/hero-block/mobile/hero-block-tablet';
 import FixedMenu from '@/app/components/hero-block/fixed-menu';
+import { MAIN_ID } from '@/app/consts';
 
 const bullets = ['стартапов', 'спикеров', 'компаний'];
 
@@ -30,7 +31,7 @@ function HeroBlock() {
   };
 
   return (
-    <>
+    <div id={MAIN_ID}>
       <HeroBlockMobile
         row1={row1}
         row2={row2}
@@ -41,7 +42,7 @@ function HeroBlock() {
       <HeroBlockTablet row1={row1} row2={row2} bullets={bullets} />
       <FixedMenu onOpenMenu={handleOpenMenu} />
       <BurgerMenu isOpen={isOpenMenu} onClose={handleCloseMenu} />
-    </>
+    </div>
   );
 }
 
