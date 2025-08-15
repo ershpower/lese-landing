@@ -19,10 +19,11 @@ export default {
         red: 'rgba(230, 0, 35, 1)',
         'behance-blue': 'rgba(0, 92, 255, 1)',
         icon: 'rgba(227, 227, 227, 1)',
+        blue: 'rgba(0, 176, 246, 1)',
       },
       boxShadow: {
         marquee: '2px 2px 6px 0px #1501974D',
-        blue: '2px 2px 20px 0px rgba(21, 1, 151, 0.3)',
+        'custom-blue': '2px 2px 20px 0px rgba(21, 1, 151, 0.3)',
       },
       backgroundImage: {
         'profile-bg': 'url("/hero/profile-bg.png")',
@@ -138,5 +139,4 @@ export default {
       },
     },
   },
-  plugins: [],
 };

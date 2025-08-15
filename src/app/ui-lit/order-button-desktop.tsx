@@ -6,7 +6,7 @@ function OrderButtonDesktop() {
   return (
     <div
       className={
-        'relative h-full rounded-20 bg-white px-18 py-30 shadow-blue hover:cursor-pointer 2xl:h-[300px] 2xl:p-40'
+        'shadow-custom-blue relative h-full rounded-20 bg-white px-18 py-30 hover:cursor-pointer 2xl:h-[300px] 2xl:p-40'
       }
     >
       <Tg
@@ -17,10 +17,11 @@ function OrderButtonDesktop() {
       <h1 className={'h4 mt-6 text-dark-blue'}>
         Заказать <br className={'hidden 2xl:block'} /> презентацию
       </h1>
+
       <p className={'h6 mt-10 text-black-70'}>
         Напишите мне, чтобы <br className={'hidden 2xl:block'} /> обсудить все
         детали <br className={'xl:hidden'} />
-        <br /> и начать ваш проект
+        <br className={'hidden xl:block'} /> и начать ваш проект
       </p>
       <Finger
         className={
