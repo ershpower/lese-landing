@@ -30,7 +30,7 @@ function HeroBlockMobile({
     >
       <div
         className={
-          'bg-brand-gradient relative z-20 min-h-[625px] flex-auto rounded-20 p-10 pb-40'
+          'relative z-30 min-h-[625px] flex-auto rounded-20 bg-brand-gradient p-10 pb-40'
         }
       >
         <div className={'flex h-full flex-col justify-between'}>

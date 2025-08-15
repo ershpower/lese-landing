@@ -34,6 +34,7 @@ export default {
         'portfolio-desk-bg': 'url("/portfolio/desk-bg.png")',
         'portfolio-bg-circle': 'url("/portfolio/circle.png")',
         'hero-bg': 'url("/hero/xs-bg-1x.png")',
+
         'marquee-gradient-1':
           'linear-gradient(90.12deg, #1ED1F9 18.81%, #FFFFFF 92.52%)',
         'marquee-gradient-2':
