@@ -1,12 +1,16 @@
 import React from 'react';
 import { Tg } from '@/app/icons/tg';
 import { Finger } from '@/app/icons/finger';
+import Link from 'next/link';
+import { PERSON_TG_LINK } from '@/app/consts';
 
 function OrderButtonDesktop() {
   return (
-    <div
+    <Link
+      href={PERSON_TG_LINK}
+      target={'_blank'}
       className={
-        'shadow-custom-blue relative h-full rounded-20 bg-white px-18 py-30 hover:cursor-pointer 2xl:h-[300px] 2xl:p-40'
+        'shadow-custom-blue relative block h-full rounded-20 bg-white px-18 py-30 hover:cursor-pointer 2xl:h-[300px] 2xl:p-40'
       }
     >
       <Tg
@@ -28,7 +32,7 @@ function OrderButtonDesktop() {
           'absolute right-[24px] top-[50px] h-[20px] w-[20px] xl:h-[30px] xl:w-[30px] 2xl:h-[60px] 2xl:w-[60px]'
         }
       />
-    </div>
+    </Link>
   );
 }
 

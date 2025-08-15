@@ -4,7 +4,7 @@ import CloseIcon from '@/app/icons/close';
 import { ArrowRightUp } from '@/app/icons/arrow-right-up';
 import { TgGradient } from '@/app/icons/tg-gradient';
 import { Finger } from '@/app/icons/finger';
-import { menuItems } from '@/app/consts';
+import { menuItems, PERSON_TG_LINK } from '@/app/consts';
 import TgChannelBtnMobile from '@/app/ui-lit/tg-channel-btn-mobile';
 
 interface BurgerProps {
@@ -62,7 +62,7 @@ function BurgerMenu({ isOpen, onClose }: BurgerProps) {
       <div className={'grid grid-cols-2 gap-8'}>
         <div className={'col-span-1'}>
           <a
-            href="#"
+            href={PERSON_TG_LINK}
             className={'relative flex flex-col rounded-20 bg-white p-20'}
           >
             <TgGradient />

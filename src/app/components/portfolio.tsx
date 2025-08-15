@@ -1,6 +1,6 @@
 import React from 'react';
 import { Finger } from '@/app/icons/finger';
-import { PORTFOLIO_ID } from '@/app/consts';
+import { BEHANCE_LINK, PINTEREST_LINK, PORTFOLIO_ID } from '@/app/consts';
 import Title from '@/app/ui-lit/title';
 
 export const Portfolio = () => {
@@ -61,7 +61,7 @@ export const Portfolio = () => {
       </div>
 
       <a
-        href={'https://ru.pinterest.com/Ershova_Presentation/'}
+        href={PINTEREST_LINK}
         target={'_blank'}
         className={
           'col-span-2 flex flex-col justify-between rounded-20 bg-red p-20 md:col-span-1 xl:p-40'
@@ -82,7 +82,7 @@ export const Portfolio = () => {
         />
       </a>
       <a
-        href={'https://www.behance.net/Ershova_Presentation'}
+        href={BEHANCE_LINK}
         target={'_blank'}
         className={
           'col-span-2 flex flex-col justify-between rounded-20 bg-behance-blue p-20 md:col-span-1 xl:p-40'

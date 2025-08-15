@@ -1,12 +1,14 @@
 import React from 'react';
 import { Tg } from '@/app/icons/tg';
 import { Finger } from '@/app/icons/finger';
+import { PERSON_TG_LINK } from '@/app/consts';
 
 export const OrderButton = () => {
   return (
     <div>
       <a
-        href="https://t.me/Ershova_Presentation"
+        href={PERSON_TG_LINK}
+        target={'_blank'}
         className={
           'relative flex items-center justify-center gap-6 rounded-20 bg-white p-16'
         }

@@ -41,3 +41,8 @@ export const menuItems = [
     title: 'Контакты',
   },
 ];
+
+export const PERSON_TG_LINK = 'https://t.me/Ershova_Presentation';
+export const CHANNEL_TG_LINK = 'https://t.me/Ershova_Presentation';
+export const PINTEREST_LINK = 'https://ru.pinterest.com/Ershova_Presentation/';
+export const BEHANCE_LINK = 'https://www.behance.net/Ershova_Presentation';

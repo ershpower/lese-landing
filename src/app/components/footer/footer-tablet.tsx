@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { ArrowRightUp } from '@/app/icons/arrow-right-up';
 import PersonInfo from '@/app/ui-lit/person-info';
 import OrderButtonDesktop from '@/app/ui-lit/order-button-desktop';
+import { BEHANCE_LINK, PERSON_TG_LINK, PINTEREST_LINK } from '@/app/consts';
 
 const items = [
   {
@@ -44,7 +45,8 @@ function FooterTablet() {
         <div className={'grid grid-cols-3'}>
           {/*tg*/}
           <Link
-            href={'https://t.me/Ershova_Presentation'}
+            target={'_blank'}
+            href={PERSON_TG_LINK}
             className={`h5 col-span-2 flex items-center gap-10 border-r border-white-50 py-10 text-white 2xl:py-20`}
           >
             <div>
@@ -58,7 +60,8 @@ function FooterTablet() {
 
           {/*behance*/}
           <Link
-            href={'https://www.behance.net/Ershova_Presentation'}
+            target={'_blank'}
+            href={BEHANCE_LINK}
             className={`h5 col-span-1 flex items-center gap-10 py-10 pl-30 text-white 2xl:py-20`}
           >
             <div>
@@ -72,6 +75,7 @@ function FooterTablet() {
 
           {/* email  */}
           <Link
+            target={'_blank'}
             href={''}
             className={`h5 col-span-2 flex items-center gap-10 border-r border-t border-white-50 py-10 text-white`}
           >
@@ -86,7 +90,8 @@ function FooterTablet() {
 
           {/*pinterest*/}
           <Link
-            href={'https://ru.pinterest.com/Ershova_Presentation/'}
+            target={'_blank'}
+            href={PINTEREST_LINK}
             className={`h5 col-span-1 flex items-center gap-10 border-t border-white-50 py-10 pl-30 text-white 2xl:py-20`}
           >
             <div>

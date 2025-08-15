@@ -2,10 +2,15 @@ import React from 'react';
 import Link from 'next/link';
 import { ArrowRightUp } from '@/app/icons/arrow-right-up';
 import TgTransparent from '@/app/icons/tg-transparent';
+import { CHANNEL_TG_LINK } from '@/app/consts';
 
 function TgChannelBtnMobile() {
   return (
-    <Link href={''} className={'bg-blue relative flex h-full rounded-20 p-20'}>
+    <Link
+      href={CHANNEL_TG_LINK}
+      target={'_blank'}
+      className={'bg-blue relative flex h-full rounded-20 p-20'}
+    >
       <div>
         <TgTransparent className={'h-[27px] w-[27px]'} />
         <p className={'h5 mt-10 text-white'}>

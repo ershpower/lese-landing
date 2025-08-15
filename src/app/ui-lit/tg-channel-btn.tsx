@@ -2,11 +2,13 @@ import React from 'react';
 import Link from 'next/link';
 import { ArrowRightUp } from '@/app/icons/arrow-right-up';
 import TgTransparent from '@/app/icons/tg-transparent';
+import { CHANNEL_TG_LINK } from '@/app/consts';
 
 function TgChannelBtn() {
   return (
     <Link
-      href={''}
+      href={CHANNEL_TG_LINK}
+      target={'_blank'}
       className={
         'bg-blue relative flex min-h-[140px] items-center rounded-20 px-10 py-20 2xl:min-h-[270px] 2xl:p-40'
       }

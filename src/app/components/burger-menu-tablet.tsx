@@ -2,10 +2,7 @@
 import React from 'react';
 import CloseIcon from '@/app/icons/close';
 import { ArrowRightUp } from '@/app/icons/arrow-right-up';
-import { TgGradient } from '@/app/icons/tg-gradient';
-import { Finger } from '@/app/icons/finger';
-import { menuItems } from '@/app/consts';
-import TgChannelBtnMobile from '@/app/ui-lit/tg-channel-btn-mobile';
+import { menuItems, PERSON_TG_LINK } from '@/app/consts';
 import Link from 'next/link';
 import { Tg } from '@/app/icons/tg';
 import RetinaImage from '@/app/ui-lit/retina-image';
@@ -58,7 +55,7 @@ function BurgerMenuTablet({ isOpen, onClose }: BurgerProps) {
       </div>
       <div className={'col-span-1 flex flex-col gap-10'}>
         <Link
-          href={'https://t.me/Ershova_Presentation'}
+          href={PERSON_TG_LINK}
           className={'flex flex-auto flex-col rounded-20 bg-white pt-40'}
         >
           <div className={'flex-auto px-20'}>

@@ -4,6 +4,7 @@ import { ArrowRightUp } from '@/app/icons/arrow-right-up';
 import TgTransparent from '@/app/icons/tg-transparent';
 import BehanceTransparent from '@/app/icons/behance-transparent';
 import PinterestTransparent from '@/app/icons/pinterest-transparent';
+import { BEHANCE_LINK, PERSON_TG_LINK, PINTEREST_LINK } from '@/app/consts';
 
 function FooterMobile() {
   return (
@@ -20,7 +21,8 @@ function FooterMobile() {
       <div className={'mt-40 grid grid-cols-3'}>
         {/*tg*/}
         <a
-          href="https://t.me/Ershova_Presentation"
+          target={'_blank'}
+          href={PERSON_TG_LINK}
           className={
             'col-span-2 flex items-center gap-6 border-r border-white-50 py-10'
           }
@@ -35,7 +37,8 @@ function FooterMobile() {
         </a>
         {/*behance*/}
         <a
-          href="https://www.behance.net/Ershova_Presentation"
+          target={'_blank'}
+          href={BEHANCE_LINK}
           className={'col-span-1 flex items-center gap-6 py-10 pl-10'}
         >
           <div>
@@ -53,7 +56,8 @@ function FooterMobile() {
         ></a>
         {/*pinterest*/}
         <a
-          href="https://ru.pinterest.com/Ershova_Presentation/"
+          target={'_blank'}
+          href={PINTEREST_LINK}
           className={
             'col-span-1 flex items-center gap-6 border-t border-white-50 py-10 pl-10'
           }
