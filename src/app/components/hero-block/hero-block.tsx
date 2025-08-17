@@ -1,12 +1,7 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
-import Marquee from 'react-fast-marquee';
-import { OrderButton } from '@/app/ui-lit/order-button';
-import { Dots } from '@/app/icons/dots';
-import RetinaImage from '@/app/ui-lit/retina-image';
+import React, { useState } from 'react';
 import BurgerMenu from '@/app/components/burger-menu';
-import { BurgerIcon } from '@/app/icons/burger';
 import HeroBlockMobile from './mobile/hero-block-mobile';
 import HeroBlockTablet from '@/app/components/hero-block/mobile/hero-block-tablet';
 import FixedMenu from '@/app/components/hero-block/fixed-menu';

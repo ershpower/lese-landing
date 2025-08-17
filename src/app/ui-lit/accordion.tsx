@@ -19,7 +19,7 @@ export const Accordion = ({ items }: AccordionProps) => {
   const renderCommonItem = (
     title: string | React.ReactNode,
     inner: string | React.ReactNode,
-    subtitle?: string,
+    subtitle?: string | null,
   ) => (
     <AccordionItem
       className={'overflow-hidden rounded-20'}
@@ -53,7 +53,7 @@ export const Accordion = ({ items }: AccordionProps) => {
   const renderAccentItems = (
     title: string | React.ReactNode,
     inner: string | React.ReactNode,
-    subtitle?: string,
+    subtitle?: string | null,
   ) => (
     <AccordionItem
       className={'overflow-hidden rounded-20 bg-brand-gradient'}
@@ -91,11 +91,11 @@ export const Accordion = ({ items }: AccordionProps) => {
       {items.map((item, index) =>
         item.isAccent ? (
           <div key={index}>
-            {renderAccentItems(item.title, item.inner, item.subtitle)}
+            {renderAccentItems(item.title, item.inner, item.subtitle as string)}
           </div>
         ) : (
           <div key={index}>
-            {renderCommonItem(item.title, item.inner, item.subtitle)}
+            {renderCommonItem(item.title, item.inner, item.subtitle as string)}
           </div>
         ),
       )}

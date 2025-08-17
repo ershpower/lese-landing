@@ -25,15 +25,17 @@ export const AccordionCard = ({
           </p>
           {subtitle && (
             <p
-              className={`h6 mt-12 h-[34px] xl:h-[60px] ${isAccent ? 'text-white-70' : 'text-black-70'} `}
+              className={`h6 mt-12 h-[60px] xl:h-[60px] ${isAccent ? 'text-white-70' : 'text-black-70'} `}
             >
               {subtitle}
             </p>
           )}
         </div>
-        <ArrowRightUp
-          className={`h-[16px] w-[16px] rotate-90 2xl:h-[24px] 2xl:w-[24px] ${isAccent ? 'text-white' : 'text-dark-blue'}`}
-        />
+        <div>
+          <ArrowRightUp
+            className={`h-[16px] w-[16px] rotate-90 2xl:h-[24px] 2xl:w-[24px] ${isAccent ? 'text-white' : 'text-dark-blue'}`}
+          />
+        </div>
       </div>
       {inner}
     </div>

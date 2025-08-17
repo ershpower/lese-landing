@@ -9,14 +9,11 @@ function TgChannelBtnMobile() {
     <Link
       href={CHANNEL_TG_LINK}
       target={'_blank'}
-      className={'bg-blue relative flex h-full rounded-20 p-20'}
+      className={'relative flex h-full rounded-20 bg-blue p-20'}
     >
       <div>
         <TgTransparent className={'h-[27px] w-[27px]'} />
-        <p className={'h5 mt-10 text-white'}>
-          Telegram канал <br />
-          creat.ershova
-        </p>
+        <p className={'h5 mt-10 text-white'}>Telegram канал creat.ershova</p>
       </div>
       <div>
         <ArrowRightUp

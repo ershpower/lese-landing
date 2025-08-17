@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { Tg } from '@/app/icons/tg';
 import RetinaImage from '@/app/ui-lit/retina-image';
 import TgChannelBtn from '@/app/ui-lit/tg-channel-btn';
+import TgChannelBtnTablet from '@/app/ui-lit/tg-channel-btn-tablet';
 
 interface BurgerProps {
   isOpen: boolean;
@@ -71,7 +72,7 @@ function BurgerMenuTablet({ isOpen, onClose }: BurgerProps) {
             src2x={'/burger-tablet.png'}
           />
         </Link>
-        <TgChannelBtn />
+        <TgChannelBtnTablet />
       </div>
       <div
         onClick={onClose}

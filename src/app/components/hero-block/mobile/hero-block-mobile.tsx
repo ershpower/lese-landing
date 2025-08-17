@@ -1,11 +1,10 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Marquee from 'react-fast-marquee';
 import { OrderButton } from '@/app/ui-lit/order-button';
 import { Dots } from '@/app/icons/dots';
 import RetinaImage from '@/app/ui-lit/retina-image';
-import BurgerMenu from '@/app/components/burger-menu';
 import { BurgerIcon } from '@/app/icons/burger';
 import Bullets from '@/app/components/hero-block/bullets';
 
@@ -34,11 +33,14 @@ function HeroBlockMobile({
         }
       >
         <div className={'flex h-full flex-col justify-between'}>
-          <div className={'absolute bottom-[25%] left-[-10px] w-[110%]'}>
+          <div className={'absolute bottom-[27%] left-[-10px] w-[110%]'}>
             <div className={'w-full rotate-[-5deg] shadow-marquee'}>
               <Marquee className={'bg-marquee-gradient-1 p-6'}>
                 {[...row1, ...row1].map((word, index) => (
-                  <div key={index} className={'flex items-center gap-8 pl-8'}>
+                  <div
+                    key={index}
+                    className={'h5 flex items-center gap-8 pl-8'}
+                  >
                     {word}
                     <div
                       className={'h-[4px] w-[4px] rounded-full bg-dark-blue'}
@@ -54,7 +56,10 @@ function HeroBlockMobile({
                 direction={'right'}
               >
                 {[...row2, ...row2].map((word, index) => (
-                  <div key={index} className={'flex items-center gap-8 pl-8'}>
+                  <div
+                    key={index}
+                    className={'h5 flex items-center gap-8 pl-8'}
+                  >
                     {word}
                     <div
                       className={'h-[4px] w-[4px] rounded-full bg-[#150197]'}
@@ -67,7 +72,10 @@ function HeroBlockMobile({
             <div className={'mt-30 w-full rotate-[-5deg] shadow-marquee'}>
               <Marquee className={'bg-marquee-gradient-1 p-6'} speed={70}>
                 {[...row3, ...row3].map((word, index) => (
-                  <div key={index} className={'flex items-center gap-8 pl-8'}>
+                  <div
+                    key={index}
+                    className={'h5 flex items-center gap-8 pl-8'}
+                  >
                     {word}
                     <div
                       className={'h-[4px] w-[4px] rounded-full bg-[#150197]'}
@@ -113,8 +121,7 @@ function HeroBlockMobile({
           <div>
             <p className={'h4 text-dark-blue'}>Алеся Ершова</p>
             <p className={'h6 mt-8 text-black-70'}>
-              впечатляю аудиторию, привлекаю <br /> инвестиции, увеличиваю
-              продажи
+              впечатляю аудиторию, привлекаю инвестиции, увеличиваю продажи
             </p>
           </div>
         </div>

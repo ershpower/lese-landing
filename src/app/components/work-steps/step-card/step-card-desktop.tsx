@@ -18,7 +18,7 @@ function StepCardDesktop({ img, subtitle, title, index }: StepCardProps) {
 
   return (
     <div
-      className={`relative rounded-20 p-20 md:h-[200px] xl:h-[280px] xl:p-30 2xl:min-h-[350px] 2xl:p-50 ${isAccent ? 'bg-brand-gradient' : 'bg-light-gray'} ${classNames}`}
+      className={`relative rounded-20 p-20 md:h-[260px] xl:h-[280px] xl:p-30 2xl:min-h-[350px] 2xl:p-50 ${isAccent ? 'bg-brand-gradient' : 'bg-light-gray'} ${classNames}`}
     >
       {!isAccent && (
         <div className={'absolute right-20 top-20 xl:right-30 xl:top-30'}>
@@ -33,8 +33,7 @@ function StepCardDesktop({ img, subtitle, title, index }: StepCardProps) {
           }
         >
           <p className={'h6 text-dark-blue'}>
-            *В формате <br />
-            “Под ключ”
+            *В формате <br /> “Под ключ”
           </p>
         </div>
       )}
@@ -47,12 +46,12 @@ function StepCardDesktop({ img, subtitle, title, index }: StepCardProps) {
         }
       />
       <p
-        className={`h4 mt-10 ${isLast ? 'max-w-[234px] xl:max-w-[500px]' : ''} ${isAccent ? 'text-white' : 'text-dark-blue'}`}
+        className={`h4 mt-10 ${isLast ? 'max-w-[234px] xl:max-w-[390px] 2xl:max-w-[500px]' : ''} ${isAccent ? 'text-white' : 'text-dark-blue'}`}
       >
         {title}
       </p>
       <p
-        className={`h6 mt-10 text-black-70 ${isLast ? 'max-w-[238px] xl:max-w-[800px]' : ''} ${isAccent ? 'text-white-70' : 'text-black-70'}`}
+        className={`h6 mt-10 text-black-70 ${isLast ? 'max-w-[238px] xl:max-w-[400px] 2xl:max-w-[700px]' : ''} ${isAccent ? 'text-white-70' : 'text-black-70'}`}
       >
         {subtitle}
       </p>

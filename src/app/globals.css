@@ -22,18 +22,18 @@ body {
         @apply text-24 leading-[1] font-medium md:text-30 lg:text-40 2xl:text-60;
     }
     .h4 {
-        @apply text-18 leading-[1] font-medium xl:text-26 2xl:text-32;
+        @apply text-20 leading-[1] font-medium xl:text-26 2xl:text-36;
     }
     .h5 {
-        @apply text-14 leading-[1.1] font-normal xl:text-20 2xl:text-24;
+        @apply text-16 leading-[1.1] font-normal xl:text-20 2xl:text-30;
     }
     .h6 {
-        @apply text-12 leading-[1.1] font-normal xl:text-16 2xl:text-22;
+        @apply text-14 leading-[1.1] font-normal xl:text-16 2xl:text-26;
     }
     .section-wrapper{
         @apply p-[0.521vw] h-screen lg:py-[1.042vw] lg:pr-[1.042vw] lg:pl-[0px];
     }
     .section{
-        @apply  bg-white rounded-20 mt-40 mx-6 pt-40 pb-10 px-10 md:pt-30 md:mx-10 xl:mt-80 2xl:pt-40;
+        @apply  bg-white rounded-20 mt-40 mx-6 pt-30 pb-10 px-10 md:pt-30 md:mx-10 xl:mt-80 2xl:pt-40;
     }
 }

@@ -24,11 +24,13 @@ export const StepCardMobileTwo = ({
       <div className={'flex items-start gap-10'}>
         <img src={img} alt="" className={'h-[40px] w-[55px]'} />
         <div>
-          <p className={`h4 ${isAccent ? 'text-white' : 'text-dark-blue'}`}>
+          <p
+            className={`h4 max-w-[270px] md:max-w-[none] ${isAccent ? 'text-white' : 'text-dark-blue'}`}
+          >
             {title}
           </p>
           <p
-            className={`h6 ${isAccent ? 'text-white-70' : 'text-black-70'} mt-10`}
+            className={`h6 w-[260px] md:max-w-[none] ${isAccent ? 'text-white-70' : 'text-black-70'} mt-10`}
           >
             {subtitle}
           </p>

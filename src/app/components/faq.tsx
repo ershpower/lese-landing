@@ -7,22 +7,20 @@ const items = [
   {
     title: (
       <span>
-        Если <br className={'hidden md:block 2xl:hidden'} /> бюджет <br />{' '}
-        ограничен
+        Если бюджет <br /> ограничен
       </span>
     ),
     answer: (
       <>
-        Предлагаю несколько вариантов визуализации{' '}
-        <br className={'hidden 2xl:block'} /> в зависимости{' '}
-        <br className={'hidden xl:block 2xl:hidden'} /> от вашего бюджета
+        Предлагаю несколько вариантов визуализации в зависимости от вашего
+        бюджета
       </>
     ),
   },
   {
     title: (
       <span>
-        Если из исходников <br className={'2x xl:hidden'} /> только идея
+        Если из исходников <br /> только идея
       </span>
     ),
     answer:
@@ -31,7 +29,8 @@ const items = [
   {
     title: (
       <span>
-        Если нужна <br /> финансовая отчётность
+        Если нужна финансовая <br />
+        отчётность
       </span>
     ),
     answer:
@@ -40,14 +39,13 @@ const items = [
   {
     title: (
       <span>
-        Если нельзя <br /> подвести <br className={'2xl:hidden'} /> по срокам
+        Если нельзя <br /> подвести по срокам
       </span>
     ),
     answer: (
       <>
-        Предоставляю промежуточные результаты <br className={'md:hidden'} />{' '}
-        проекта, строго придерживаюсь оговорённых сроков и оперативно реагирую
-        на вопросы
+        Предоставляю промежуточные результаты проекта, строго придерживаюсь
+        оговорённых сроков и оперативно реагирую на вопросы
       </>
     ),
   },
@@ -59,13 +57,8 @@ const items = [
     ),
     answer: (
       <>
-        Разрабатываю индивидуальную{' '}
-        <br className={'hidden xl:block 2xl:hidden'} /> дизайн-
-        <br className={'md:hidden'} />
-        концепцию без использования шаблонных <br
-          className={'md:hidden'}
-        />{' '}
-        решений и банальных картинок
+        Разрабатываю индивидуальную дизайн- концепцию без использования
+        шаблонных решений и банальных картинок
       </>
     ),
   },
@@ -77,8 +70,8 @@ const items = [
     ),
     answer: (
       <>
-        Подписываю соглашение о неразглашении <br className={'md:hidden'} />{' '}
-        (NDA). Ответственно отношусь к хранению и использованию вашей информации
+        Подписываю соглашение о неразглашении (NDA). Ответственно отношусь
+        к хранению и использованию вашей информации
       </>
     ),
   },
@@ -90,9 +83,7 @@ function Faq() {
       <Title
         title={
           <>
-            Предложу решение <br className={'md:hidden'} /> для любой{' '}
-            <br className={'hidden md:block'} /> задачи
-            <br className={'md:hidden'} /> в установленные сроки
+            Предложу решение для любой <br /> задачи в установленные сроки
           </>
         }
       />
@@ -107,12 +98,12 @@ function Faq() {
             {/*visible*/}
             <div
               className={
-                'relative left-0 top-0 flex items-center justify-between gap-10 p-20 transition-all duration-200 ease-in-out group-hover:left-[-100%] md:h-[110px] xl:h-[150px] 2xl:h-[170px] 2xl:p-40'
+                'relative left-0 top-0 flex items-center justify-between gap-10 p-20 transition-all duration-200 ease-in-out group-hover:left-[-100%] md:h-[150px] lg:h-[130px] xl:h-[150px] 2xl:h-[170px] 2xl:p-40'
               }
             >
               <p
                 className={
-                  'h4 text-dark-blue md:max-w-[133px] xl:max-w-[250px] 2xl:max-w-[380px]'
+                  'h4 text-dark-blue md:max-w-[170px] xl:max-w-[none] 2xl:max-w-[380px]'
                 }
               >
                 {item.title}

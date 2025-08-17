@@ -20,13 +20,13 @@ export const Portfolio = () => {
           <Title
             title={
               <>
-                Создам презентацию, <br />
-                даже если у вас сплошной <br /> текст и море графиков
+                Создам презентацию, <br className={'block'} /> даже если у вас
+                сплошной <br className={'block'} /> текст и море графиков
               </>
             }
           />
         </div>
-        <div className={'relative 2xl:-mt-60'}>
+        <div className={'relative -mt-30 md:mt-0 2xl:-mt-60'}>
           <picture>
             <source
               media="(min-width: 1024px)"
@@ -44,7 +44,7 @@ export const Portfolio = () => {
           </picture>
           <div
             className={
-              'absolute left-1/2 top-1/2 h-[270px] w-[270px] -translate-x-1/2 -translate-y-1/2 rounded-full p-16 backdrop-blur xl:h-[360px] xl:w-[360px] 2xl:h-[460px] 2xl:w-[460px]'
+              'absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full p-16 backdrop-blur xl:h-[360px] xl:w-[360px] 2xl:h-[500px] 2xl:w-[500px]'
             }
           >
             <div
@@ -68,7 +68,7 @@ export const Portfolio = () => {
         }
       >
         <p className={'h6 text-white'}>
-          Больше работ <br /> можно посмотреть на:{' '}
+          Больше работ <br /> можно посмотреть на:
         </p>
         <img
           src="/portfolio/big-pinerest.svg"

@@ -8,24 +8,6 @@ import PersonInfo from '@/app/ui-lit/person-info';
 import OrderButtonDesktop from '@/app/ui-lit/order-button-desktop';
 import { BEHANCE_LINK, PERSON_TG_LINK, PINTEREST_LINK } from '@/app/consts';
 
-const items = [
-  {
-    icon: <TgTransparent />,
-    title: 'Telegram канал',
-    href: '',
-  },
-  {
-    icon: <PinterestTransparent />,
-    title: 'Pinterest',
-    href: '',
-  },
-  {
-    icon: <BehanceTransparent />,
-    title: 'Behance',
-    href: '',
-  },
-];
-
 function FooterTablet() {
   return (
     <div className={'grid grid-cols-4 gap-10'}>
@@ -38,8 +20,8 @@ function FooterTablet() {
         <p className={'h1 text-white'}>
           Ваш проект заслуживает впечатляющего визуала!
         </p>
-        <p className={'h5 max-w-[280px] text-white xl:max-w-[500px]'}>
-          Доверьтесь моему опыту и креативу, чтобы получить эффектную
+        <p className={'h5 text-white'}>
+          Доверьтесь моему опыту и креативу, <br /> чтобы получить эффектную
           презентацию
         </p>
         <div className={'grid grid-cols-3'}>

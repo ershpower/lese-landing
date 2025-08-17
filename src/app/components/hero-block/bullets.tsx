@@ -19,9 +19,9 @@ function Bullets({ bullets }: { bullets: string[] }) {
   }, []);
 
   return (
-    <div className={'flex w-full gap-6'}>
+    <div className={'flex w-full gap-6 2xl:gap-14'}>
       <p
-        className={`h5 flex-auto rounded-20 border border-white bg-white px-12 py-8 text-center text-dark-blue`}
+        className={`flex-auto rounded-20 border border-white bg-white px-12 py-8 text-center text-14 text-dark-blue md:text-20 2xl:rounded-30 2xl:text-30`}
       >
         Для:
       </p>
@@ -33,7 +33,7 @@ function Bullets({ bullets }: { bullets: string[] }) {
         return (
           <p
             key={index}
-            className={`h5 flex-auto rounded-20 border border-white px-12 py-8 text-center md:px-24 ${classNames}`}
+            className={`flex-auto rounded-20 border border-white px-12 py-8 text-center text-14 md:px-24 md:text-20 2xl:rounded-30 2xl:text-30 ${classNames}`}
           >
             {bullet}
           </p>

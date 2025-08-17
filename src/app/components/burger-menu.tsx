@@ -68,7 +68,7 @@ function BurgerMenu({ isOpen, onClose }: BurgerProps) {
             <TgGradient />
             <p className={'h4 mt-10 text-dark-blue'}>Заказать презентацию</p>
             <p className={'h6 mt-10 text-black-70'}>
-              Напишите мне, чтобы обсудить все детали <br />и начать ваш проект
+              Напишите мне, чтобы обсудить все детали и начать ваш проект
             </p>
             <Finger
               width={24}

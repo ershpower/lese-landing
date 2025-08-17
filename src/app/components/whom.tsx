@@ -109,20 +109,18 @@ const items = [
     isAccent: true,
     inner: (
       <div>
-        <p className={'h6 border-b border-black-10 pb-10 text-white'}>
-          Разрабатываю индивидуальные шаблоны <br className={'2xl:hidden'} /> с
-          актуальным дизайном <br className={'hidden 2xl:block'} /> для
-          самостоятельного редактирования и независимости от времени <br /> и
-          работы дизайнера
+        <p className={'h6 border-b border-white-30 pb-10 text-white'}>
+          Разрабатываю индивидуальные шаблоны с актуальным дизайном для
+          самостоятельного редактирования и независимости от времени и работы
+          дизайнера
         </p>
         <div className={'mt-10 flex gap-10'}>
           <div className={'text-white-70'}>
             <Info />
           </div>
           <p className={'h6 text-white-70'}>
-            Идеальное решение для тех, кто не может{' '}
-            <br className={'hidden xl:block'} /> тратить крупные бюджеты,и хочет
-            быстро <br className={'hidden xl:block'} /> обновить старый дизайн
+            Идеальное решение для тех, кто не может тратить крупные бюджеты,и
+            хочет быстро обновить старый дизайн
           </p>
         </div>
       </div>
@@ -136,7 +134,7 @@ export const Whom = () => {
       <Title
         title={
           <>
-            Мои услуги для тех, кто нуждается{' '}
+            Мои услуги для тех, кто нуждается
             <br className={'hidden md:block'} /> в эффективных решениях
           </>
         }

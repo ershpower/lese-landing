@@ -21,7 +21,7 @@ function HeroBlockTablet({ bullets, row2, row1 }: HeroBlockTabletProps) {
           }
         >
           <h2 className={'h1 mt-60 text-center text-white'}>
-            Оригинально <br /> визуализирую <br /> сложные идеи
+            Оригинально визуализирую сложные идеи
           </h2>
           <div className={'mt-30'}>
             <Bullets bullets={bullets} />
@@ -38,7 +38,7 @@ function HeroBlockTablet({ bullets, row2, row1 }: HeroBlockTabletProps) {
                   (word, index) => (
                     <div
                       key={index}
-                      className={'h6 flex items-center gap-8 pl-8'}
+                      className={'h5 flex items-center gap-8 pl-8'}
                     >
                       {word}
                       <div
@@ -59,7 +59,7 @@ function HeroBlockTablet({ bullets, row2, row1 }: HeroBlockTabletProps) {
                   (word, index) => (
                     <div
                       key={index}
-                      className={'h6 flex items-center gap-8 pl-8'}
+                      className={'h5 flex items-center gap-8 pl-8'}
                     >
                       {word}
                       <div

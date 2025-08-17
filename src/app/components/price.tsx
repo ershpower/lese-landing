@@ -10,10 +10,7 @@ const items = [
   {
     title: 'Разработка шаблона',
     subtitle: (
-      <>
-        Дизайн на вымышленном тексте <br />
-        для самостоятельного редактирования
-      </>
+      <>Дизайн на вымышленном тексте для самостоятельного редактирования</>
     ),
     inner: (
       <div className={'border-t border-black-10 pt-10'}>
@@ -23,7 +20,7 @@ const items = [
         </div>
         <div className={'mt-10 flex items-center gap-6 text-black-70'}>
           <Clock className={'text-icon'} />
-          <span className={'h6'}>Срок выполнения от 7 дней (30 слайдов)</span>
+          <span className={'h6'}>Выпо=лнение от 7 дней (30 слайдов)</span>
         </div>
       </div>
     ),
@@ -39,9 +36,7 @@ const items = [
         </div>
         <div className={'mt-10 flex items-center gap-6 text-black-70'}>
           <Clock className={'text-icon'} />
-          <span className={'h6'}>
-            Срок выполнения от 2 дней (15-20 слайдов)
-          </span>
+          <span className={'h6'}>Выполнение от 2 дней (15-20 слайдов)</span>
         </div>
       </div>
     ),
@@ -51,16 +46,14 @@ const items = [
     subtitle: 'Структура, текст, дизайн',
     isAccent: true,
     inner: (
-      <div className={'border-t border-white-10 pt-10'}>
+      <div className={'border-t border-white-30 pt-10'}>
         <div className={'flex items-end gap-10'}>
           <span className={'h3 text-white'}>от</span>
           <span className={'h2 text-white'}>35 000₽</span>
         </div>
         <div className={'mt-10 flex items-center gap-6 text-white-70'}>
           <Clock className={'text-icon'} />
-          <span className={'h6'}>
-            Срок выполнения от 4 дней (10-15 слайдов)
-          </span>
+          <span className={'h6'}>Выполнение от 4 дней (10-15 слайдов)</span>
         </div>
       </div>
     ),
@@ -69,10 +62,8 @@ const items = [
     title: 'Консультация',
     subtitle: (
       <>
-        Для дизайнеров и других смежных <br className={'2xl:hidden'} />{' '}
-        специалистов. Обсуждаем <br className={'hidden 2xl:block'} /> любой
-        интересующий <br className={'2xl:hidden'} /> вас вопрос и разбираем ваши
-        работы
+        Для дизайнеров и других смежных специалистов. Обсуждаем любой
+        интересующий вас вопрос и разбираем ваши работы
       </>
     ),
     inner: (
@@ -93,25 +84,15 @@ function Price() {
   return (
     <section className={'section'} id={PRICE_ID}>
       <Title title={'Стоимость'} />
-      <div className={'mb-20 gap-60 md:flex md:pl-10 xl:mb-40 2xl:pl-40'}>
-        <p
-          className={
-            'h5 mt-20 pl-10 text-black-70 md:max-w-[300px] xl:max-w-[353px] 2xl:max-w-[453px]'
-          }
-        >
+      <div className={'mb-40 gap-60 md:flex md:pl-10 xl:mb-40 2xl:pl-40'}>
+        <p className={'h5 mt-20 pl-10 text-black-70'}>
           Итоговая цена рассчитывается <br /> индивидуально на основе объема,{' '}
           <br />
           сложности и специфики задачи
         </p>
-        <p
-          className={
-            'h5 mt-20 pl-10 text-black-70 md:max-w-[350px] xl:max-w-[463px] 2xl:max-w-[563px]'
-          }
-        >
-          Больше деталей, точные сроки и стоимость{' '}
-          <br className={'md:hidden'} /> работы можно узнать после обсуждения{' '}
-          <br className={'md:hidden'} /> и составления полной сметы вашего
-          проекта
+        <p className={'h5 mt-20 pl-10 text-black-70'}>
+          Больше деталей, точные сроки и стоимость <br /> работы можно узнать
+          после обсуждения <br /> и составления полной сметы вашего проекта
         </p>
       </div>
       <div className={'block md:hidden'}>
@@ -129,11 +110,11 @@ function Price() {
         ))}
       </div>
       <div className={'mt-10 flex items-start gap-6 text-black-50 md:hidden'}>
-        <div>
+        <div className={'text-black-20'}>
           <Info />
         </div>
         <p className={'h6'}>
-          Время работы рассчитывается в рабочих будних днях (пн – пт) и
+          Время работы рассчитывается в рабочих будних <br /> днях (пн – пт) и
           начинается с момента получения обратной связи от клиента
         </p>
       </div>

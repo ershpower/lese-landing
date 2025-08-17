@@ -12,7 +12,8 @@ function Experience() {
       <Title
         title={
           <span>
-            Мой опыт для вашей <br /> эффектной презентации
+            Мой опыт для вашей <br className={'hidden lg:block'} /> эффектной
+            презентации
           </span>
         }
       />
@@ -26,12 +27,7 @@ function Experience() {
           <CardText
             title={'года'}
             bigTitle={'3'}
-            subtitle={
-              <>
-                Работала ведущим <br className={'hidden xl:block'} /> дизайнером
-                в студии <br className={'hidden 2xl:block'} /> презентации
-              </>
-            }
+            subtitle={<>Работала ведущим дизайнером в студии презентации</>}
           />
         </div>
 
@@ -39,9 +35,8 @@ function Experience() {
           <CardImage
             title={
               <>
-                Дизайнила презентации <br /> для топовых российских{' '}
-                <br className={'hidden 2xl:block'} /> компаний и стартапов{' '}
-                <br /> из разных уголков мира
+                Дизайнила презентации для топовых российских компаний и
+                стартапов <br className={'2xl:hidden'} /> из разных уголков мира
               </>
             }
             img={'/experience/moon.png'}
@@ -52,7 +47,7 @@ function Experience() {
           <CardImage
             title={
               <>
-                Красный диплом <br /> «Реклама и связи <br />с общественностью»
+                Красный диплом <br /> «Реклама и связи <br /> с общественностью»
               </>
             }
             img={'/experience/diplom.png'}
@@ -65,8 +60,7 @@ function Experience() {
             bigTitle={'>400'}
             subtitle={
               <>
-                Выполнила за 6 лет
-                <br /> работы дизайнеров
+                Выполнила за 6 лет <br /> работы дизайнеров
               </>
             }
           />
@@ -78,10 +72,7 @@ function Experience() {
             bigTitle={'7'}
             subtitle={
               <>
-                Дополнительного <br className={'hidden 2xl:block'} />
-                художественного
-                <br className={'hidden xl:block'} />
-                образования
+                Дополнительного <br /> художественного <br /> образования
               </>
             }
           />
@@ -98,11 +89,8 @@ function Experience() {
             />
             <div>
               <p className={'h6 text-white'}>
-                Всегда соблюдаю <br className={'hidden xl:block 2xl:hidden'} />{' '}
-                дедлайны, <br className={'hidden 2xl:block'} /> не «пропадаю»,
-                строго следую <br className={'hidden 2xl:block'} />
-                NDA <br className={'hidden xl:block 2xl:hidden'} />и авторскому
-                праву
+                Всегда соблюдаю дедлайны, не «пропадаю», строго следую NDA и
+                авторскому праву
               </p>
             </div>
           </div>

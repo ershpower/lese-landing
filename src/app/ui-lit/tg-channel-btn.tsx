@@ -10,15 +10,12 @@ function TgChannelBtn() {
       href={CHANNEL_TG_LINK}
       target={'_blank'}
       className={
-        'bg-blue relative flex min-h-[140px] items-center rounded-20 px-10 py-20 2xl:min-h-[270px] 2xl:p-40'
+        'relative flex min-h-[140px] items-center rounded-20 bg-blue px-10 py-20 2xl:min-h-[270px] 2xl:p-40'
       }
     >
       <div>
         <TgTransparent className={'h-[40px] w-[40px]'} />
-        <p className={'h5 mt-10 text-white'}>
-          Telegram канал <br />
-          creat.ershova
-        </p>
+        <p className={'h5 mt-10 text-white'}>Telegram канал creat.ershova</p>
       </div>
       <div>
         <ArrowRightUp

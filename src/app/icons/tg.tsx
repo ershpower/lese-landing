@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconProps } from '@/app/icons/types';
 
-export const Tg = ({ height, width, className }: IconProps) => {
+export const Tg = ({ className }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
