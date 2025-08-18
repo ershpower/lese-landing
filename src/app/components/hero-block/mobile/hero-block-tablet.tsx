@@ -21,7 +21,7 @@ function HeroBlockTablet({ bullets, row2, row1 }: HeroBlockTabletProps) {
           }
         >
           <h2 className={'h1 mt-60 text-center text-white'}>
-            Оригинально визуализирую сложные идеи
+            Оригинально <br /> визуализирую <br /> сложные идеи
           </h2>
           <div className={'mt-30'}>
             <Bullets bullets={bullets} />
