@@ -27,6 +27,17 @@ export const metadata: Metadata = {
   title: 'Ershova Presentation',
   description: 'Оригинально визуализирую сложные идеи🌟',
 
+  icons: {
+    icon: '/favicon.ico', // /public путь
+    shortcut: '/favicon.ico', // альтернативная иконка
+    apple: '/favicon-apple.png', // для Apple устройств
+    other: {
+      rel: 'icon',
+      url: '/favicon-apple.png', // современные браузеры
+      type: 'image/png',
+    },
+  },
+
   openGraph: {
     title: 'Ershova Presentation',
     description: 'Оригинально визуализирую сложные идеи🌟',

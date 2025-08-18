@@ -10,7 +10,7 @@ function OrderButtonDesktop() {
       href={PERSON_TG_LINK}
       target={'_blank'}
       className={
-        'relative block flex h-full flex-col justify-center rounded-20 bg-white px-18 py-30 shadow-custom-blue hover:cursor-pointer 2xl:h-[350px] 2xl:p-40'
+        'relative flex h-full flex-col justify-center rounded-20 bg-white px-18 py-30 shadow-custom-blue hover:cursor-pointer 2xl:h-[350px] 2xl:p-40'
       }
     >
       <Tg
@@ -24,8 +24,8 @@ function OrderButtonDesktop() {
         </h1>
 
         <p className={'h6 mt-10 text-black-70'}>
-          Напишите мне, чтобы <br /> обсудить все детали <br /> и начать ваш
-          проект
+          Напишите мне, чтобы <br className={'hidden lg:block'} /> обсудить все
+          детали <br className={'hidden lg:block'} /> и начать ваш проект
         </p>
         <Finger
           className={
