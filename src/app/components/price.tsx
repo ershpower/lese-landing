@@ -16,7 +16,7 @@ const items = [
       <div className={'border-t border-black-10 pt-10'}>
         <div className={'flex items-end gap-10'}>
           <span className={'h3 text-dark-blue'}>от</span>
-          <span className={'h2 text-dark-blue'}>15 000₽</span>
+          <span className={'h2 text-dark-blue'}>25 000₽</span>
         </div>
         <div className={'mt-10 flex items-center gap-6 text-black-70'}>
           <Clock className={'text-icon'} />
@@ -32,7 +32,7 @@ const items = [
       <div className={'border-t border-black-10 pt-10'}>
         <div className={'flex items-end gap-10'}>
           <span className={'h3 text-dark-blue'}>от</span>
-          <span className={'h2 text-dark-blue'}>20 000₽</span>
+          <span className={'h2 text-dark-blue'}>30 000₽</span>
         </div>
         <div className={'mt-10 flex items-center gap-6 text-black-70'}>
           <Clock className={'text-icon'} />
@@ -49,7 +49,7 @@ const items = [
       <div className={'border-t border-white-30 pt-10'}>
         <div className={'flex items-end gap-10'}>
           <span className={'h3 text-white'}>от</span>
-          <span className={'h2 text-white'}>35 000₽</span>
+          <span className={'h2 text-white'}>40 000₽</span>
         </div>
         <div className={'mt-10 flex items-center gap-6 text-white-70'}>
           <Clock className={'text-icon'} />
@@ -69,7 +69,7 @@ const items = [
     inner: (
       <div className={'border-t border-black-10 pt-10'}>
         <div className={'flex items-end gap-10'}>
-          <span className={'h2 text-dark-blue'}>2000₽</span>
+          <span className={'h2 text-dark-blue'}>3000₽</span>
         </div>
         <div className={'mt-10 flex items-center gap-6 text-black-70'}>
           <Clock className={'text-icon'} />

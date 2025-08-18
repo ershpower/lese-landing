@@ -1,5 +1,5 @@
 import HeroBlock from '@/app/components/hero-block/hero-block';
-import Experience from '@/app/components/experience/experience';
+import Diplom2x from '@/app/components/experience/diplom2x';
 import { Portfolio } from '@/app/components/portfolio';
 import { Whom } from '@/app/components/whom';
 import { WorkSteps } from '@/app/components/work-steps/work-steps';
@@ -20,7 +20,7 @@ export default function Home() {
       </nav>
       <main className={'col-span-4 2xl:col-span-5'}>
         <HeroBlock />
-        <Experience />
+        <Diplom2x />
         <Portfolio />
         <Whom />
         <WorkSteps />

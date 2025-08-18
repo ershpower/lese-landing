@@ -6,7 +6,7 @@ import { BigCard } from '@/app/components/experience/big-card';
 import { ABOUT_ME_ID } from '@/app/consts';
 import Title from '@/app/ui-lit/title';
 
-function Experience() {
+function Diplom2x() {
   return (
     <section className={'section'} id={ABOUT_ME_ID}>
       <Title
@@ -39,7 +39,8 @@ function Experience() {
                 стартапов <br className={'2xl:hidden'} /> из разных уголков мира
               </>
             }
-            img={'/experience/moon.png'}
+            src1x={'/experience/moon1x.png'}
+            src2x={'/experience/moon2x.png'}
           />
         </div>
 
@@ -50,7 +51,8 @@ function Experience() {
                 Красный диплом <br /> «Реклама и связи <br /> с общественностью»
               </>
             }
-            img={'/experience/diplom.png'}
+            src1x={'/experience/diplom1x.png'}
+            src2x={'/experience/diplom2x.png'}
           />
         </div>
 
@@ -104,4 +106,4 @@ function Experience() {
   );
 }
 
-export default Experience;
+export default Diplom2x;
