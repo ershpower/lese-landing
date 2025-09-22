@@ -125,7 +125,6 @@ function HeroBlockMobile({
             </p>
           </div>
         </div>
-        <Dots />
       </div>
     </section>
   );

@@ -10,10 +10,9 @@ export const CardText = ({ bigTitle, title, subtitle }: CardTextProps) => {
   return (
     <div
       className={
-        'relative flex h-full min-h-[168px] items-center rounded-20 bg-light-gray p-10 lg:p-14 xl:min-h-[220px] xl:p-20 2xl:h-[320px] 2xl:p-40'
+        'relative flex h-full min-h-[188px] items-center rounded-20 bg-light-gray p-10 lg:p-14 xl:min-h-[220px] xl:p-20 2xl:h-[320px] 2xl:p-40'
       }
     >
-      <Dots className={'absolute right-20 top-20'} />
       <div>
         <p className={'text-dark-blue'}>
           <span className={'h2'}>{bigTitle}</span>

@@ -41,11 +41,6 @@ export const StepCardMobile = ({
           </div>
         </div>
       </div>
-      {!isAccent && (
-        <div className={'absolute right-20 top-20'}>
-          <Dots />
-        </div>
-      )}
 
       {withArrow && (
         <div

@@ -12,10 +12,9 @@ export const CardImage = ({ title, src2x, src1x }: CardImageProps) => {
   return (
     <div
       className={
-        'relative h-full min-h-[168px] resize rounded-20 bg-light-gray p-10 lg:min-h-[220px] lg:p-14 xl:p-20 2xl:h-[320px] 2xl:p-40'
+        'relative h-full min-h-[188px] resize rounded-20 bg-light-gray p-10 lg:min-h-[220px] lg:p-14 xl:p-20 2xl:h-[320px] 2xl:p-40'
       }
     >
-      <Dots className={'absolute right-20 top-20'} />
       <p className={'h6 mt-30 text-black-70'}>{title}</p>
       <RetinaImage
         className={

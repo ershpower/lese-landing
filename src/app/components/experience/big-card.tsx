@@ -44,10 +44,9 @@ export const BigCard = () => {
   return (
     <div
       className={
-        'relative flex h-full min-h-[168px] flex-col justify-center rounded-20 bg-light-gray p-10 lg:p-14 xl:min-h-[220px] xl:p-20 2xl:h-[320px] 2xl:p-40'
+        'relative flex h-full min-h-[188px] flex-col justify-center rounded-20 bg-light-gray p-10 lg:p-14 xl:min-h-[220px] xl:p-20 2xl:h-[320px] 2xl:p-40'
       }
     >
-      <Dots className={'absolute right-20 top-20 ml-auto mr-10 mt-10'} />
       <div>
         <p className={'h2 text-dark-blue'}> 25+ </p>
         <p className={'h4 text-dark-blue'}>

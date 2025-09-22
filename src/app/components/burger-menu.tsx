@@ -22,7 +22,7 @@ function BurgerMenu({ isOpen, onClose }: BurgerProps) {
   return (
     <div
       className={
-        'w-[calc(100wv - 12px)] fixed inset-6 z-50 flex h-[calc(100vh-12px)] flex-col justify-between rounded-20 bg-burger-gradient p-10 backdrop-blur md:hidden'
+        'w-[calc(100wv - 12px)] fixed inset-6 z-50 flex h-[calc(100vh-12px)] flex-col justify-between overflow-y-auto rounded-20 bg-burger-gradient p-10 backdrop-blur md:hidden'
       }
     >
       <div

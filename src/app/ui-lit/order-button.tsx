@@ -16,7 +16,7 @@ export const OrderButton = () => {
         <Tg />
         <span className={'h4 text-dark-blue'}>Заказать презентацию</span>
         <Finger
-          className={'absolute bottom-[12px] right-[24px]'}
+          className={'absolute bottom-[12px] right-[10px]'}
           width={24}
           height={24}
         />

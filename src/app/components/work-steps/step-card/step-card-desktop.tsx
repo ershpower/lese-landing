@@ -20,12 +20,6 @@ function StepCardDesktop({ img, subtitle, title, index }: StepCardProps) {
     <div
       className={`relative rounded-20 p-20 md:h-[260px] xl:h-[280px] xl:p-30 2xl:min-h-[350px] 2xl:p-50 ${isAccent ? 'bg-brand-gradient' : 'bg-light-gray'} ${classNames}`}
     >
-      {!isAccent && (
-        <div className={'absolute right-20 top-20 xl:right-30 xl:top-30'}>
-          <Dots />
-        </div>
-      )}
-
       {isAccent && (
         <div
           className={

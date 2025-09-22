@@ -11,7 +11,7 @@
 
 .szh-accordion__item--expanded{
     svg.accordion_arrow{
-        transform: rotate(90deg);
+        transform: rotate(180deg);
     }
 }
 

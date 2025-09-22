@@ -6,6 +6,7 @@ import {
   AccordionItem,
 } from '@szhsin/react-accordion';
 import { ArrowRightUp } from '@/app/icons/arrow-right-up';
+import { ChevronDown } from '@/app/icons/chevron-down';
 
 interface AccordionProps {
   items: Array<{
@@ -37,11 +38,7 @@ export const Accordion = ({ items }: AccordionProps) => {
             )}
           </div>
           <div>
-            <ArrowRightUp
-              className={'accordion_arrow'}
-              height={16}
-              width={16}
-            />
+            <ChevronDown width={16} height={16} className={'accordion_arrow'} />
           </div>
         </div>
       }
@@ -62,18 +59,14 @@ export const Accordion = ({ items }: AccordionProps) => {
       }}
       header={
         <div
-          className={`button-gradient flex w-full items-center justify-between overflow-hidden rounded-20 p-20`}
+          className={`button-gradient flex w-full items-start justify-between overflow-hidden rounded-20 p-20`}
         >
           <div>
             <p className={'h4 text-left'}> {title}</p>
             {subtitle && <p className={'h6 mt-10 text-white-70'}>{subtitle}</p>}
           </div>
           <div>
-            <ArrowRightUp
-              className={'accordion_arrow'}
-              height={16}
-              width={16}
-            />
+            <ChevronDown width={16} height={16} className={'accordion_arrow'} />
           </div>
         </div>
       }

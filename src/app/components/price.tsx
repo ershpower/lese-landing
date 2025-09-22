@@ -20,7 +20,7 @@ const items = [
         </div>
         <div className={'mt-10 flex items-center gap-6 text-black-70'}>
           <Clock className={'text-icon'} />
-          <span className={'h6'}>Выпо=лнение от 7 дней (30 слайдов)</span>
+          <span className={'h6'}>Выполнение от 7 дней (30 слайдов)</span>
         </div>
       </div>
     ),

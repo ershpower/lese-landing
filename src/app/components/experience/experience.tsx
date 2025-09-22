@@ -88,9 +88,6 @@ function Experience() {
               'relative flex h-full min-h-[168px] items-center rounded-20 bg-brand-gradient p-10 xl:min-h-[220px] xl:p-20 2xl:h-[320px] 2xl:p-40'
             }
           >
-            <Dots
-              className={'top absolute right-20 top-20 ml-auto text-white'}
-            />
             <div>
               <p className={'h6 text-white'}>
                 Всегда соблюдаю дедлайны, не «пропадаю», строго следую NDA и

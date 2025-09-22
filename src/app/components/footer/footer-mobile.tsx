@@ -64,7 +64,7 @@ function FooterMobile() {
           <div>
             <PinterestTransparent />
           </div>
-          <p className={'h6 text-white'}>Behance</p>
+          <p className={'h6 text-white'}>Pinterest</p>
           <div className={'text-white'}>
             <ArrowRightUp width={10} height={10} />
           </div>
