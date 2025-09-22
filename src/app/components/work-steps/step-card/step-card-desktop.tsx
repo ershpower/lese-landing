@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dots } from '@/app/icons/dots';
+
 import { ArrowRoundedRight } from '@/app/icons/arrow-rounded-right';
 
 interface StepCardProps {

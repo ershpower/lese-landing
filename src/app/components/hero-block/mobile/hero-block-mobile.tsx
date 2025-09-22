@@ -3,7 +3,7 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 import { OrderButton } from '@/app/ui-lit/order-button';
-import { Dots } from '@/app/icons/dots';
+
 import RetinaImage from '@/app/ui-lit/retina-image';
 import { BurgerIcon } from '@/app/icons/burger';
 import Bullets from '@/app/components/hero-block/bullets';

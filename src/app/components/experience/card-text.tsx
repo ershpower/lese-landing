@@ -1,5 +1,4 @@
 import React from 'react';
-import { Dots } from '@/app/icons/dots';
 
 interface CardTextProps {
   bigTitle: string;

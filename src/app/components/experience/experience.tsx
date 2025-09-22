@@ -1,7 +1,7 @@
 import React from 'react';
 import { CardText } from '@/app/components/experience/card-text';
 import { CardImage } from '@/app/components/experience/card-image';
-import { Dots } from '@/app/icons/dots';
+
 import { BigCard } from '@/app/components/experience/big-card';
 import { ABOUT_ME_ID } from '@/app/consts';
 import Title from '@/app/ui-lit/title';

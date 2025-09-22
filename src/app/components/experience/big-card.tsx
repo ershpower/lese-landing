@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dots } from '@/app/icons/dots';
+
 import RetinaImage from '@/app/ui-lit/retina-image';
 
 const images = [
