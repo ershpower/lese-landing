@@ -5,7 +5,6 @@ import {
   Accordion as AccordionUI,
   AccordionItem,
 } from '@szhsin/react-accordion';
-import { ArrowRightUp } from '@/app/icons/arrow-right-up';
 import { ChevronDown } from '@/app/icons/chevron-down';
 
 interface AccordionProps {
