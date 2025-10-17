@@ -36,7 +36,7 @@ const items = [
         </div>
         <div className={'mt-10 flex items-center gap-6 text-black-70'}>
           <Clock className={'text-icon'} />
-          <span className={'h6'}>Выполнение от 2 дней (15-20 слайдов)</span>
+          <span className={'h6'}>Выполнение от 3 дней (10-15 слайдов)</span>
         </div>
       </div>
     ),
@@ -49,11 +49,11 @@ const items = [
       <div className={'border-t border-white-30 pt-10'}>
         <div className={'flex items-end gap-10'}>
           <span className={'h3 text-white'}>от</span>
-          <span className={'h2 text-white'}>40 000₽</span>
+          <span className={'h2 text-white'}>45 000₽</span>
         </div>
         <div className={'mt-10 flex items-center gap-6 text-white-70'}>
           <Clock className={'text-icon'} />
-          <span className={'h6'}>Выполнение от 4 дней (10-15 слайдов)</span>
+          <span className={'h6'}>Выполнение от 5 дней (10-15 слайдов)</span>
         </div>
       </div>
     ),

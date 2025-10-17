@@ -61,10 +61,10 @@ function Experience() {
         <div className={'order-4 col-span-1 md:order-6'}>
           <CardText
             title={'Проектов'}
-            bigTitle={'>400'}
+            bigTitle={'>250 '}
             subtitle={
               <>
-                Выполнила за 6 лет <br /> работы дизайнеров
+                Выполнила за 6 лет <br /> работы дизайнером
               </>
             }
           />

@@ -139,7 +139,7 @@ export const Whom = () => {
           </>
         }
       />
-      <p className={'h5 mb-20 mt-20 pl-20 text-black-70 2xl:pl-40'}>
+      <p className={'h5 mb-20 mt-20 pl-10 text-black-70 2xl:pl-40'}>
         Работаю в различных дизайн-стилях. Помогаю:
       </p>
       <div className={'block md:hidden'}>

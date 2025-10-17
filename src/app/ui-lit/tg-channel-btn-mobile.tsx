@@ -13,7 +13,9 @@ function TgChannelBtnMobile() {
     >
       <div>
         <TgTransparent className={'h-[27px] w-[27px]'} />
-        <p className={'h5 mt-10 text-white'}>Telegram канал creat.ershova</p>
+        <p className={'h5 mt-10 text-white'}>
+          Telegram канал <br /> Психология креатива
+        </p>
       </div>
       <div>
         <ArrowRightUp

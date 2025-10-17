@@ -4,7 +4,7 @@ import { ArrowRightUp } from '@/app/icons/arrow-right-up';
 import TgTransparent from '@/app/icons/tg-transparent';
 import BehanceTransparent from '@/app/icons/behance-transparent';
 import PinterestTransparent from '@/app/icons/pinterest-transparent';
-import { BEHANCE_LINK, PERSON_TG_LINK, PINTEREST_LINK } from '@/app/consts';
+import { BEHANCE_LINK, CHANNEL_TG_LINK, PINTEREST_LINK } from '@/app/consts';
 
 function FooterMobile() {
   return (
@@ -21,7 +21,7 @@ function FooterMobile() {
         {/*tg*/}
         <a
           target={'_blank'}
-          href={PERSON_TG_LINK}
+          href={CHANNEL_TG_LINK}
           className={
             'col-span-2 flex items-center gap-6 border-r border-white-50 py-10'
           }

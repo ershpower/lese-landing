@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { ArrowRightUp } from '@/app/icons/arrow-right-up';
 import PersonInfo from '@/app/ui-lit/person-info';
 import OrderButtonDesktop from '@/app/ui-lit/order-button-desktop';
-import { BEHANCE_LINK, PERSON_TG_LINK, PINTEREST_LINK } from '@/app/consts';
+import { BEHANCE_LINK, CHANNEL_TG_LINK, PINTEREST_LINK } from '@/app/consts';
 
 function FooterTablet() {
   return (
@@ -28,7 +28,7 @@ function FooterTablet() {
           {/*tg*/}
           <Link
             target={'_blank'}
-            href={PERSON_TG_LINK}
+            href={CHANNEL_TG_LINK}
             className={`h5 col-span-2 flex items-center gap-10 border-r border-white-50 py-10 text-white 2xl:py-20`}
           >
             <div>

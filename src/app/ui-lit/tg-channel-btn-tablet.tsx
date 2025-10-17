@@ -16,7 +16,7 @@ function TgChannelBtnTablet() {
       <div>
         <TgTransparent className={'h-[40px] w-[40px]'} />
         <p className={'h5 mt-10 text-white'}>
-          Telegram канал <br /> creat.ershova
+          Telegram канал <br /> Психология Креатива
         </p>
       </div>
       <div>
